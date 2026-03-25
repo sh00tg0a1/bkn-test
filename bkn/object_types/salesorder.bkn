@@ -1,0 +1,44 @@
+---
+type: object_type
+id: supplychain_hd0202_salesorder
+name: 销售订单
+tags:
+  - 已审核
+  - 老数据
+icon: "icon-dip-suanziguanli"
+color: "#0e5fc5"
+---
+
+## ObjectType: supplychain_hd0202_salesorder
+
+销售订单视图（历史/老数据标签见 tags）。与产品的关联用于需求侧参考（PRD 术语表）。
+
+### 业务规则
+
+- 复合主键见 Keys；与产品通过 `product_code` ↔ `material_number` 关联（关系类定义）。
+
+### Data Properties
+
+| Name | Display Name | Type | Description | Mapped Field |
+|------|-------------|------|-------------|-------------|
+| contract_number | 合同编号 | string |  | contract_number |
+| signing_quantity | 签约数量 | integer |  | signing_quantity |
+| promised_delivery_date | 承诺交期时间 | date |  | promised_delivery_date |
+| product_category | 产品类别 | string |  | product_category |
+| shipping_date | 交付时间 | date |  | shipping_date |
+| shipping_quantity | 交付数量 | float |  | shipping_quantity |
+| product_code | 产品编码 | string |  | product_code |
+| product_name | 产品名称 | string |  | product_name |
+| signing_date | 签约时间 | date |  | signing_date |
+
+### Keys
+
+Primary Keys: contract_number, signing_quantity, product_name
+Display Key: contract_number
+Incremental Key: 
+
+### Data Source
+
+| Type | ID | Name |
+|------|-----|------|
+| data_view | ec2f0a5e-aa15-480a-9f00-e637760e90f0 | 订单信息_fixed |

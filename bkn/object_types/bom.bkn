@@ -1,0 +1,53 @@
+---
+type: object_type
+id: supplychain_hd0202_bom
+name: 产品BOM
+tags:
+  - 已审核
+icon: "icon-dip-suanziguanli"
+color: "#0e5fc5"
+---
+
+## ObjectType: supplychain_hd0202_bom
+
+产品物料清单（BOM），描述成品/半成品由哪些物料组成、用量与替代组。是 MRP 展开与齐套分析的基础数据。
+
+### 业务规则
+
+- **主料/替代料（PRD §1.7）**：`alt_priority == 0` 为主料；同 `parent_material_code` 下、同 `alt_group_no` 内 `alt_priority > 0` 为替代料。分析/甘特/MRP 统计仅使用主料行。
+- **BOM 两步精确查询（PRD §5.3）**：Step1 — 按 `bom_material_code == productCode` 查询，取结果中 `bom_version` 字典序最大值为最新版本号；Step2 — 按 `bom_material_code == productCode` + `bom_version == latestVersion` + `alt_priority == 0`（仅主料）三条件查询。
+- **BOM 树构建**：对 Step2 结果进行 BFS 可达性遍历（从产品根节点沿 `parent_material_code → material_code` 展开），排除替代料残留子级；`ancestors Set` 防止环路，`MAX_NODES = 2000` 安全截断。物料集合 = BOM 可达主料 `material_code` 的唯一值。
+- **异常容错（PRD §1.7.4）**：同组多个 `alt_priority = 0` → 取 `seq_no` 最小者为主料；组内无 `alt_priority = 0` → 取最小 `alt_priority` 为主料；`alt_group_no` 有值但 `alt_priority` 为空 → 视为 0（主料）。空 BOM 则整个链路中断并提示用户检查 ERP。
+
+### Data Properties
+
+| Name | Display Name | Type | Description | Mapped Field |
+|------|-------------|------|-------------|-------------|
+| bom_version | BOM版本 | text |  | bom_version |
+| demand_quantity | 需求数量 | decimal |  | demand_quantity |
+| usage_denominator | 用量：分母 | decimal |  | usage_denominator |
+| usage_numerator | 用量：分子 | decimal |  | usage_numerator |
+| alt_group_no | 替代组号 | string | 可相互替代的物料组号，在同一父级物料下，同一组号的物料可相互替代。 | alt_group_no |
+| alt_method | 替代方式 | string | 直接替代或者需要改造改制后替代 | alt_method |
+| alt_part | 替代件 | string | 主料为空，其他为√； | alt_part |
+| alt_priority | 优先级 | integer | 优先级为0的是主料； | alt_priority |
+| bom_level | 物料层级 | integer | 以一个产品为单位来组织的，1、2、3，最多8级；可以通过产品物料编码直接过滤获得产品的物料分层数量； | bom_level |
+| bom_material_code | BOM所属产品物料编码 | string | 产品的BOM物料号，可以以产品编码=BOM物料号来找到该产品的所有物料； | bom_material_code |
+| material_code | 物料编码 | string |  | material_code |
+| material_name | 物料名称 | string |  | material_name |
+| parent_material_code | 父级物料编码 | string | 注意：最终产品/产成品是没有父级物料编码的； | parent_material_code |
+| seq_no | BOM序号 | integer | BOM序号用来跟踪一个产品中，每个物料的序号。比如产品A，有10个物料构成，每个物料在 A产品的BOM中都有一个序号。 | seq_no |
+| standard_usage | 标准用量 | decimal | 在组装成上级物料时，需要的标准用量。 | standard_usage |
+| variable_loss_rate | 变动损耗率 | decimal | 0就是没有损耗，百分比计数方式。 | variable_loss_rate |
+
+### Keys
+
+Primary Keys: bom_version, bom_material_code, seq_no
+Display Key: bom_material_code
+Incremental Key: 
+
+### Data Source
+
+| Type | ID | Name |
+|------|-----|------|
+| data_view | 2017573348757762050 | erp_material_bom |

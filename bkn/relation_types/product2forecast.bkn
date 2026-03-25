@@ -1,0 +1,29 @@
+---
+type: relation_type
+id: product2mds_forecast
+name: 产品关联需求预测单
+source_object_type_id: supplychain_hd0202_product
+target_object_type_id: supplychain_hd0202_forecast
+tags: []
+---
+
+## RelationType: product2mds_forecast
+
+产品关联需求预测单（产品的需求计划）
+
+### 业务规则
+
+- 关联类型：`direct`。
+- 映射字段见下表；跨对象时间过滤、降级链等全局口径见 `network.bkn` 与 `SKILL.md`。
+
+### Endpoint
+
+| Source | Target | Type |
+|--------|--------|------|
+| supplychain_hd0202_product | supplychain_hd0202_forecast | direct |
+
+### Mapping Rules
+
+| Source Property | Source Display Name | Target Property | Target Display Name |
+|----------------|---------------------|-----------------|----------------------|
+| material_number |  | material_number |  |

@@ -1,0 +1,707 @@
+{
+    "entries": [
+        {
+            "id": "monitor2mds_forecast",
+            "name": "监控任务关联需求预测单",
+            "source_object_type_id": "supplychain_hd0202_monitoring_task",
+            "target_object_type_id": "supplychain_hd0202_forecast",
+            "type": "direct",
+            "mapping_rules": [
+                {
+                    "source_property": {
+                        "name": "product_code",
+                        "display_name": ""
+                    },
+                    "target_property": {
+                        "name": "material_number",
+                        "display_name": ""
+                    }
+                }
+            ],
+            "tags": [],
+            "comment": "",
+            "icon": "",
+            "color": "",
+            "kn_id": "supplychain_hd0202",
+            "branch": "main",
+            "source_object_type": {
+                "id": "supplychain_hd0202_monitoring_task",
+                "name": "监控任务",
+                "branch": "",
+                "icon": "icon-daibanshixiang",
+                "color": "#FF4D4F"
+            },
+            "target_object_type": {
+                "id": "supplychain_hd0202_forecast",
+                "name": "产品需求预测单",
+                "branch": "",
+                "icon": "icon-jingquezhunque",
+                "color": "#52C41A"
+            },
+            "creator": {
+                "id": "449f93f6-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "李基亮（Leecky）"
+            },
+            "create_time": 1772887027478,
+            "updater": {
+                "id": "449f93f6-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "李基亮（Leecky）"
+            },
+            "update_time": 1772887027478,
+            "module_type": "relation_type"
+        },
+        {
+            "id": "product2mds_forecast",
+            "name": "产品关联需求预测单",
+            "source_object_type_id": "supplychain_hd0202_product",
+            "target_object_type_id": "supplychain_hd0202_forecast",
+            "type": "direct",
+            "mapping_rules": [
+                {
+                    "source_property": {
+                        "name": "material_number",
+                        "display_name": ""
+                    },
+                    "target_property": {
+                        "name": "material_number",
+                        "display_name": ""
+                    }
+                }
+            ],
+            "tags": [],
+            "comment": "产品关联需求预测单（产品的需求计划）",
+            "icon": "",
+            "color": "",
+            "kn_id": "supplychain_hd0202",
+            "branch": "main",
+            "source_object_type": {
+                "id": "supplychain_hd0202_product",
+                "name": "产品",
+                "branch": "",
+                "icon": "icon-dip-suanziguanli",
+                "color": "#0e5fc5"
+            },
+            "target_object_type": {
+                "id": "supplychain_hd0202_forecast",
+                "name": "产品需求预测单",
+                "branch": "",
+                "icon": "icon-jingquezhunque",
+                "color": "#52C41A"
+            },
+            "creator": {
+                "id": "449f93f6-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "李基亮（Leecky）"
+            },
+            "create_time": 1772886809023,
+            "updater": {
+                "id": "449f93f6-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "李基亮（Leecky）"
+            },
+            "update_time": 1772886809023,
+            "module_type": "relation_type"
+        },
+        {
+            "id": "mrp2material",
+            "name": "物料需求计划关联物料",
+            "source_object_type_id": "supplychain_hd0202_mrp",
+            "target_object_type_id": "supplychain_hd0202_material",
+            "type": "direct",
+            "mapping_rules": [
+                {
+                    "source_property": {
+                        "name": "materialplanid_number",
+                        "display_name": ""
+                    },
+                    "target_property": {
+                        "display_name": "",
+                        "name": "material_code"
+                    }
+                }
+            ],
+            "tags": [],
+            "comment": "物料需求计划关联的物料。",
+            "icon": "",
+            "color": "",
+            "kn_id": "supplychain_hd0202",
+            "branch": "main",
+            "source_object_type": {
+                "id": "supplychain_hd0202_mrp",
+                "name": "物料需求计划",
+                "branch": "",
+                "icon": "icon-dip-suanziguanli",
+                "color": "#52C41A"
+            },
+            "target_object_type": {
+                "id": "supplychain_hd0202_material",
+                "name": "物料",
+                "branch": "",
+                "icon": "icon-dip-suanziguanli",
+                "color": "#0e5fc5"
+            },
+            "creator": {
+                "id": "449f93f6-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "李基亮（Leecky）"
+            },
+            "create_time": 1772886588260,
+            "updater": {
+                "id": "449f93f6-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "李基亮（Leecky）"
+            },
+            "update_time": 1772886588260,
+            "module_type": "relation_type"
+        },
+        {
+            "id": "pr2mrp",
+            "name": "采购申请单关联物料需求计划",
+            "source_object_type_id": "supplychain_hd0202_pr",
+            "target_object_type_id": "supplychain_hd0202_mrp",
+            "type": "direct",
+            "mapping_rules": [
+                {
+                    "source_property": {
+                        "name": "srcbillid",
+                        "display_name": "采购申请明细主键"
+                    },
+                    "target_property": {
+                        "name": "billno",
+                        "display_name": "需求计划订单单据编号"
+                    }
+                }
+            ],
+            "tags": [],
+            "comment": "采购订单来自于物料需求计划的投放。",
+            "icon": "",
+            "color": "",
+            "kn_id": "supplychain_hd0202",
+            "branch": "main",
+            "source_object_type": {
+                "id": "supplychain_hd0202_pr",
+                "name": "采购申请单",
+                "branch": "",
+                "icon": "icon-dip-suanziguanli",
+                "color": "#52C41A"
+            },
+            "target_object_type": {
+                "id": "supplychain_hd0202_mrp",
+                "name": "物料需求计划",
+                "branch": "",
+                "icon": "icon-dip-suanziguanli",
+                "color": "#52C41A"
+            },
+            "creator": {
+                "id": "449f93f6-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "李基亮（Leecky）"
+            },
+            "create_time": 1772886034591,
+            "updater": {
+                "id": "449f93f6-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "李基亮（Leecky）"
+            },
+            "update_time": 1772886288413,
+            "module_type": "relation_type"
+        },
+        {
+            "id": "d60nsctce73l0mrsstfg",
+            "name": "生产计划关联需求预测单",
+            "source_object_type_id": "supplychain_hd0202_mps",
+            "target_object_type_id": "supplychain_hd0202_forecast",
+            "type": "direct",
+            "mapping_rules": [
+                {
+                    "target_property": {
+                        "name": "billno",
+                        "display_name": ""
+                    },
+                    "source_property": {
+                        "name": "sourcebillnumber",
+                        "display_name": "产品编码"
+                    }
+                }
+            ],
+            "tags": [
+                "已审核"
+            ],
+            "comment": "生产计划按照需求预测单来生产。",
+            "icon": "",
+            "color": "",
+            "kn_id": "supplychain_hd0202",
+            "branch": "main",
+            "source_object_type": {
+                "id": "supplychain_hd0202_mps",
+                "name": "工厂生产计划",
+                "branch": "",
+                "icon": "icon-dip-suanziguanli",
+                "color": "#52C41A"
+            },
+            "target_object_type": {
+                "id": "supplychain_hd0202_forecast",
+                "name": "产品需求预测单",
+                "branch": "",
+                "icon": "icon-jingquezhunque",
+                "color": "#52C41A"
+            },
+            "creator": {
+                "id": "449f93f6-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "李基亮（Leecky）"
+            },
+            "create_time": 1770094131766,
+            "updater": {
+                "id": "449f93f6-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "李基亮（Leecky）"
+            },
+            "update_time": 1772885857517,
+            "module_type": "relation_type"
+        },
+        {
+            "id": "mrp2mds_forecast",
+            "name": "物料需求计划关联产品预测需求",
+            "source_object_type_id": "supplychain_hd0202_mrp",
+            "target_object_type_id": "supplychain_hd0202_forecast",
+            "type": "direct",
+            "mapping_rules": [
+                {
+                    "source_property": {
+                        "name": "rootdemandbillno",
+                        "display_name": ""
+                    },
+                    "target_property": {
+                        "name": "billno",
+                        "display_name": ""
+                    }
+                }
+            ],
+            "tags": [],
+            "comment": "物料需求计划关联产品预测单",
+            "icon": "",
+            "color": "",
+            "kn_id": "supplychain_hd0202",
+            "branch": "main",
+            "source_object_type": {
+                "id": "supplychain_hd0202_mrp",
+                "name": "物料需求计划",
+                "branch": "",
+                "icon": "icon-dip-suanziguanli",
+                "color": "#52C41A"
+            },
+            "target_object_type": {
+                "id": "supplychain_hd0202_forecast",
+                "name": "产品需求预测单",
+                "branch": "",
+                "icon": "icon-jingquezhunque",
+                "color": "#52C41A"
+            },
+            "creator": {
+                "id": "449f93f6-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "李基亮（Leecky）"
+            },
+            "create_time": 1772885624443,
+            "updater": {
+                "id": "449f93f6-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "李基亮（Leecky）"
+            },
+            "update_time": 1772885624443,
+            "module_type": "relation_type"
+        },
+        {
+            "id": "supplychain_hd0202_pr2po",
+            "name": "采购订单关联物料请购单",
+            "source_object_type_id": "supplychain_hd0202_po",
+            "target_object_type_id": "supplychain_hd0202_pr",
+            "type": "direct",
+            "mapping_rules": [
+                {
+                    "source_property": {
+                        "display_name": "物料编码",
+                        "name": "material_number"
+                    },
+                    "target_property": {
+                        "name": "material_number",
+                        "display_name": "物料编码"
+                    }
+                },
+                {
+                    "source_property": {
+                        "name": "srcbillid",
+                        "display_name": "采购申请单号"
+                    },
+                    "target_property": {
+                        "name": "id",
+                        "display_name": "来源单据号-采购申请单号"
+                    }
+                }
+            ],
+            "tags": [
+                "已审核"
+            ],
+            "comment": "按照物料需求计划驱动的情况，PO与PR是关联的。",
+            "icon": "",
+            "color": "",
+            "kn_id": "supplychain_hd0202",
+            "branch": "main",
+            "source_object_type": {
+                "id": "supplychain_hd0202_po",
+                "name": "采购订单",
+                "branch": "",
+                "icon": "icon-dip-suanziguanli",
+                "color": "#52C41A"
+            },
+            "target_object_type": {
+                "id": "supplychain_hd0202_pr",
+                "name": "采购申请单",
+                "branch": "",
+                "icon": "icon-dip-suanziguanli",
+                "color": "#52C41A"
+            },
+            "creator": {
+                "id": "488c973e-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "颜梦玲（Vania）"
+            },
+            "create_time": 1770020815940,
+            "updater": {
+                "id": "449f93f6-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "李基亮（Leecky）"
+            },
+            "update_time": 1772885292766,
+            "module_type": "relation_type"
+        },
+        {
+            "id": "supplychain_hd0202_product2bom",
+            "name": "产品关联产品bom",
+            "source_object_type_id": "supplychain_hd0202_product",
+            "target_object_type_id": "supplychain_hd0202_bom",
+            "type": "direct",
+            "mapping_rules": [
+                {
+                    "source_property": {
+                        "name": "material_number",
+                        "display_name": "产品编码"
+                    },
+                    "target_property": {
+                        "name": "bom_material_code",
+                        "display_name": "BOM所属产品物料编码"
+                    }
+                }
+            ],
+            "tags": [
+                "已审核"
+            ],
+            "comment": "",
+            "icon": "",
+            "color": "",
+            "kn_id": "supplychain_hd0202",
+            "branch": "main",
+            "source_object_type": {
+                "id": "supplychain_hd0202_product",
+                "name": "产品",
+                "branch": "",
+                "icon": "icon-dip-suanziguanli",
+                "color": "#0e5fc5"
+            },
+            "target_object_type": {
+                "id": "supplychain_hd0202_bom",
+                "name": "产品BOM",
+                "branch": "",
+                "icon": "icon-dip-suanziguanli",
+                "color": "#0e5fc5"
+            },
+            "creator": {
+                "id": "488c973e-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "颜梦玲（Vania）"
+            },
+            "create_time": 1770029608504,
+            "updater": {
+                "id": "4b4b1248-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "李金龙（Ken）"
+            },
+            "update_time": 1770605191827,
+            "module_type": "relation_type"
+        },
+        {
+            "id": "supplychain_hd0202_po2supplier",
+            "name": "采购订单关联供应商",
+            "source_object_type_id": "supplychain_hd0202_po",
+            "target_object_type_id": "supplychain_hd0202_supplier",
+            "type": "direct",
+            "mapping_rules": [
+                {
+                    "source_property": {
+                        "name": "supplier_number",
+                        "display_name": "供应商编码"
+                    },
+                    "target_property": {
+                        "display_name": "供应商编码",
+                        "name": "supplier_code"
+                    }
+                }
+            ],
+            "tags": [
+                "已审核"
+            ],
+            "comment": "",
+            "icon": "",
+            "color": "",
+            "kn_id": "supplychain_hd0202",
+            "branch": "main",
+            "source_object_type": {
+                "id": "supplychain_hd0202_po",
+                "name": "采购订单",
+                "branch": "",
+                "icon": "icon-dip-suanziguanli",
+                "color": "#52C41A"
+            },
+            "target_object_type": {
+                "id": "supplychain_hd0202_supplier",
+                "name": "供应商",
+                "branch": "",
+                "icon": "icon-dip-suanziguanli",
+                "color": "#0e5fc5"
+            },
+            "creator": {
+                "id": "488c973e-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "颜梦玲（Vania）"
+            },
+            "create_time": 1770015713547,
+            "updater": {
+                "id": "449f93f6-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "李基亮（Leecky）"
+            },
+            "update_time": 1770383919999,
+            "module_type": "relation_type"
+        },
+        {
+            "id": "supplychain_hd0202_material2inventory",
+            "name": "物料关联库存",
+            "source_object_type_id": "supplychain_hd0202_material",
+            "target_object_type_id": "supplychain_hd0202_inventory",
+            "type": "direct",
+            "mapping_rules": [
+                {
+                    "source_property": {
+                        "name": "material_code",
+                        "display_name": "物料编码"
+                    },
+                    "target_property": {
+                        "display_name": "物料编码",
+                        "name": "material_code"
+                    }
+                }
+            ],
+            "tags": [
+                "已审核"
+            ],
+            "comment": "",
+            "icon": "",
+            "color": "",
+            "kn_id": "supplychain_hd0202",
+            "branch": "main",
+            "source_object_type": {
+                "id": "supplychain_hd0202_material",
+                "name": "物料",
+                "branch": "",
+                "icon": "icon-dip-suanziguanli",
+                "color": "#0e5fc5"
+            },
+            "target_object_type": {
+                "id": "supplychain_hd0202_inventory",
+                "name": "库存",
+                "branch": "",
+                "icon": "icon-dip-suanziguanli",
+                "color": "#0e5fc5"
+            },
+            "creator": {
+                "id": "488c973e-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "颜梦玲（Vania）"
+            },
+            "create_time": 1770020903861,
+            "updater": {
+                "id": "449f93f6-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "李基亮（Leecky）"
+            },
+            "update_time": 1770383890530,
+            "module_type": "relation_type"
+        },
+        {
+            "id": "supplychain_hd0202_bom2material",
+            "name": "产品bom关联物料",
+            "source_object_type_id": "supplychain_hd0202_bom",
+            "target_object_type_id": "supplychain_hd0202_material",
+            "type": "direct",
+            "mapping_rules": [
+                {
+                    "source_property": {
+                        "name": "material_code",
+                        "display_name": "物料编码"
+                    },
+                    "target_property": {
+                        "name": "material_code",
+                        "display_name": "物料编码"
+                    }
+                }
+            ],
+            "tags": [
+                "已审核"
+            ],
+            "comment": "",
+            "icon": "",
+            "color": "",
+            "kn_id": "supplychain_hd0202",
+            "branch": "main",
+            "source_object_type": {
+                "id": "supplychain_hd0202_bom",
+                "name": "产品BOM",
+                "branch": "",
+                "icon": "icon-dip-suanziguanli",
+                "color": "#0e5fc5"
+            },
+            "target_object_type": {
+                "id": "supplychain_hd0202_material",
+                "name": "物料",
+                "branch": "",
+                "icon": "icon-dip-suanziguanli",
+                "color": "#0e5fc5"
+            },
+            "creator": {
+                "id": "488c973e-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "颜梦玲（Vania）"
+            },
+            "create_time": 1770029698385,
+            "updater": {
+                "id": "449f93f6-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "李基亮（Leecky）"
+            },
+            "update_time": 1770383844895,
+            "module_type": "relation_type"
+        },
+        {
+            "id": "supplychain_hd0202_product2inventory",
+            "name": "产品关联库存",
+            "source_object_type_id": "supplychain_hd0202_product",
+            "target_object_type_id": "supplychain_hd0202_inventory",
+            "type": "direct",
+            "mapping_rules": [
+                {
+                    "target_property": {
+                        "name": "material_code",
+                        "display_name": "物料编码"
+                    },
+                    "source_property": {
+                        "display_name": "",
+                        "name": "material_number"
+                    }
+                }
+            ],
+            "tags": [
+                "已审核"
+            ],
+            "comment": "",
+            "icon": "",
+            "color": "",
+            "kn_id": "supplychain_hd0202",
+            "branch": "main",
+            "source_object_type": {
+                "id": "supplychain_hd0202_product",
+                "name": "产品",
+                "branch": "",
+                "icon": "icon-dip-suanziguanli",
+                "color": "#0e5fc5"
+            },
+            "target_object_type": {
+                "id": "supplychain_hd0202_inventory",
+                "name": "库存",
+                "branch": "",
+                "icon": "icon-dip-suanziguanli",
+                "color": "#0e5fc5"
+            },
+            "creator": {
+                "id": "488c973e-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "颜梦玲（Vania）"
+            },
+            "create_time": 1770035539110,
+            "updater": {
+                "id": "449f93f6-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "李基亮（Leecky）"
+            },
+            "update_time": 1770383833021,
+            "module_type": "relation_type"
+        },
+        {
+            "id": "supplychain_hd0202_salesorder2product",
+            "name": "销售订单关联产品",
+            "source_object_type_id": "supplychain_hd0202_salesorder",
+            "target_object_type_id": "supplychain_hd0202_product",
+            "type": "direct",
+            "mapping_rules": [
+                {
+                    "source_property": {
+                        "name": "product_code",
+                        "display_name": "产品编码"
+                    },
+                    "target_property": {
+                        "name": "material_number",
+                        "display_name": ""
+                    }
+                }
+            ],
+            "tags": [
+                "已审核"
+            ],
+            "comment": "",
+            "icon": "",
+            "color": "",
+            "kn_id": "supplychain_hd0202",
+            "branch": "main",
+            "source_object_type": {
+                "id": "supplychain_hd0202_salesorder",
+                "name": "销售订单",
+                "branch": "",
+                "icon": "icon-dip-suanziguanli",
+                "color": "#0e5fc5"
+            },
+            "target_object_type": {
+                "id": "supplychain_hd0202_product",
+                "name": "产品",
+                "branch": "",
+                "icon": "icon-dip-suanziguanli",
+                "color": "#0e5fc5"
+            },
+            "creator": {
+                "id": "488c973e-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "颜梦玲（Vania）"
+            },
+            "create_time": 1770107532246,
+            "updater": {
+                "id": "449f93f6-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "李基亮（Leecky）"
+            },
+            "update_time": 1770383659486,
+            "module_type": "relation_type"
+        }
+    ],
+    "total_count": 13
+}

@@ -1,0 +1,2205 @@
+{
+    "entries": [
+        {
+            "id": "supplychain_hd0202_po",
+            "name": "采购订单",
+            "data_source": {
+                "type": "data_view",
+                "id": "2017573348875202562",
+                "name": "erp_purchase_order"
+            },
+            "data_properties": [
+                {
+                    "name": "entry_id",
+                    "display_name": "entry_id",
+                    "type": "string",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "entry_id",
+                        "type": "string",
+                        "display_name": "entry_id"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "id",
+                    "display_name": "id",
+                    "type": "string",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "id",
+                        "type": "string",
+                        "display_name": "id"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "srcbillentryid",
+                    "display_name": "来源单据号-采购申请单明细主键",
+                    "type": "string",
+                    "comment": "来源单据号（对应采购申请单明细主键ID）",
+                    "mapped_field": {
+                        "name": "srcbillentryid",
+                        "type": "string",
+                        "display_name": "srcbillentryid"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "srcbillid",
+                    "display_name": "来源单据号-采购申请单主键",
+                    "type": "string",
+                    "comment": "来源单据号（对应采购申请单主键ID）",
+                    "mapped_field": {
+                        "name": "srcbillid",
+                        "type": "string",
+                        "display_name": "srcbillid"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "billno",
+                    "display_name": "采购订单单号",
+                    "type": "string",
+                    "comment": "采购订单单号",
+                    "mapped_field": {
+                        "name": "billno",
+                        "type": "string",
+                        "display_name": "billno"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "biztime",
+                    "display_name": "采购日期",
+                    "type": "date",
+                    "comment": "业务日期",
+                    "mapped_field": {
+                        "name": "biztime",
+                        "type": "date",
+                        "display_name": "biztime"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "org_name",
+                    "display_name": "购买组织",
+                    "type": "string",
+                    "comment": "购买签订的主体",
+                    "mapped_field": {
+                        "name": "org_name",
+                        "type": "string",
+                        "display_name": "org_name"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": true,
+                            "model_id": "1951511856216674304"
+                        }
+                    }
+                },
+                {
+                    "name": "billtype_name",
+                    "display_name": "订单类型",
+                    "type": "string",
+                    "comment": "生产项目采购订单、研发项目采购订单等等。",
+                    "mapped_field": {
+                        "name": "billtype_name",
+                        "type": "string",
+                        "display_name": "billtype_name"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "supplier_number",
+                    "display_name": "供应商编码",
+                    "type": "string",
+                    "comment": "供应商编码",
+                    "mapped_field": {
+                        "name": "supplier_number",
+                        "type": "string",
+                        "display_name": "supplier_number"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "supplier_name",
+                    "display_name": "供应商名称",
+                    "type": "string",
+                    "comment": "供应商名称",
+                    "mapped_field": {
+                        "name": "supplier_name",
+                        "type": "string",
+                        "display_name": "supplier_name"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": true,
+                            "model_id": "1951511856216674304"
+                        }
+                    }
+                },
+                {
+                    "name": "operatorname",
+                    "display_name": "执行采购人",
+                    "type": "string",
+                    "comment": " 执行采购的采购人员",
+                    "mapped_field": {
+                        "name": "operatorname",
+                        "type": "string",
+                        "display_name": "operatorname"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "huid_xycg_operatorname",
+                    "display_name": "寻源采购人",
+                    "type": "string",
+                    "comment": "采购寻源的人员",
+                    "mapped_field": {
+                        "name": "huid_xycg_operatorname",
+                        "type": "string",
+                        "display_name": "huid_xycg_operatorname"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "createtime",
+                    "display_name": "创建时间",
+                    "type": "timestamp",
+                    "comment": "创建时间",
+                    "mapped_field": {
+                        "name": "createtime",
+                        "type": "timestamp",
+                        "display_name": "createtime"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "auditdate",
+                    "display_name": "审核时间",
+                    "type": "timestamp",
+                    "comment": "审核时间",
+                    "mapped_field": {
+                        "name": "auditdate",
+                        "type": "timestamp",
+                        "display_name": "auditdate"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "material_number",
+                    "display_name": "物料编码",
+                    "type": "string",
+                    "comment": "物料编码",
+                    "mapped_field": {
+                        "name": "material_number",
+                        "type": "string",
+                        "display_name": "material_number"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "material_name",
+                    "display_name": "物料名称",
+                    "type": "string",
+                    "comment": "物料名称",
+                    "mapped_field": {
+                        "name": "material_name",
+                        "type": "string",
+                        "display_name": "material_name"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": true,
+                            "model_id": "1951511856216674304"
+                        }
+                    }
+                },
+                {
+                    "name": "qty",
+                    "display_name": "采购数量",
+                    "type": "decimal",
+                    "comment": "数量",
+                    "mapped_field": {
+                        "name": "qty",
+                        "type": "decimal",
+                        "display_name": "qty"
+                    }
+                },
+                {
+                    "name": "deliverdate",
+                    "display_name": "预计交货日期",
+                    "type": "date",
+                    "comment": "预计交货日期，取用的标准交货时间。采购员可在ERP更新供应商反馈的交货时间。",
+                    "mapped_field": {
+                        "name": "deliverdate",
+                        "type": "date",
+                        "display_name": "deliverdate"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "srcbillnumber",
+                    "display_name": "来源单据号-采购申请单号",
+                    "type": "string",
+                    "comment": "来源单据号（对应采购申请单号）",
+                    "mapped_field": {
+                        "name": "srcbillnumber",
+                        "type": "string",
+                        "display_name": "srcbillnumber"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "invqty",
+                    "display_name": "入库数量",
+                    "type": "decimal",
+                    "comment": "入库数量",
+                    "mapped_field": {
+                        "name": "invqty",
+                        "type": "decimal",
+                        "display_name": "invqty"
+                    }
+                },
+                {
+                    "name": "returnqty",
+                    "display_name": "退库数量",
+                    "type": "decimal",
+                    "comment": "退库数量",
+                    "mapped_field": {
+                        "name": "returnqty",
+                        "type": "decimal",
+                        "display_name": "returnqty"
+                    }
+                },
+                {
+                    "name": "actqty",
+                    "display_name": "实际入库数量",
+                    "type": "decimal",
+                    "comment": "实际入库数量（入库数量 - 退库数量）",
+                    "mapped_field": {
+                        "name": "actqty",
+                        "type": "decimal",
+                        "display_name": "actqty"
+                    }
+                },
+                {
+                    "name": "biztype_name",
+                    "display_name": "物料类型",
+                    "type": "string",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "biztype_name",
+                        "type": "string",
+                        "display_name": "biztype_name"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    },
+                    "condition_operations": [
+                        "==",
+                        "!=",
+                        "like",
+                        "not_like",
+                        "in",
+                        "not_in",
+                        ">",
+                        ">=",
+                        "<",
+                        "<=",
+                        "range",
+                        "out_range"
+                    ]
+                },
+                {
+                    "name": "rowclosestatus_title",
+                    "display_name": "关闭状态",
+                    "type": "string",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "rowclosestatus_title",
+                        "type": "string",
+                        "display_name": "rowclosestatus_title"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    },
+                    "condition_operations": [
+                        "==",
+                        "!=",
+                        "like",
+                        "not_like",
+                        "in",
+                        "not_in",
+                        ">",
+                        ">=",
+                        "<",
+                        "<=",
+                        "range",
+                        "out_range"
+                    ]
+                },
+                {
+                    "name": "rowterminatestatus_title",
+                    "display_name": "终止状态",
+                    "type": "string",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "rowterminatestatus_title",
+                        "type": "string",
+                        "display_name": "rowterminatestatus_title"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    },
+                    "condition_operations": [
+                        "==",
+                        "!=",
+                        "like",
+                        "not_like",
+                        "in",
+                        "not_in",
+                        ">",
+                        ">=",
+                        "<",
+                        "<=",
+                        "range",
+                        "out_range"
+                    ]
+                }
+            ],
+            "primary_keys": [
+                "entry_id"
+            ],
+            "display_key": "material_name",
+            "incremental_key": "",
+            "tags": [
+                "已审核"
+            ],
+            "comment": "发给供应商的正式采购订单。",
+            "icon": "icon-dip-suanziguanli",
+            "color": "#52C41A",
+            "kn_id": "supplychain_hd0202",
+            "branch": "main",
+            "status": {
+                "incremental_key": "",
+                "incremental_value": "",
+                "index": "adp-kn_ot_index-supplychain_hd0202-main-supplychain_hd0202_po-d6ua9v53qdm7olbpaueg",
+                "index_available": true,
+                "doc_count": 41162,
+                "storage_size": 1424899640,
+                "update_time": 1773971510058
+            },
+            "creator": {
+                "id": "488c973e-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "颜梦玲（Vania）"
+            },
+            "create_time": 1770015713140,
+            "updater": {
+                "id": "488c973e-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "颜梦玲（Vania）"
+            },
+            "update_time": 1773915157513,
+            "module_type": "object_type"
+        },
+        {
+            "id": "supplychain_hd0202_pr",
+            "name": "采购申请单",
+            "data_source": {
+                "type": "data_view",
+                "id": "2017573348833259522",
+                "name": "erp_purchase_request"
+            },
+            "data_properties": [
+                {
+                    "name": "huid_xmh_name",
+                    "display_name": "生产项目号",
+                    "type": "string",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "huid_xmh_name",
+                        "type": "string",
+                        "display_name": "huid_xmh_name"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "srcbillentryid",
+                    "display_name": "来源单据明细ID",
+                    "type": "string",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "srcbillentryid",
+                        "type": "string",
+                        "display_name": "srcbillentryid"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "srcbillid",
+                    "display_name": "来源单据ID",
+                    "type": "string",
+                    "comment": "计划订单下推生成的采购申请，关联需求计划ID。",
+                    "mapped_field": {
+                        "name": "srcbillid",
+                        "type": "string",
+                        "display_name": "srcbillid"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "srcbillnumber",
+                    "display_name": "来源单据号",
+                    "type": "string",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "srcbillnumber",
+                        "type": "string",
+                        "display_name": "srcbillnumber"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "id",
+                    "display_name": "采购申请主键",
+                    "type": "string",
+                    "comment": "采购申请主键",
+                    "mapped_field": {
+                        "name": "id",
+                        "type": "string",
+                        "display_name": "id"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "billno",
+                    "display_name": "采购申请单号",
+                    "type": "string",
+                    "comment": "采购申请单号",
+                    "mapped_field": {
+                        "name": "billno",
+                        "type": "string",
+                        "display_name": "billno"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "biztime",
+                    "display_name": "业务时间",
+                    "type": "timestamp",
+                    "comment": "业务时间",
+                    "mapped_field": {
+                        "name": "biztime",
+                        "type": "timestamp",
+                        "display_name": "biztime"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "billtype_name",
+                    "display_name": "单据类型",
+                    "type": "string",
+                    "comment": "单据类型（包含研发/生产等，目前仅考虑生产）",
+                    "mapped_field": {
+                        "name": "billtype_name",
+                        "type": "string",
+                        "display_name": "billtype_name"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "org_name",
+                    "display_name": "组织名称",
+                    "type": "string",
+                    "comment": "组织名称",
+                    "mapped_field": {
+                        "name": "org_name",
+                        "type": "string",
+                        "display_name": "org_name"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": true,
+                            "model_id": "1951511856216674304"
+                        }
+                    }
+                },
+                {
+                    "name": "auditdate",
+                    "display_name": "审核日期",
+                    "type": "timestamp",
+                    "comment": "审核日期",
+                    "mapped_field": {
+                        "name": "auditdate",
+                        "type": "timestamp",
+                        "display_name": "auditdate"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "entry_id",
+                    "display_name": "采购申请明细主键",
+                    "type": "string",
+                    "comment": "采购申请明细主键",
+                    "mapped_field": {
+                        "name": "entry_id",
+                        "type": "string",
+                        "display_name": "entry_id"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "material_number",
+                    "display_name": "物料编码",
+                    "type": "string",
+                    "comment": "物料编码",
+                    "mapped_field": {
+                        "name": "material_number",
+                        "type": "string",
+                        "display_name": "material_number"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "material_name",
+                    "display_name": "物料名称",
+                    "type": "string",
+                    "comment": "物料名称",
+                    "mapped_field": {
+                        "name": "material_name",
+                        "type": "string",
+                        "display_name": "material_name"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": true,
+                            "model_id": "1951511856216674304"
+                        }
+                    }
+                },
+                {
+                    "name": "qty",
+                    "display_name": "数量",
+                    "type": "decimal",
+                    "comment": "数量",
+                    "mapped_field": {
+                        "name": "qty",
+                        "type": "decimal",
+                        "display_name": "qty"
+                    }
+                },
+                {
+                    "name": "unit_name",
+                    "display_name": "单位",
+                    "type": "string",
+                    "comment": "单位",
+                    "mapped_field": {
+                        "name": "unit_name",
+                        "type": "string",
+                        "display_name": "unit_name"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "joinqty",
+                    "display_name": "已下推采购订单数量",
+                    "type": "decimal",
+                    "comment": "已下推采购订单数量",
+                    "mapped_field": {
+                        "name": "joinqty",
+                        "type": "decimal",
+                        "display_name": "joinqty"
+                    }
+                },
+                {
+                    "name": "rowclosestatus_title",
+                    "display_name": "关闭状态",
+                    "type": "string",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "rowclosestatus_title",
+                        "type": "string",
+                        "display_name": "rowclosestatus_title"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    },
+                    "condition_operations": [
+                        "==",
+                        "!=",
+                        "like",
+                        "not_like",
+                        "in",
+                        "not_in",
+                        ">",
+                        ">=",
+                        "<",
+                        "<=",
+                        "range",
+                        "out_range"
+                    ]
+                },
+                {
+                    "name": "rowterminatestatus_title",
+                    "display_name": "终止状态",
+                    "type": "string",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "rowterminatestatus_title",
+                        "type": "string",
+                        "display_name": "rowterminatestatus_title"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    },
+                    "condition_operations": [
+                        "==",
+                        "!=",
+                        "like",
+                        "not_like",
+                        "in",
+                        "not_in",
+                        ">",
+                        ">=",
+                        "<",
+                        "<=",
+                        "range",
+                        "out_range"
+                    ]
+                }
+            ],
+            "primary_keys": [
+                "entry_id"
+            ],
+            "display_key": "billno",
+            "incremental_key": "",
+            "tags": [
+                "已审核"
+            ],
+            "comment": "根据MRP生成的内部采购申请PR。",
+            "icon": "icon-dip-suanziguanli",
+            "color": "#52C41A",
+            "kn_id": "supplychain_hd0202",
+            "branch": "main",
+            "status": {
+                "incremental_key": "",
+                "incremental_value": "",
+                "index": "adp-kn_ot_index-supplychain_hd0202-main-supplychain_hd0202_pr-d6uahpl3qdm7olbpaug0",
+                "index_available": true,
+                "doc_count": 37986,
+                "storage_size": 1091742405,
+                "update_time": 1773972174686
+            },
+            "creator": {
+                "id": "488c973e-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "颜梦玲（Vania）"
+            },
+            "create_time": 1770015713140,
+            "updater": {
+                "id": "488c973e-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "颜梦玲（Vania）"
+            },
+            "update_time": 1773914925751,
+            "module_type": "object_type"
+        },
+        {
+            "id": "supplychain_hd0202_mrp",
+            "name": "物料需求计划",
+            "data_source": {
+                "type": "data_view",
+                "id": "2017573348367691777",
+                "name": "erp_mrp_plan_order"
+            },
+            "data_properties": [
+                {
+                    "name": "advisedroptime",
+                    "display_name": "建议投放时间",
+                    "type": "date",
+                    "comment": "建议物料投放时间",
+                    "mapped_field": {
+                        "name": "advisedroptime",
+                        "type": "date",
+                        "display_name": "advisedroptime"
+                    }
+                },
+                {
+                    "name": "adviseenddate",
+                    "display_name": "建议结束时间",
+                    "type": "date",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "adviseenddate",
+                        "type": "date",
+                        "display_name": "adviseenddate"
+                    }
+                },
+                {
+                    "name": "adviseorderqty",
+                    "display_name": "建议订单数量",
+                    "type": "decimal",
+                    "comment": "MRP跑出来的需要的物料数量，理论值",
+                    "mapped_field": {
+                        "name": "adviseorderqty",
+                        "type": "decimal",
+                        "display_name": "adviseorderqty"
+                    }
+                },
+                {
+                    "name": "advisestartdate",
+                    "display_name": "建议开始时间",
+                    "type": "date",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "advisestartdate",
+                        "type": "date",
+                        "display_name": "advisestartdate"
+                    }
+                },
+                {
+                    "name": "availabledate",
+                    "display_name": "可用日期",
+                    "type": "date",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "availabledate",
+                        "type": "date",
+                        "display_name": "availabledate"
+                    }
+                },
+                {
+                    "name": "billno",
+                    "display_name": "需求计划订单单据编号",
+                    "type": "string",
+                    "comment": "MRP的单据编号",
+                    "mapped_field": {
+                        "name": "billno",
+                        "type": "string",
+                        "display_name": "billno"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "bizdropqty",
+                    "display_name": "投放数量",
+                    "type": "decimal",
+                    "comment": "PMC经理确认的投放物料数量，是采购申请和订单的数量。",
+                    "mapped_field": {
+                        "name": "bizdropqty",
+                        "type": "decimal",
+                        "display_name": "bizdropqty"
+                    }
+                },
+                {
+                    "name": "bizorderqty",
+                    "display_name": "订单数量 ",
+                    "type": "decimal",
+                    "comment": "PMC修订后的实际物料需求数量",
+                    "mapped_field": {
+                        "name": "bizorderqty",
+                        "type": "decimal",
+                        "display_name": "bizorderqty"
+                    }
+                },
+                {
+                    "name": "closestatus_title",
+                    "display_name": "关闭状态",
+                    "type": "string",
+                    "comment": "A:正常，尚未关闭, B:关闭, C:拆分关闭, D:合并关闭, E:投放关闭",
+                    "mapped_field": {
+                        "name": "closestatus_title",
+                        "type": "string",
+                        "display_name": "closestatus_title"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "createtime",
+                    "display_name": "创建时间",
+                    "type": "timestamp",
+                    "comment": "MRP计算时间",
+                    "mapped_field": {
+                        "name": "createtime",
+                        "type": "timestamp",
+                        "display_name": "createtime"
+                    }
+                },
+                {
+                    "name": "creator_name",
+                    "display_name": "创建人",
+                    "type": "string",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "creator_name",
+                        "type": "string",
+                        "display_name": "creator_name"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "dropbilltype_name",
+                    "display_name": "投放单据类型",
+                    "type": "string",
+                    "comment": "与物料属性对应 （自制-汇报生产）（委外-普通委外）（外购-生产项目采购申请单）",
+                    "mapped_field": {
+                        "name": "dropbilltype_name",
+                        "type": "string",
+                        "display_name": "dropbilltype_name"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "dropstatus_title",
+                    "display_name": "投放状态",
+                    "type": "string",
+                    "comment": "物料需求是否投放生产，也就是发起采购申请PR，最终形成采购订单PO。",
+                    "mapped_field": {
+                        "name": "dropstatus_title",
+                        "type": "string",
+                        "display_name": "dropstatus_title"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "droptime",
+                    "display_name": "投放时间",
+                    "type": "timestamp",
+                    "comment": "物料的投放时间，投放是指投放采购，这是确定性的采购依据。",
+                    "mapped_field": {
+                        "name": "droptime",
+                        "type": "timestamp",
+                        "display_name": "droptime"
+                    }
+                },
+                {
+                    "name": "enddate",
+                    "display_name": "计划完成日期",
+                    "type": "date",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "enddate",
+                        "type": "date",
+                        "display_name": "enddate"
+                    }
+                },
+                {
+                    "name": "materialattr_title",
+                    "display_name": "物料属性 ",
+                    "type": "string",
+                    "comment": "自制/委外/外购",
+                    "mapped_field": {
+                        "name": "materialattr_title",
+                        "type": "string",
+                        "display_name": "materialattr_title"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "materialplanid_name",
+                    "display_name": "物料名称",
+                    "type": "string",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "materialplanid_name",
+                        "type": "string",
+                        "display_name": "materialplanid_name"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "materialplanid_number",
+                    "display_name": "物料编码",
+                    "type": "string",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "materialplanid_number",
+                        "type": "string",
+                        "display_name": "materialplanid_number"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "orderdate",
+                    "display_name": "计划准备日期",
+                    "type": "date",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "orderdate",
+                        "type": "date",
+                        "display_name": "orderdate"
+                    }
+                },
+                {
+                    "name": "planoperatenum",
+                    "display_name": "计划运算单号",
+                    "type": "string",
+                    "comment": "MRP计算单号",
+                    "mapped_field": {
+                        "name": "planoperatenum",
+                        "type": "string",
+                        "display_name": "planoperatenum"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "rootdemandbillno",
+                    "display_name": "根需求单号",
+                    "type": "string",
+                    "comment": "与预测单单号（产品需求预测计划）关联；",
+                    "mapped_field": {
+                        "name": "rootdemandbillno",
+                        "type": "string",
+                        "display_name": "rootdemandbillno"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "startdate",
+                    "display_name": "计划开始日期",
+                    "type": "date",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "startdate",
+                        "type": "date",
+                        "display_name": "startdate"
+                    }
+                }
+            ],
+            "primary_keys": [
+                "billno"
+            ],
+            "display_key": "materialplanid_name",
+            "incremental_key": "",
+            "tags": [
+                "已审核"
+            ],
+            "comment": "通过ERP系统的MRP运算产生的物料需求计划。",
+            "icon": "icon-dip-suanziguanli",
+            "color": "#52C41A",
+            "kn_id": "supplychain_hd0202",
+            "branch": "main",
+            "status": {
+                "incremental_key": "",
+                "incremental_value": "",
+                "index": "adp-kn_ot_index-supplychain_hd0202-main-supplychain_hd0202_mrp-d6t8i953qdm7olbpan30",
+                "index_available": true,
+                "doc_count": 2895,
+                "storage_size": 1317688,
+                "update_time": 1773832487339
+            },
+            "creator": {
+                "id": "488c973e-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "颜梦玲（Vania）"
+            },
+            "create_time": 1770015713140,
+            "updater": {
+                "id": "488c973e-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "颜梦玲（Vania）"
+            },
+            "update_time": 1773914790997,
+            "module_type": "object_type"
+        },
+        {
+            "id": "supplychain_hd0202_forecast",
+            "name": "产品需求预测单",
+            "data_source": {
+                "type": "data_view",
+                "id": "2017573348858425346",
+                "name": "erp_mds_forecast"
+            },
+            "data_properties": [
+                {
+                    "name": "id",
+                    "display_name": "id",
+                    "type": "string",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "id",
+                        "type": "string",
+                        "display_name": "id"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "auditdate",
+                    "display_name": "审核日期",
+                    "type": "timestamp",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "auditdate",
+                        "type": "timestamp",
+                        "display_name": "auditdate"
+                    }
+                },
+                {
+                    "name": "auditor_name",
+                    "display_name": "审核人",
+                    "type": "string",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "auditor_name",
+                        "type": "string",
+                        "display_name": "auditor_name"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "billno",
+                    "display_name": "预测单号",
+                    "type": "string",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "billno",
+                        "type": "string",
+                        "display_name": "billno"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": true,
+                            "model_id": "1951511856216674304"
+                        }
+                    }
+                },
+                {
+                    "name": "bizdate",
+                    "display_name": "单据创建时间",
+                    "type": "date",
+                    "comment": "该预测的创建时间",
+                    "mapped_field": {
+                        "name": "bizdate",
+                        "type": "date",
+                        "display_name": "bizdate"
+                    }
+                },
+                {
+                    "name": "creator_name",
+                    "display_name": "创建人",
+                    "type": "string",
+                    "comment": "产品需求预测的创建者",
+                    "mapped_field": {
+                        "name": "creator_name",
+                        "type": "string",
+                        "display_name": "creator_name"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "enddate",
+                    "display_name": "预测终止日期",
+                    "type": "date",
+                    "comment": "该物料预测交付的终止日期",
+                    "mapped_field": {
+                        "name": "enddate",
+                        "type": "date",
+                        "display_name": "enddate"
+                    }
+                },
+                {
+                    "name": "material_name",
+                    "display_name": "物料名称",
+                    "type": "string",
+                    "comment": "也就是产成品的名称。",
+                    "mapped_field": {
+                        "name": "material_name",
+                        "type": "string",
+                        "display_name": "material_name"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": true,
+                            "model_id": "1951511856216674304"
+                        }
+                    }
+                },
+                {
+                    "name": "material_number",
+                    "display_name": "物料编码",
+                    "type": "string",
+                    "comment": "预测以产品为单位，也就是产成品的物料编码",
+                    "mapped_field": {
+                        "name": "material_number",
+                        "type": "string",
+                        "display_name": "material_number"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": true,
+                            "model_id": "1951511856216674304"
+                        }
+                    }
+                },
+                {
+                    "name": "qty",
+                    "display_name": "预测数量",
+                    "type": "decimal",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "qty",
+                        "type": "decimal",
+                        "display_name": "qty"
+                    }
+                },
+                {
+                    "name": "startdate",
+                    "display_name": "预测交货日期",
+                    "type": "date",
+                    "comment": "该产品预测需要交货的日期",
+                    "mapped_field": {
+                        "name": "startdate",
+                        "type": "date",
+                        "display_name": "startdate"
+                    }
+                },
+                {
+                    "name": "closestatus_title",
+                    "display_name": "关闭状态",
+                    "type": "text",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "closestatus_title",
+                        "type": "text",
+                        "display_name": "closestatus_title"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    },
+                    "condition_operations": [
+                        "==",
+                        "!=",
+                        "like",
+                        "not_like",
+                        "in",
+                        "not_in",
+                        ">",
+                        ">=",
+                        "<",
+                        "<=",
+                        "range",
+                        "out_range"
+                    ]
+                }
+            ],
+            "primary_keys": [
+                "id"
+            ],
+            "display_key": "material_name",
+            "incremental_key": "",
+            "tags": [
+                "已审核"
+            ],
+            "comment": "业务端（产品经理）基于销售需求、市场预判制定的基础需求数据源，是偏 “预判性” 的原始单据，核心记录产品、预测数量、对应月份 / 时间节点等基础信息，是“最上游单据”。每个月预测未来3个月的需求数据，每个产品都是滚动预测，滚动排产。从产品需求预测到物料需求计划（MRP），正式投放后，发起采购申请，通过后形成采购订单，当成品物料齐套后，安排生产工单，生产完成，则产品需求计划（产品需求预测单）完成。所以，当前产品需求预测单等同于产品需求计划。",
+            "icon": "icon-jingquezhunque",
+            "color": "#52C41A",
+            "kn_id": "supplychain_hd0202",
+            "branch": "main",
+            "status": {
+                "incremental_key": "",
+                "incremental_value": "",
+                "index": "adp-kn_ot_index-supplychain_hd0202-main-supplychain_hd0202_forecast-d6u8lvt3qdm7olbpaubg",
+                "index_available": true,
+                "doc_count": 394,
+                "storage_size": 208,
+                "update_time": 1773964041094
+            },
+            "creator": {
+                "id": "488c973e-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "颜梦玲（Vania）"
+            },
+            "create_time": 1770015713140,
+            "updater": {
+                "id": "488c973e-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "颜梦玲（Vania）"
+            },
+            "update_time": 1773914452193,
+            "module_type": "object_type"
+        },
+        {
+            "id": "supplychain_hd0202_material",
+            "name": "物料",
+            "data_source": {
+                "type": "data_view",
+                "id": "d607dm08ubbiutnq84mg",
+                "name": "HD_物料"
+            },
+            "data_properties": [
+                {
+                    "name": "material_code",
+                    "display_name": "物料编码",
+                    "type": "string",
+                    "comment": "物料的唯一标识编码",
+                    "mapped_field": {
+                        "name": "material_code",
+                        "type": "string",
+                        "display_name": "material_code"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "material_name",
+                    "display_name": "物料名称",
+                    "type": "string",
+                    "comment": "物料的正式名称",
+                    "mapped_field": {
+                        "name": "material_name",
+                        "type": "string",
+                        "display_name": "material_name"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": true,
+                            "model_id": "1951511856216674304"
+                        }
+                    }
+                },
+                {
+                    "name": "modelnum",
+                    "display_name": "规格型号",
+                    "type": "string",
+                    "comment": "物料的规格与其型号",
+                    "mapped_field": {
+                        "name": "modelnum",
+                        "type": "string",
+                        "display_name": "modelnum"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "huid_productline_name",
+                    "display_name": "产品线名称",
+                    "type": "string",
+                    "comment": "所属产品线",
+                    "mapped_field": {
+                        "name": "huid_productline_name",
+                        "type": "string",
+                        "display_name": "huid_productline_name"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "baseunit_number",
+                    "display_name": "物料规格编码",
+                    "type": "string",
+                    "comment": "计量单位的编码，pcs",
+                    "mapped_field": {
+                        "name": "baseunit_number",
+                        "type": "string",
+                        "display_name": "baseunit_number"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": false,
+                            "analyzer": ""
+                        },
+                        "vector_config": {
+                            "enabled": false,
+                            "model_id": ""
+                        }
+                    }
+                },
+                {
+                    "name": "baseunit_name",
+                    "display_name": "物料规格",
+                    "type": "string",
+                    "comment": "计量单位名称 (如:  个，套)",
+                    "mapped_field": {
+                        "name": "baseunit_name",
+                        "type": "string",
+                        "display_name": "baseunit_name"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": true,
+                            "model_id": "1951511856216674304"
+                        }
+                    }
+                },
+                {
+                    "name": "group_name",
+                    "display_name": "存货类别",
+                    "type": "string",
+                    "comment": "原材料-半成品",
+                    "mapped_field": {
+                        "name": "group_name",
+                        "type": "string",
+                        "display_name": "group_name"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": true,
+                            "model_id": "1951511856216674304"
+                        }
+                    }
+                },
+                {
+                    "name": "group_type",
+                    "display_name": "物料分类",
+                    "type": "string",
+                    "comment": "物料的类别描述",
+                    "mapped_field": {
+                        "name": "group_type",
+                        "type": "string",
+                        "display_name": "group_type"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": true,
+                            "model_id": "1951511856216674304"
+                        }
+                    }
+                },
+                {
+                    "name": "materialattr",
+                    "display_name": "物料属性",
+                    "type": "string",
+                    "comment": "物料属性 (如: 外购)",
+                    "mapped_field": {
+                        "name": "materialattr",
+                        "type": "string",
+                        "display_name": "materialattr"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": true,
+                            "model_id": "1951511856216674304"
+                        }
+                    }
+                },
+                {
+                    "name": "purchase_fixedleadtime",
+                    "display_name": "采购固定提前期",
+                    "type": "decimal",
+                    "comment": "采购交货提前期 (天)",
+                    "mapped_field": {
+                        "name": "purchase_fixedleadtime",
+                        "type": "decimal",
+                        "display_name": "purchase_fixedleadtime"
+                    }
+                },
+                {
+                    "name": "product_fixedleadtime",
+                    "display_name": "生产固定提前期",
+                    "type": "decimal",
+                    "comment": "自制件包括产成品、半成品的生产提前期 (天)",
+                    "mapped_field": {
+                        "name": "product_fixedleadtime",
+                        "type": "decimal",
+                        "display_name": "product_fixedleadtime"
+                    }
+                },
+                {
+                    "name": "material_standard_price",
+                    "display_name": "物料标准价格（含税单价）",
+                    "type": "decimal",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "material_standard_price",
+                        "type": "decimal",
+                        "display_name": "material_standard_price"
+                    }
+                },
+                {
+                    "name": "product_status",
+                    "display_name": "产品状态",
+                    "type": "string",
+                    "comment": "",
+                    "mapped_field": {
+                        "name": "product_status",
+                        "type": "string",
+                        "display_name": "product_status"
+                    },
+                    "index_config": {
+                        "keyword_config": {
+                            "enabled": true,
+                            "ignore_above_len": 1024
+                        },
+                        "fulltext_config": {
+                            "enabled": true,
+                            "analyzer": "standard"
+                        },
+                        "vector_config": {
+                            "enabled": true,
+                            "model_id": "1951511856216674304"
+                        }
+                    }
+                }
+            ],
+            "primary_keys": [
+                "material_code"
+            ],
+            "display_key": "material_name",
+            "incremental_key": "",
+            "tags": [
+                "已审核"
+            ],
+            "comment": "记录物料的基础信息，包括编码、名称、规格型号、属性（自制/外购）及单位等及相关参数。",
+            "icon": "icon-dip-suanziguanli",
+            "color": "#0e5fc5",
+            "kn_id": "supplychain_hd0202",
+            "branch": "main",
+            "status": {
+                "incremental_key": "",
+                "incremental_value": "",
+                "index": "adp-kn_ot_index-supplychain_hd0202-main-supplychain_hd0202_material-d6u7sed3qdm7olbpau40",
+                "index_available": true,
+                "doc_count": 27848,
+                "storage_size": 1949040467,
+                "update_time": 1773961891821
+            },
+            "creator": {
+                "id": "488c973e-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "颜梦玲（Vania）"
+            },
+            "create_time": 1770015713140,
+            "updater": {
+                "id": "488c973e-6f67-11f0-b0dc-36fa540cff80",
+                "type": "user",
+                "name": "颜梦玲（Vania）"
+            },
+            "update_time": 1773626476682,
+            "module_type": "object_type"
+        }
+    ],
+    "total_count": 12
+}

@@ -1,0 +1,30 @@
+---
+type: relation_type
+id: supplychain_hd0202_product2inventory
+name: 产品关联库存
+source_object_type_id: supplychain_hd0202_product
+target_object_type_id: supplychain_hd0202_inventory
+tags:
+  - 已审核
+---
+
+## RelationType: supplychain_hd0202_product2inventory
+
+产品关联库存：源 `supplychain_hd0202_product` → 目标 `supplychain_hd0202_inventory`（类型：direct）。
+
+### 业务规则
+
+- 关联类型：`direct`。
+- 映射字段见下表；跨对象时间过滤、降级链等全局口径见 `network.bkn` 与 `SKILL.md`。
+
+### Endpoint
+
+| Source | Target | Type |
+|--------|--------|------|
+| supplychain_hd0202_product | supplychain_hd0202_inventory | direct |
+
+### Mapping Rules
+
+| Source Property | Source Display Name | Target Property | Target Display Name |
+|----------------|---------------------|-----------------|----------------------|
+| material_number |  | material_code | 物料编码 |

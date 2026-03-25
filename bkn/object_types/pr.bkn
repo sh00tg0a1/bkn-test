@@ -1,0 +1,53 @@
+---
+type: object_type
+id: supplychain_hd0202_pr
+name: 采购申请单
+tags:
+  - 已审核
+icon: "icon-dip-suanziguanli"
+color: "#52C41A"
+---
+
+## ObjectType: supplychain_hd0202_pr
+
+采购申请：由 MRP 投放生成，是计划域到执行域的桥梁；`srcbillid` 等溯源字段见属性说明（PRD §1.6）。
+
+### 业务规则
+
+- **溯源**：`srcbillid` 对齐 MRP `billno`；下推 PO 后 `joinqty` 反映已转订单数量（PRD §4.4）。
+- **时间过滤**：`biztime >= demandStart`（PRD §1.6.2）。
+
+### Data Properties
+
+| Name | Display Name | Type | Description | Mapped Field |
+|------|-------------|------|-------------|-------------|
+| huid_xmh_name | 生产项目号 | string |  | huid_xmh_name |
+| srcbillentryid | 来源单据明细ID | string |  | srcbillentryid |
+| srcbillid | 来源单据ID | string | 计划订单下推生成的采购申请，关联需求计划ID。 | srcbillid |
+| srcbillnumber | 来源单据号 | string | 来源 MRP 单号；v4.2 精确查询以 `srcbillnumber in [mrpBillnos]` 匹配（PRD §1.6.2） | srcbillnumber |
+| id | 采购申请主键 | string | 采购申请主键 | id |
+| billno | 采购申请单号 | string | 采购申请单号 | billno |
+| biztime | 业务时间 | timestamp | 业务时间；查询 PR 时叠加 `biztime >= demandStart` 排除历史单据（PRD §1.6.2） | biztime |
+| billtype_name | 单据类型 | string | 单据类型（包含研发/生产等，目前仅考虑生产） | billtype_name |
+| org_name | 组织名称 | string | 组织名称 | org_name |
+| auditdate | 审核日期 | timestamp | 审核日期 | auditdate |
+| entry_id | 采购申请明细主键 | string | 采购申请明细主键 | entry_id |
+| material_number | 物料编码 | string | 物料编码 | material_number |
+| material_name | 物料名称 | string | 物料名称 | material_name |
+| qty | 数量 | decimal | 数量 | qty |
+| unit_name | 单位 | string | 单位 | unit_name |
+| joinqty | 已下推采购订单数量 | decimal | 已下推采购订单数量 | joinqty |
+| rowclosestatus_title | 关闭状态 | string |  | rowclosestatus_title |
+| rowterminatestatus_title | 终止状态 | string |  | rowterminatestatus_title |
+
+### Keys
+
+Primary Keys: entry_id
+Display Key: billno
+Incremental Key: 
+
+### Data Source
+
+| Type | ID | Name |
+|------|-----|------|
+| data_view | 2017573348833259522 | erp_purchase_request |

@@ -1,0 +1,57 @@
+---
+type: object_type
+id: supplychain_hd0202_mps
+name: 工厂生产计划
+tags:
+  - 已审核
+icon: "icon-dip-suanziguanli"
+color: "#52C41A"
+---
+
+## ObjectType: supplychain_hd0202_mps
+
+工厂生产工单（ERP）。物料齐套后的下游执行单据；与自制件 MRP 的溯源关系见 PRD §1.6、v4.2（`sourcebillnumber`）。
+
+### 业务规则
+
+- **v4.2 溯源**：生产工单 `sourcebillnumber` 对齐**自制件 MRP 计划订单** `billno`（非直接对齐预测单号）；与 forecast 的关系对象在数据模型中可能仍为 `sourcebillnumber → billno`，业务查询以 PRD §1.6 为准。
+- **完工过滤**（PRD §4.5.4、§6.5.2）：`taskstatus_title === '完工'` **或** `qty - xkquainwaqty <= 0`（待入库 ≤ 0）的工单不在活跃列表展示。
+- **作废过滤**（PRD §6.5.3）：`billstatus === 'D'` 视为作废/关闭，同样不展示。
+- **工单完成判定**（PRD §6.5.3）：`待入库 = qty - xkquainwaqty`；完成 = `待入库 ≤ 0 || taskstatus_title === '完工'`；关闭 = `billstatus === 'D'`。
+- **任务关闭联动**（PRD §6.5.4）：所有关联工单均完成或关闭时，提示用户可结束监测任务。
+- **工单状态颜色**（PRD §4.5.4）：未开工=灰、开工=蓝、部分完工=橙、完工=绿、作废=红。
+
+### Data Properties
+
+| Name | Display Name | Type | Description | Mapped Field |
+|------|-------------|------|-------------|-------------|
+| auditdate | 审核日期 | timestamp |  | auditdate |
+| billdate | 单据日期 | date |  | billdate |
+| billno | 生产工单单号 | string |  | billno |
+| billstatus | 单据状态 | text | A:暂存, B:已提交, C:已审核, D:作废 | billstatus |
+| entry_id | 生产工单明细主键 | string |  | entry_id |
+| huid_scxmh_number | 生产项目号 | string | 生产项目号=scxmh | huid_scxmh_number |
+| id | 生产工单id | string |  | id |
+| material_name | 物料名称 | string |  | material_name |
+| material_number | 物料编码 | string |  | material_number |
+| pickstatus_title | 领料状态 | string | A:未领料, B:部分领料, C:全部领料, D:超额领料 | pickstatus_title |
+| planbegintime | 计划开工时间 | timestamp |  | planbegintime |
+| planendtime | 计划完工时间 | timestamp |  | planendtime |
+| qty | 生产数量 | decimal | 生产工单计划数量；`pendingInboundQty = qty - xkquainwaqty`，≤ 0 视为完工（PRD §6.5.3） | qty |
+| sourcebillnumber | 来源单据编号 | string | 平台数据视图注释为预测单号；v4.2 实际关联自制件 MRP `billno`（PRD §1.6.2），查询以 `sourcebillnumber in [selfMadeMrpBillnos]` 为准 | sourcebillnumber |
+| sourcebilltype | 来源单据类型 | string |  | sourcebilltype |
+| srcbillentity | 来源单据分录号 | string |  | srcbillentity |
+| taskstatus_title | 任务状态 | string | A:未开工, B:开工, C:完工, D:部分完工；'完工'或 pendingInboundQty ≤ 0 → 不展示在活跃列表（PRD §4.5.4） | taskstatus_title |
+| xkquainwaqty | 合格品入库数量 | decimal | 已入库合格品数量；`pendingInboundQty = qty - xkquainwaqty`，≤ 0 或 taskstatus_title === '完工' 则视为完成（PRD §6.5.3） | xkquainwaqty |
+
+### Keys
+
+Primary Keys: entry_id
+Display Key: material_name
+Incremental Key: 
+
+### Data Source
+
+| Type | ID | Name |
+|------|-----|------|
+| data_view | 2030183837953757186 | erp_production_work_order |

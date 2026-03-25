@@ -1,0 +1,41 @@
+{
+    "id": "supplychain_hd0202",
+    "name": "HD供应链业务知识网络_v3",
+    "tags": [],
+    "comment": "产品供应分析路径：产品需求预测/计划→MRP→采购申请→采购订单→物料齐套，安排生产→完成需求计划。 逻辑：1. 基于需求预测，结合BOM结构展开物料需求；2. 核查成品及物料库存，进行MRP运算生成MRP计划；3. MRP下推，根据物料属性（自制/外购），生成采购申请；4. 采购申请转化为采购订单并由供应商执行，5. 物料齐套，安排生产计划指导工厂生产；6. 最终完成生产，达成产品需求计划目标，支撑供应链决策。",
+    "icon": "icon-dip-graph",
+    "color": "#52C41A",
+    "detail": "---\ntype: network\nid: supplychain_hd0202\nname: HD供应链业务知识网络_v3\ntags: []\nbranch: main\n---\n\n# HD供应链业务知识网络_v3\n\n产品供应分析路径：产品需求预测/计划→MRP→采购申请→采购订单→物料齐套，安排生产→完成需求计划。 逻辑：1. 基于需求预测，结合BOM结构展开物料需求；2. 核查成品及物料库存，进行MRP运算生成MRP计划；3. MRP下推，根据物料属性（自制/外购），生成采购申请；4. 采购申请转化为采购订单并由供应商执行，5. 物料齐套，安排生产计划指导工厂生产；6. 最终完成生产，达成产品需求计划目标，支撑供应链决策。\n\n## Network Overview\n\n",
+    "branch": "main",
+    "business_domain": "bd_public",
+    "creator": {
+        "id": "488c973e-6f67-11f0-b0dc-36fa540cff80",
+        "type": "user",
+        "name": "颜梦玲（Vania）"
+    },
+    "create_time": 1770015713131,
+    "updater": {
+        "id": "449f93f6-6f67-11f0-b0dc-36fa540cff80",
+        "type": "user",
+        "name": "李基亮（Leecky）"
+    },
+    "update_time": 1773061102338,
+    "module_type": "knowledge_network",
+    "statistics": {
+        "concept_groups_total": 0,
+        "object_types_total": 12,
+        "relation_types_total": 13,
+        "action_types_total": 2
+    },
+    "operations": [
+        "data_query",
+        "task_manage",
+        "import",
+        "modify",
+        "export",
+        "delete",
+        "authorize",
+        "view_detail",
+        "create"
+    ]
+}

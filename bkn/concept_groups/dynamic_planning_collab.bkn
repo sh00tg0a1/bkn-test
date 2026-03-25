@@ -1,0 +1,31 @@
+---
+type: concept_group
+id: dynamic_planning_collab
+name: 动态计划协同业务规则总册
+tags:
+  - 业务规则
+  - 动态计划
+  - 齐套分析
+  - 预警机制
+---
+
+## ConceptGroup: dynamic_planning_collab
+
+本概念分组用于平台侧索引（标签与对象类型列表）。**十条跨对象业务规则的完整正文**已迁移至同目录 **`SKILL.md`**「跨对象业务规则（全文）」；字段级规则仍见各 `object_types/*.bkn`、`relation_types/*.bkn` 内「### 业务规则」。
+
+### Object Types
+
+| ID | Name | Description |
+|----|------|-------------|
+| supplychain_hd0202_forecast | 产品需求预测单 | 预测根节点 |
+| supplychain_hd0202_mrp | 物料需求计划 | MRP 展开 |
+| supplychain_hd0202_pr | 采购申请单 | PR |
+| supplychain_hd0202_po | 采购订单 | PO |
+| supplychain_hd0202_material | 物料 | 物料主数据 |
+| supplychain_hd0202_bom | 产品BOM | BOM |
+| supplychain_hd0202_product | 产品 | 产品 |
+| supplychain_hd0202_inventory | 库存 | 库存 |
+| supplychain_hd0202_mps | 工厂生产计划 | MPS |
+| supplychain_hd0202_monitoring_task | 监控任务 | 预警载体 |
+| supplychain_hd0202_salesorder | 销售订单 | 需求侧参考 |
+| supplychain_hd0202_supplier | 供应商 | 采购主数据 |

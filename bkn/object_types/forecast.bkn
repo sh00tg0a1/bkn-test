@@ -1,0 +1,50 @@
+---
+type: object_type
+id: supplychain_hd0202_forecast
+name: 产品需求预测单
+tags:
+  - 已审核
+icon: "icon-jingquezhunque"
+color: "#52C41A"
+---
+
+## ObjectType: supplychain_hd0202_forecast
+
+产品需求预测单：计划协同的**核心驱动对象**（PRD §1.2）。业务方基于销售与市场预判形成“产品+时间窗”的需求输入，向上游驱动 MRP→PR/PO→齐套→生产工单。
+
+### 业务规则
+
+- **核心对象**：全链路以预测单为根；MRP 通过 `rootdemandbillno` / 关联逻辑对齐预测（PRD §1.6）。
+- **选择排序**（PRD §4.3.3）：预测单按 `startdate` **倒序**展示（最新交货在前）；`startdate` 落在下月范围内的记录标记「推荐」并默认选中，无推荐则选中倒排第一条。
+- **单选**（PRD §4.3）：一次仅选一张预测单进入协同流程，不按月合并多条。
+- **时间口径**：PR/PO 类查询需满足 `biztime >= demandStart`（需求起点，PRD §1.6.2）。
+- **关闭**：`closestatus_title` 表示是否仍驱动新需求。
+
+### Data Properties
+
+| Name | Display Name | Type | Description | Mapped Field |
+|------|-------------|------|-------------|-------------|
+| id | id | string |  | id |
+| auditdate | 审核日期 | timestamp |  | auditdate |
+| auditor_name | 审核人 | string |  | auditor_name |
+| billno | 预测单号 | string |  | billno |
+| bizdate | 单据创建时间 | date | 该预测的创建时间 | bizdate |
+| creator_name | 创建人 | string | 产品需求预测的创建者 | creator_name |
+| enddate | 预测终止日期 | date | 该物料预测交付的终止日期 | enddate |
+| material_name | 物料名称 | string | 也就是产成品的名称。 | material_name |
+| material_number | 物料编码 | string | 预测以产品为单位，也就是产成品的物料编码 | material_number |
+| qty | 预测数量 | decimal |  | qty |
+| startdate | 预测交货日期 | date | 该产品预测需要交货的日期 | startdate |
+| closestatus_title | 关闭状态 | text |  | closestatus_title |
+
+### Keys
+
+Primary Keys: id
+Display Key: material_name
+Incremental Key: 
+
+### Data Source
+
+| Type | ID | Name |
+|------|-----|------|
+| data_view | 2017573348858425346 | erp_mds_forecast |

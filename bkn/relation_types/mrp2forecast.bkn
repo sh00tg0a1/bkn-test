@@ -1,0 +1,31 @@
+---
+type: relation_type
+id: mrp2mds_forecast
+name: 物料需求计划关联产品预测需求
+source_object_type_id: supplychain_hd0202_mrp
+target_object_type_id: supplychain_hd0202_forecast
+tags: []
+---
+
+## RelationType: mrp2mds_forecast
+
+物料需求计划关联产品预测单
+
+**PRD**：`rootdemandbillno → billno` 为精确溯源；无结果时需回 ERP 核对 MRP 是否已运算（PRD §4.4.5）。
+
+### 业务规则
+
+- 关联类型：`direct`。
+- 映射字段见下表；跨对象时间过滤、降级链等全局口径见 `network.bkn` 与 `SKILL.md`。
+
+### Endpoint
+
+| Source | Target | Type |
+|--------|--------|------|
+| supplychain_hd0202_mrp | supplychain_hd0202_forecast | direct |
+
+### Mapping Rules
+
+| Source Property | Source Display Name | Target Property | Target Display Name |
+|----------------|---------------------|-----------------|----------------------|
+| rootdemandbillno |  | billno |  |

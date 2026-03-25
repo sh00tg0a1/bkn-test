@@ -1,0 +1,58 @@
+---
+type: object_type
+id: supplychain_hd0202_mrp
+name: 物料需求计划
+tags:
+  - 已审核
+icon: "icon-dip-suanziguanli"
+color: "#52C41A"
+---
+
+## ObjectType: supplychain_hd0202_mrp
+
+MRP 计划订单：连接预测与采购执行。有效记录过滤、数量优先级与根需求溯源字段见属性说明（PRD §4.4）。
+
+### 业务规则
+
+- **有效行**：动态计划协同侧通常仅保留 `closestatus_title` 为「正常」或 `A` 的记录（PRD §4.4.4）。
+- **数量**：优先 `bizorderqty`，否则 `adviseorderqty`；`bizdropqty` 为投放数量。
+- **溯源**：`rootdemandbillno` 对齐预测单 `billno`。
+
+### Data Properties
+
+| Name | Display Name | Type | Description | Mapped Field |
+|------|-------------|------|-------------|-------------|
+| advisedroptime | 建议投放时间 | date | 建议物料投放时间；已过期且 dropstatus_title 为未投放 → 触发「PR 未下推」预警（PRD §10.1） | advisedroptime |
+| adviseenddate | 建议结束时间 | date |  | adviseenddate |
+| adviseorderqty | 建议订单数量 | decimal | MRP跑出来的需要的物料数量，理论值 | adviseorderqty |
+| advisestartdate | 建议开始时间 | date |  | advisestartdate |
+| availabledate | 可用日期 | date |  | availabledate |
+| billno | 需求计划订单单据编号 | string | MRP的单据编号 | billno |
+| bizdropqty | 投放数量 | decimal | PMC经理确认的投放物料数量，是采购申请和订单的数量。 | bizdropqty |
+| bizorderqty | 订单数量  | decimal | PMC修订后的实际物料需求数量 | bizorderqty |
+| closestatus_title | 关闭状态 | string | A:正常，尚未关闭, B:关闭, C:拆分关闭, D:合并关闭, E:投放关闭 | closestatus_title |
+| createtime | 创建时间 | timestamp | MRP计算时间 | createtime |
+| creator_name | 创建人 | string |  | creator_name |
+| dropbilltype_name | 投放单据类型 | string | 与物料属性对应 （自制-汇报生产）（委外-普通委外）（外购-生产项目采购申请单） | dropbilltype_name |
+| dropstatus_title | 投放状态 | string | 物料需求是否投放（发起 PR→PO）；与 advisedroptime 联合判定「PR 未下推」预警（PRD §10.1） | dropstatus_title |
+| droptime | 投放时间 | timestamp | 物料的投放时间，投放是指投放采购，这是确定性的采购依据。 | droptime |
+| enddate | 计划完成日期 | date |  | enddate |
+| materialattr_title | 物料属性  | string | 自制/委外/外购 | materialattr_title |
+| materialplanid_name | 物料名称 | string |  | materialplanid_name |
+| materialplanid_number | 物料编码 | string |  | materialplanid_number |
+| orderdate | 计划准备日期 | date |  | orderdate |
+| planoperatenum | 计划运算单号 | string | MRP计算单号 | planoperatenum |
+| rootdemandbillno | 根需求单号 | string | 与预测单单号（产品需求预测计划）关联； | rootdemandbillno |
+| startdate | 计划开始日期 | date |  | startdate |
+
+### Keys
+
+Primary Keys: billno
+Display Key: materialplanid_name
+Incremental Key: 
+
+### Data Source
+
+| Type | ID | Name |
+|------|-----|------|
+| data_view | 2017573348367691777 | erp_mrp_plan_order |

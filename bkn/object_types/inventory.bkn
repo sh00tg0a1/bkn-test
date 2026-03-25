@@ -1,0 +1,56 @@
+---
+type: object_type
+id: supplychain_hd0202_inventory
+name: 库存
+tags:
+  - 已审核
+icon: "icon-dip-suanziguanli"
+color: "#0e5fc5"
+---
+
+## ObjectType: supplychain_hd0202_inventory
+
+实时库存视图。齐套与倒排中用于判断可用量；`available_inventory_qty` 口径见属性说明（PRD §6.6）。
+
+### 业务规则
+
+- **可用量**：`available_inventory_qty = inventory_qty - reserved_inventory_qty`。同一物料可能有多条记录（不同批号/仓库），按 `material_code` 汇总。
+- **有效仓库过滤**（PRD §6.6.2）：齐套判定中的可用库存仅汇总**有效仓库**内的 `available_inventory_qty`。默认有效仓库：昆山半成品仓、昆山成品仓、昆山电子原料仓、昆山无人机原料仓、昆山装配原料仓、新疆成品仓、哈尔滨成品仓。`inventory_qty`（总库存）不受仓库过滤影响，始终全量汇总（供参考）。
+- **新入库库存**（PRD §6.6.3）：`inbound_date >= 监测任务创建时间` 的记录，按 `inventory_qty` 汇总（非 `available_inventory_qty`），用于每日报告和物料进度跟踪。
+- **异常**：库存接口失败时齐套判定挂起，不静默兜底（PRD §1.6.2）。
+
+### Data Properties
+
+| Name | Display Name | Type | Description | Mapped Field |
+|------|-------------|------|-------------|-------------|
+| seq_no | 库存编号 | integer |  | seq_no |
+| available_inventory_qty | 可用库存数量 | decimal | 可用库存数量 = 库存数量-预留库存数量 | available_inventory_qty |
+| batch_master | 批号主档 | string | 一批物料的主档批号 | batch_master |
+| batch_no | 批号 | string | 一批物料的编号 | batch_no |
+| bin_location | 仓位 | string | 物料所在仓位 | bin_location |
+| expiry_date | 有效日期 | date | 是否呆滞物料的关键字段，超过有效日期的可以视为呆滞物料。 | expiry_date |
+| inbound_date | 入库时间 | date | 新入库判定字段：`inbound_date >= task.createdAt` 的记录按 `inventory_qty` 汇总为新入库量（PRD §6.6.3） | inbound_date |
+| inventory_org | 库存所属组织 | string | 库存所属组织 | inventory_org |
+| inventory_qty | 库存数量 | decimal | 总库存数量；不受有效仓库过滤影响，始终全量汇总（PRD §6.6.2） | inventory_qty |
+| inventory_uom | 库存单位 | string | 个，套等单位。 | inventory_uom |
+| manufacture_date | 生产日期 | date |  | manufacture_date |
+| material_code | 物料编码 | string |  | material_code |
+| material_name | 物料名称 | string |  | material_name |
+| purchase_qty | 采购数量 | decimal |  | purchase_qty |
+| reserved_inventory_qty | 预留库存数量 | decimal |  | reserved_inventory_qty |
+| spec_model | 规格型号 | string |  | spec_model |
+| stock_status | 库存状态 | string | 可用或者其他状态 | stock_status |
+| stock_type | 库存类型 | string | 普通或者特殊用途库存等等 | stock_type |
+| warehouse | 仓库 | string | 仓库名称 | warehouse |
+
+### Keys
+
+Primary Keys: seq_no
+Display Key: material_name
+Incremental Key: 
+
+### Data Source
+
+| Type | ID | Name |
+|------|-----|------|
+| data_view | 2017573348090867713 | erp_real_time_inventory |

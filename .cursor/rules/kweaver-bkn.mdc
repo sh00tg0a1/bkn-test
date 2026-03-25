@@ -1,0 +1,12 @@
+---
+description: KWeaver BKN 上传规则
+alwaysApply: true
+---
+
+# BKN 上传
+
+上传 BKN 文件夹到平台时，永远使用 `kweaver bkn push <directory>` 命令，不要使用 REST API 逐个更新的方式。
+
+```bash
+kweaver bkn push bkn/
+```

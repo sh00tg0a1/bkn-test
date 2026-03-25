@@ -1,0 +1,59 @@
+---
+type: object_type
+id: supplychain_hd0202_monitoring_task
+name: 监控任务
+tags: []
+icon: "icon-daibanshixiang"
+color: "#FF4D4F"
+---
+
+## ObjectType: supplychain_hd0202_monitoring_task
+
+监测任务：围绕所选预测单/产品持续跟踪物料与执行状态；任务级状态与 UI 逻辑见 PRD §3、§8（非 ERP 单据）。
+
+### 业务规则
+
+- 监测任务为产品侧跟踪载体；与预测单的关联见 `monitor2forecast` 关系（`product_code` ↔ `material_number`）。
+- **任务状态流转**（PRD §3.4）：
+  - `active`：进行中，任务创建后默认状态
+  - `completed`：已结束且有入库——全部关联工单完工或有关联工单且产品已入库（PRD §8.1）
+  - `incomplete`：已结束无入库——无关联工单且无产品入库（PRD §8.1）
+  - `expired`：当前时间 > `demand_end` 时自动置为过期
+  - 历史存在的 `ended` 状态视为 `completed`（向后兼容）
+  - 所有终态（completed / incomplete / expired）均为只读
+- **导入**（PRD §9.3）：原 `active` 任务导入后若 `demand_end` 已过期则设为 `expired`，否则保持 `active`。
+- **任务名称默认格式**：`{product_code}-{product_name}-{YYYYMMDDHHmm}`。
+- **存储**：第一期 localStorage（key `planning_v2_tasks`），第二期迁移 Ontology 服务端。容量策略：3MB 预警、4MB 自动清理已结束任务 90 天以上的每日报告。
+
+### Data Properties
+
+| Name | Display Name | Type | Description | Mapped Field |
+|------|-------------|------|-------------|-------------|
+| ended_at | 任务结束时间 | datetime |  | ended_at |
+| production_start | 生产计划开始日 | date |  | production_start |
+| created_at | 创建时间 | datetime |  | created_at |
+| demand_start | 产品需求开始日期 | date |  | demand_start |
+| task_name | 任务名称 | string |  | task_name |
+| production_quantity | 生产计划数量 | integer |  | production_quantity |
+| updated_at | 最后更新时间 | datetime |  | updated_at |
+| demand_end | 产品需求结束日期 | date | 当前时间 > demand_end 时任务自动过期为 expired（PRD §3.4） | demand_end |
+| task_id | 任务id | string |  | task_id |
+| product_name | 产品名称 | string |  | product_name |
+| task_status | 任务状态 | string | active=进行中; completed=已结束且有入库; incomplete=已结束无入库; expired=当前时间>demand_end（PRD §3.4） | task_status |
+| product_code | 产品编码 | string |  | product_code |
+| description_entries | 监控任务描述 | json |  | description_entries |
+| created_by | 创建人 | string |  | created_by |
+| demand_quantity | 产品需求数量 | integer |  | demand_quantity |
+| production_end | 生产计划结束日期 | date |  | production_end |
+
+### Keys
+
+Primary Keys: task_id
+Display Key: task_name
+Incremental Key: 
+
+### Data Source
+
+| Type | ID | Name |
+|------|-----|------|
+| data_view | 331973cc-576a-4722-814a-8ed0205f2f7a | monitoring_task |

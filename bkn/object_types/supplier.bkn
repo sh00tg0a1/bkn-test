@@ -1,0 +1,39 @@
+---
+type: object_type
+id: supplychain_hd0202_supplier
+name: 供应商
+tags:
+  - 已审核
+icon: "icon-dip-suanziguanli"
+color: "#0e5fc5"
+---
+
+## ObjectType: supplychain_hd0202_supplier
+
+供应商主数据：与 PO 关联，用于采购跟踪与交期类分析。
+
+### 业务规则
+
+- PO 通过 `supplier_number` 对齐 `supplier_code`（见 `po2supplier`）。
+
+### Data Properties
+
+| Name | Display Name | Type | Description | Mapped Field |
+|------|-------------|------|-------------|-------------|
+| supplier_code | 供应商编码 | string | 供应商的唯一标识编码 | supplier_code |
+| supplier_name | 供应商名称 | string | 供应商的公司全称 | supplier_name |
+| societycreditcode | 统一社会信用代码 | string | 企业统一社会信用代码 | societycreditcode |
+| purchaserid_name | 采购员 | string | 负责该供应商的采购员姓名 | purchaserid_name |
+| paycond_name | 付款条件 | string | 供应商的付款结算条款 | paycond_name |
+
+### Keys
+
+Primary Keys: supplier_code
+Display Key: supplier_name
+Incremental Key: 
+
+### Data Source
+
+| Type | ID | Name |
+|------|-----|------|
+| data_view | 2017573348875202561 | erp_supplier |

@@ -1,0 +1,30 @@
+---
+type: relation_type
+id: supplychain_hd0202_bom2material
+name: 产品bom关联物料
+source_object_type_id: supplychain_hd0202_bom
+target_object_type_id: supplychain_hd0202_material
+tags:
+  - 已审核
+---
+
+## RelationType: supplychain_hd0202_bom2material
+
+产品bom关联物料：源 `supplychain_hd0202_bom` → 目标 `supplychain_hd0202_material`（类型：direct）。
+
+### 业务规则
+
+- 关联类型：`direct`。
+- 映射字段见下表；跨对象时间过滤、降级链等全局口径见 `network.bkn` 与 `SKILL.md`。
+
+### Endpoint
+
+| Source | Target | Type |
+|--------|--------|------|
+| supplychain_hd0202_bom | supplychain_hd0202_material | direct |
+
+### Mapping Rules
+
+| Source Property | Source Display Name | Target Property | Target Display Name |
+|----------------|---------------------|-----------------|----------------------|
+| material_code | 物料编码 | material_code | 物料编码 |

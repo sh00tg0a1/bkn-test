@@ -1,0 +1,60 @@
+---
+type: object_type
+id: supplychain_hd0202_po
+name: 采购订单
+tags:
+  - 已审核
+icon: "icon-dip-suanziguanli"
+color: "#52C41A"
+---
+
+## ObjectType: supplychain_hd0202_po
+
+采购订单：PR 下推形成，记录供应商、数量、交期与入库执行；与 PR 的精确关联字段见属性说明（PRD §1.6）。
+
+### 业务规则
+
+- **溯源**：`srcbillid`→PR 主键，`srcbillentryid`→PR 明细主键，`srcbillnumber`→PR 单号（PRD §1.6.1）。
+- **交期**：`deliverdate` 用于齐套与预警；多 PO 取数规则见 PRD §4.4 / §11.3。
+
+### Data Properties
+
+| Name | Display Name | Type | Description | Mapped Field |
+|------|-------------|------|-------------|-------------|
+| entry_id | entry_id | string |  | entry_id |
+| id | id | string |  | id |
+| srcbillentryid | 来源单据号-采购申请单明细主键 | string | 来源单据号（对应采购申请单明细主键ID） | srcbillentryid |
+| srcbillid | 来源单据号-采购申请单主键 | string | 来源单据号（对应采购申请单主键ID） | srcbillid |
+| billno | 采购订单单号 | string | 采购订单单号 | billno |
+| biztime | 采购日期 | date | 业务日期；查询 PO 时叠加 `biztime >= demandStart` 排除历史单据（PRD §1.6.2） | biztime |
+| org_name | 购买组织 | string | 购买签订的主体 | org_name |
+| billtype_name | 订单类型 | string | 生产项目采购订单、研发项目采购订单等等。 | billtype_name |
+| supplier_number | 供应商编码 | string | 供应商编码 | supplier_number |
+| supplier_name | 供应商名称 | string | 供应商名称 | supplier_name |
+| operatorname | 执行采购人 | string |  执行采购的采购人员 | operatorname |
+| huid_xycg_operatorname | 寻源采购人 | string | 采购寻源的人员 | huid_xycg_operatorname |
+| createtime | 创建时间 | timestamp | 创建时间 | createtime |
+| auditdate | 审核时间 | timestamp | 审核时间 | auditdate |
+| material_number | 物料编码 | string | 物料编码 | material_number |
+| material_name | 物料名称 | string | 物料名称 | material_name |
+| qty | 采购数量 | decimal | 数量 | qty |
+| deliverdate | 预计交货日期 | date | 预计交货日期；为空 → 触发「PO 无交货日期」预警；超过动态阈值（ceil(leadtime×0.2)，3–14天）未变更 → 触发「交货日期未更新」预警；已过且 actqty < qty → 触发「超期未到料」预警（PRD §10.1） | deliverdate |
+| srcbillnumber | 来源单据号-采购申请单号 | string | 来源单据号（对应采购申请单号） | srcbillnumber |
+| invqty | 入库数量 | decimal | 入库数量 | invqty |
+| returnqty | 退库数量 | decimal | 退库数量 | returnqty |
+| actqty | 实际入库数量 | decimal | 实际入库数量（入库数量 - 退库数量） | actqty |
+| biztype_name | 物料类型 | string |  | biztype_name |
+| rowclosestatus_title | 关闭状态 | string |  | rowclosestatus_title |
+| rowterminatestatus_title | 终止状态 | string |  | rowterminatestatus_title |
+
+### Keys
+
+Primary Keys: entry_id
+Display Key: material_name
+Incremental Key: 
+
+### Data Source
+
+| Type | ID | Name |
+|------|-----|------|
+| data_view | 2017573348875202562 | erp_purchase_order |

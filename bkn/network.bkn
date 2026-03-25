@@ -1,0 +1,131 @@
+---
+type: network
+id: supplychain_hd0202_bkn_optimized
+name: HD供应链业务知识网络_v3_bkn优化
+tags: []
+branch: main
+---
+
+# HD供应链业务知识网络_v3
+
+产品供应分析路径：**产品需求预测单 → MRP → PR → PO → 物料齐套 → 生产工单（齐套后下游）→ 完成需求计划**（PRD §1.2、§1.3）。
+
+逻辑：
+
+1. **预测单为核心驱动**：以产品需求预测单为根展开 BOM、运行 MRP，并跟踪 PR/PO 与库存（PRD §1.2）。
+2. 结合 BOM 结构展开物料需求；核查库存；MRP 输出计划订单。
+3. MRP 下推并按物料属性（自制 / 外购 / 委外）生成采购申请（PR）。
+4. PR 转化为 PO 并由供应商执行；**PR/PO 查询需满足** `biztime >= demandStart`（PRD §1.6.2）。
+5. **物料齐套后**再安排生产工单；工单为下游执行，而非监测任务创建的前置条件（PRD §1.2）。
+6. 齐套与预警、甘特倒排等**跨对象口径**以 `SKILL.md`「跨对象业务规则」为准；字段级规则见各 `object_types/*.bkn`、`relation_types/*.bkn`。
+
+## 规则绑定原则
+
+业务规则按作用范围分层放置：
+
+1. **属性级规则**：写在对应 `object_types/*.bkn` 属性表的 Description 列（如 `alt_priority` 的主料判定）
+2. **单对象/单关系规则**：写在对应 `.bkn` 文件的「### 业务规则」（如 MRP 过滤、工单完成判定）
+3. **跨对象规则**：写在 `SKILL.md`「跨对象业务规则（全文）」（如全链路溯源、齐套判定、预警机制）
+4. **无法绑定到具体数据对象的规则**：写在本文件（`network.bkn`）
+
+## 数据口径一致性（PRD §13.3）
+
+步骤2（MRP 面板）、步骤3（计划协同摘要）、视图3（任务详情物料概况）三处的物料数、缺料数和异常数**必须保持一致**：
+- 物料集合 = BOM 主料 `material_code` 去重（不 union MRP 中额外的物料编码）
+- 主料判定 = `alt_priority == 0`（规则详见 `bom.bkn`）
+- 齐套判定 = shortage 数为 0 **且** anomaly 数为 0
+- PR/PO 时间过滤 = 所有查询均叠加 `biztime >= demandStart`
+
+## API 批量查询策略（PRD §11.3）
+
+物料编码批量查询（Material / PR / PO / Inventory）每批 100 个（`BATCH_CHUNK_SIZE = 100`），受控并行执行（`CHUNK_CONCURRENCY = 5`）。数据加载采用两轮并行：Round 1（物料主数据 + 库存）→ Round 2（PR + PO，仅查外购/委外件）。API 响应缓存 5 分钟。
+
+## Network Overview
+
+### Object Types
+
+| ID | 名称 | 文件 |
+|----|------|------|
+| supplychain_hd0202_forecast | 产品需求预测单 | `object_types/forecast.bkn` |
+| supplychain_hd0202_mrp | 物料需求计划 | `object_types/mrp.bkn` |
+| supplychain_hd0202_pr | 采购申请单 | `object_types/pr.bkn` |
+| supplychain_hd0202_po | 采购订单 | `object_types/po.bkn` |
+| supplychain_hd0202_material | 物料 | `object_types/material.bkn` |
+| supplychain_hd0202_product | 产品 | `object_types/product.bkn` |
+| supplychain_hd0202_bom | 产品BOM | `object_types/bom.bkn` |
+| supplychain_hd0202_mps | 工厂生产计划 | `object_types/mps.bkn` |
+| supplychain_hd0202_inventory | 库存 | `object_types/inventory.bkn` |
+| supplychain_hd0202_supplier | 供应商 | `object_types/supplier.bkn` |
+| supplychain_hd0202_salesorder | 销售订单 | `object_types/salesorder.bkn` |
+| supplychain_hd0202_monitoring_task | 监控任务 | `object_types/monitoring_task.bkn` |
+
+### Relation Types
+
+| ID | 名称 | Source → Target | 文件 |
+|----|------|----------------|------|
+| monitor2mds_forecast | 监控任务关联需求预测单 | monitoring_task → forecast | `relation_types/monitor2forecast.bkn` |
+| product2mds_forecast | 产品关联需求预测单 | product → forecast | `relation_types/product2forecast.bkn` |
+| mrp2material | 物料需求计划关联物料 | mrp → material | `relation_types/mrp2material.bkn` |
+| pr2mrp | 采购申请单关联物料需求计划 | pr → mrp | `relation_types/pr2mrp.bkn` |
+| d60nsctce73l0mrsstfg | 生产计划关联需求预测单 | mps → forecast | `relation_types/mps2forecast.bkn` |
+| mrp2mds_forecast | 物料需求计划关联产品预测需求 | mrp → forecast | `relation_types/mrp2forecast.bkn` |
+| supplychain_hd0202_pr2po | 采购订单关联物料请购单 | po → pr | `relation_types/po2pr.bkn` |
+| supplychain_hd0202_product2bom | 产品关联产品bom | product → bom | `relation_types/product2bom.bkn` |
+| supplychain_hd0202_po2supplier | 采购订单关联供应商 | po → supplier | `relation_types/po2supplier.bkn` |
+| supplychain_hd0202_material2inventory | 物料关联库存 | material → inventory | `relation_types/material2inventory.bkn` |
+| supplychain_hd0202_bom2material | 产品bom关联物料 | bom → material | `relation_types/bom2material.bkn` |
+| supplychain_hd0202_product2inventory | 产品关联库存 | product → inventory | `relation_types/product2inventory.bkn` |
+| supplychain_hd0202_salesorder2product | 销售订单关联产品 | salesorder → product | `relation_types/salesorder2product.bkn` |
+
+### Concept Groups
+
+| ID | 名称 | 文件 |
+|----|------|------|
+| dynamic_planning_collab | 动态计划协同业务规则总册 | `concept_groups/dynamic_planning_collab.bkn`（规则正文见 `SKILL.md`「跨对象业务规则」） |
+
+## 全局规则（跨对象、无法绑定到单一数据源）
+
+以下规则跨越多个对象类型，无法归入某一 `object_type` 或 `relation_type`，统一记录于此。
+
+### 数据质量阈值（PRD §1.6.4）
+
+精确关联启用前提：关联字段填充率达标方可使用精确匹配模式。
+
+| 对象 | 关联字段 | 填充率阈值 |
+|------|---------|----------|
+| MRP | `rootdemandbillno` | ≥ 90% |
+| PR | `srcbillid` / `srcbillnumber` | ≥ 90% |
+| PO | `srcbillid` / `srcbillnumber` | ≥ 90% |
+| MPS | `sourcebillnumber` | ≥ 80% |
+
+### 物料行状态规则（PRD §6.6.4、§8.3.2）
+
+ShortageList / 每日报告中每行物料的行级状态判定（涉及 BOM、MRP、PO、倒排日期等多对象）：
+
+| 行状态 | 判断条件 | 用途 |
+|-------|---------|------|
+| `production_ready` | 自制件 + 倒排开始日 ≤ 2 天 + 无供应缺口 | 生产推送按钮可点 |
+| `danger` | 外购/委外 + 有 MRP + 无 PO + 采购开始日已过期（`startDate < 今天`） | 紧急行动项 |
+| `warning` | 同 danger 条件但采购开始日在 2 天内 | 关注行动项 |
+
+### 任务结束判定（PRD §8.1）
+
+| 结束状态 | 条件 |
+|---------|------|
+| `completed` | 全部关联工单完工 **或** 有关联工单且产品已入库 |
+| `incomplete` | 无关联工单 **且** 无产品入库 |
+
+### 决策建议生成（PRD §8.3.2）
+
+每日报告行动项汇总后自动生成决策建议：
+
+- 存在 `danger` 行动项 → 紧急建议：立即跟进采购
+- 存在 `warning` 行动项 → 关注建议：近期关注
+- 存在 `production_ready` → 就绪建议：可安排生产
+- 存在 `anomaly` 物料 → 核查建议：确认 ERP 数据
+- 以上均无 → 无紧急行动
+
+### 每日报告保留（PRD §8.3.5）
+
+每个监测任务最多保留 30 份每日报告，超出时删除最早的报告。
+

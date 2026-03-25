@@ -1,0 +1,30 @@
+---
+type: relation_type
+id: supplychain_hd0202_po2supplier
+name: 采购订单关联供应商
+source_object_type_id: supplychain_hd0202_po
+target_object_type_id: supplychain_hd0202_supplier
+tags:
+  - 已审核
+---
+
+## RelationType: supplychain_hd0202_po2supplier
+
+采购订单关联供应商：源 `supplychain_hd0202_po` → 目标 `supplychain_hd0202_supplier`（类型：direct）。
+
+### 业务规则
+
+- 关联类型：`direct`。
+- 映射字段见下表；跨对象时间过滤、降级链等全局口径见 `network.bkn` 与 `SKILL.md`。
+
+### Endpoint
+
+| Source | Target | Type |
+|--------|--------|------|
+| supplychain_hd0202_po | supplychain_hd0202_supplier | direct |
+
+### Mapping Rules
+
+| Source Property | Source Display Name | Target Property | Target Display Name |
+|----------------|---------------------|-----------------|----------------------|
+| supplier_number | 供应商编码 | supplier_code | 供应商编码 |

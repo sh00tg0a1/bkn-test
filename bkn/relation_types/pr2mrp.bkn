@@ -1,0 +1,29 @@
+---
+type: relation_type
+id: pr2mrp
+name: 采购申请单关联物料需求计划
+source_object_type_id: supplychain_hd0202_pr
+target_object_type_id: supplychain_hd0202_mrp
+tags: []
+---
+
+## RelationType: pr2mrp
+
+采购申请单（PR）在 MRP 投放后生成，通过 `srcbillid` 回溯对应 MRP 计划订单 `billno`。
+
+### 业务规则
+
+- 关联类型：`direct`。
+- 映射字段见下表；跨对象时间过滤、降级链等全局口径见 `network.bkn` 与 `SKILL.md`。
+
+### Endpoint
+
+| Source | Target | Type |
+|--------|--------|------|
+| supplychain_hd0202_pr | supplychain_hd0202_mrp | direct |
+
+### Mapping Rules
+
+| Source Property | Source Display Name | Target Property | Target Display Name |
+|----------------|---------------------|-----------------|----------------------|
+| srcbillid | 采购申请明细主键 | billno | 需求计划订单单据编号 |

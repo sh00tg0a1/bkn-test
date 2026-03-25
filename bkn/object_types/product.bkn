@@ -1,0 +1,36 @@
+---
+type: object_type
+id: supplychain_hd0202_product
+name: 产品
+tags:
+  - 已审核
+icon: "icon-dip-suanziguanli"
+color: "#0e5fc5"
+---
+
+## ObjectType: supplychain_hd0202_product
+
+成品/产品主数据。产品编码即成品物料编码，用于关联预测单、BOM 与库存。
+
+### 业务规则
+
+- 产品编码与物料主数据 `material_code` 同源；用于关联预测、BOM、库存与销售订单。
+
+### Data Properties
+
+| Name | Display Name | Type | Description | Mapped Field |
+|------|-------------|------|-------------|-------------|
+| material_name | 产品名称 | string |  | material_name |
+| material_number | 产品编码 | string | 产品编码，产品物料也是成品物料，所以产品编码也是物料编码，但是物料不一定是产品。 | material_code |
+
+### Keys
+
+Primary Keys: material_number
+Display Key: material_number
+Incremental Key: 
+
+### Data Source
+
+| Type | ID | Name |
+|------|-----|------|
+| data_view | d606tgg8ubbiutnq84lg | HD_产品 |

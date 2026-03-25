@@ -1,0 +1,33 @@
+---
+type: relation_type
+id: supplychain_hd0202_pr2po
+name: 采购订单关联物料请购单
+source_object_type_id: supplychain_hd0202_po
+target_object_type_id: supplychain_hd0202_pr
+tags:
+  - 已审核
+---
+
+## RelationType: supplychain_hd0202_pr2po
+
+按照物料需求计划驱动的情况，PO与PR是关联的。
+
+**PRD §1.6**：双键匹配；PR/PO 查询需加 `biztime >= demandStart`。
+
+### 业务规则
+
+- 关联类型：`direct`。
+- 映射字段见下表；跨对象时间过滤、降级链等全局口径见 `network.bkn` 与 `SKILL.md`。
+
+### Endpoint
+
+| Source | Target | Type |
+|--------|--------|------|
+| supplychain_hd0202_po | supplychain_hd0202_pr | direct |
+
+### Mapping Rules
+
+| Source Property | Source Display Name | Target Property | Target Display Name |
+|----------------|---------------------|-----------------|----------------------|
+| material_number | 物料编码 | material_number | 物料编码 |
+| srcbillid | 采购申请单号 | id | 来源单据号-采购申请单号 |

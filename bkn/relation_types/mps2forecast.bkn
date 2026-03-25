@@ -1,0 +1,32 @@
+---
+type: relation_type
+id: d60nsctce73l0mrsstfg
+name: 生产计划关联需求预测单
+source_object_type_id: supplychain_hd0202_mps
+target_object_type_id: supplychain_hd0202_forecast
+tags:
+  - 已审核
+---
+
+## RelationType: d60nsctce73l0mrsstfg
+
+生产计划按照需求预测单来生产。
+
+**PRD v4.2**：业务上生产工单 `sourcebillnumber` 对齐**自制件 MRP 的 billno**；本关系在数据模型中仍为 `sourcebillnumber → forecast.billno`，查询请以 PRD §1.6 精确关联为准。
+
+### 业务规则
+
+- 关联类型：`direct`。
+- 映射字段见下表；跨对象时间过滤、降级链等全局口径见 `network.bkn` 与 `SKILL.md`。
+
+### Endpoint
+
+| Source | Target | Type |
+|--------|--------|------|
+| supplychain_hd0202_mps | supplychain_hd0202_forecast | direct |
+
+### Mapping Rules
+
+| Source Property | Source Display Name | Target Property | Target Display Name |
+|----------------|---------------------|-----------------|----------------------|
+| sourcebillnumber | 产品编码 | billno |  |
