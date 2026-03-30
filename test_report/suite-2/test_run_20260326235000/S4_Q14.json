@@ -1,0 +1,258 @@
+{
+  "entries": [
+    {
+      "child_name": "1200万像素固定相机",
+      "scrap_rate": 0.01,
+      "inv_qty": "-306",
+      "child_code": "PART-CAM-FIX-12MP"
+    },
+    {
+      "inv_qty": "-47",
+      "child_code": "PART-BAT-2S-3000",
+      "child_name": "标准智能电池2S3000mAh",
+      "scrap_rate": 0.03
+    },
+    {
+      "inv_qty": "3253",
+      "child_code": "PART-RC-BASIC",
+      "child_name": "基础遥控器",
+      "scrap_rate": 0.01
+    },
+    {
+      "child_code": "PART-CAM-FIX-20MP",
+      "child_name": "2000万像素固定相机",
+      "scrap_rate": 0.01,
+      "inv_qty": "-420"
+    },
+    {
+      "child_code": "PART-BAT-3S-4000",
+      "child_name": "增强智能电池3S4000mAh",
+      "scrap_rate": 0.03,
+      "inv_qty": "261"
+    },
+    {
+      "child_code": "PART-RC-ADV",
+      "child_name": "高级遥控器",
+      "scrap_rate": 0.01,
+      "inv_qty": "1514"
+    },
+    {
+      "inv_qty": "861",
+      "child_code": "PART-CAM-GIMBAL-1INCH",
+      "child_name": "1英寸三轴云台相机",
+      "scrap_rate": 0.01
+    },
+    {
+      "child_code": "PART-BAT-4S-5200",
+      "child_name": "高容智能电池4S5200mAh",
+      "scrap_rate": 0.01,
+      "inv_qty": "1564"
+    },
+    {
+      "child_code": "PART-RC-PRO",
+      "child_name": "专业遥控器",
+      "scrap_rate": 0.01,
+      "inv_qty": "9585"
+    },
+    {
+      "scrap_rate": 0.02,
+      "inv_qty": "4034",
+      "child_code": "PART-AVOID-VISION",
+      "child_name": "视觉避障系统"
+    },
+    {
+      "inv_qty": "949",
+      "child_code": "PART-CAM-ZOOM",
+      "child_name": "变焦相机模组",
+      "scrap_rate": 0.01
+    },
+    {
+      "inv_qty": "5280",
+      "child_code": "PART-AVOID-ENHANCED",
+      "child_name": "增强避障系统（视觉+红外）",
+      "scrap_rate": 0.03
+    },
+    {
+      "child_code": "VIRT-CAM-SEL",
+      "child_name": "相机配置选择件",
+      "scrap_rate": 0.03,
+      "inv_qty": "3182"
+    },
+    {
+      "scrap_rate": 0.03,
+      "inv_qty": "782",
+      "child_code": "PART-BAT-4S-5200",
+      "child_name": "高容智能电池4S5200mAh"
+    },
+    {
+      "child_name": "FPV图传相机",
+      "scrap_rate": 0.01,
+      "inv_qty": "10539",
+      "child_code": "PART-CAM-FPV"
+    },
+    {
+      "scrap_rate": 0.01,
+      "inv_qty": "26680",
+      "child_code": "PART-RC-IND",
+      "child_name": "工业遥控器"
+    },
+    {
+      "child_name": "16升智能喷洒系统",
+      "scrap_rate": 0.03,
+      "inv_qty": "4402",
+      "child_code": "PART-SPRAYER-16L"
+    },
+    {
+      "scrap_rate": 0.03,
+      "inv_qty": "18117",
+      "child_code": "PART-RADAR-ALT",
+      "child_name": "雷达测高仪"
+    },
+    {
+      "child_code": "PART-CAM-SURVEY-42MP",
+      "child_name": "4200万像素测绘相机",
+      "scrap_rate": 0.01,
+      "inv_qty": "1160"
+    },
+    {
+      "inv_qty": "4094",
+      "child_code": "PART-LIDAR",
+      "child_name": "激光雷达模块",
+      "scrap_rate": 0.02
+    },
+    {
+      "scrap_rate": 0.01,
+      "inv_qty": "1131",
+      "child_code": "PART-CAM-THERMAL",
+      "child_name": "红外热成像相机"
+    },
+    {
+      "child_code": "PART-CAM-ZOOM-30X",
+      "child_name": "30倍变焦可见光相机",
+      "scrap_rate": 0.01,
+      "inv_qty": "912"
+    },
+    {
+      "child_code": "PART-SPOTLIGHT-50W",
+      "child_name": "50W强光照明灯",
+      "scrap_rate": 0.01,
+      "inv_qty": "3518"
+    },
+    {
+      "inv_qty": "3398",
+      "child_code": "PART-FRAME-HEX-CF",
+      "child_name": "六轴碳纤维机架",
+      "scrap_rate": 0.01
+    },
+    {
+      "child_code": "PART-SPRAYER-20L",
+      "child_name": "20升智能喷洒系统",
+      "scrap_rate": 0.01,
+      "inv_qty": "3341"
+    },
+    {
+      "child_code": "PART-MOTOR-5010-PRO",
+      "child_name": "5010重载无刷电机",
+      "scrap_rate": 0.03,
+      "inv_qty": "5489"
+    },
+    {
+      "child_code": "PART-PROP-3016-CF",
+      "child_name": "3016碳纤螺旋桨",
+      "scrap_rate": 0.03,
+      "inv_qty": "3168"
+    },
+    {
+      "child_name": "12S22000mAh重载电池",
+      "scrap_rate": 0.02,
+      "inv_qty": "2387",
+      "child_code": "PART-BAT-12S-22000"
+    },
+    {
+      "child_code": "PART-SPRAYER-30L",
+      "child_name": "30升智能喷洒系统",
+      "scrap_rate": 0.02,
+      "inv_qty": "2549"
+    },
+    {
+      "scrap_rate": 0.01,
+      "inv_qty": "24510",
+      "child_code": "PART-IMU-ADIS16505",
+      "child_name": "ADIS16505工业级IMU"
+    },
+    {
+      "child_name": "4G通信模块",
+      "scrap_rate": 0.01,
+      "inv_qty": "20826",
+      "child_code": "PART-4G-MODULE"
+    },
+    {
+      "scrap_rate": 0.02,
+      "inv_qty": "22530",
+      "child_code": "COMP-FC-CASE-AL-IND",
+      "child_name": "工业级铝合金外壳"
+    },
+    {
+      "child_code": "PART-MOTOR-4114-400KV",
+      "child_name": "4114 400KV高扭矩电机",
+      "scrap_rate": 0.02,
+      "inv_qty": "19515"
+    },
+    {
+      "child_code": "PART-ESC-50A-FOC",
+      "child_name": "50A FOC电调",
+      "scrap_rate": 0.01,
+      "inv_qty": "15582"
+    },
+    {
+      "scrap_rate": 0.01,
+      "inv_qty": "26208",
+      "child_code": "PART-PROP-1755-CF",
+      "child_name": "1755碳纤维螺旋桨"
+    },
+    {
+      "child_code": "PART-CABLE-ESC-HD",
+      "child_name": "加强型电调线",
+      "scrap_rate": 0.01,
+      "inv_qty": "31278"
+    },
+    {
+      "scrap_rate": 0.03,
+      "inv_qty": "11289",
+      "child_code": "PART-MCU-STM32H753",
+      "child_name": "STM32H753双核芯片"
+    },
+    {
+      "child_code": "PART-FPGA-ICE40",
+      "child_name": "ICE40 FPGA",
+      "scrap_rate": 0.01,
+      "inv_qty": "8982"
+    },
+    {
+      "child_name": "GH1.25 10PIN连接器",
+      "scrap_rate": 0.01,
+      "inv_qty": "22557",
+      "child_code": "PART-CONN-GH-1.25-10P"
+    },
+    {
+      "child_name": "2层PCB板",
+      "scrap_rate": 0.02,
+      "inv_qty": "9104",
+      "child_code": "PART-PCB-2L"
+    },
+    {
+      "child_code": "PART-MOSFET-DUAL",
+      "child_name": "双路MOSFET",
+      "scrap_rate": 0.02,
+      "inv_qty": "5896"
+    },
+    {
+      "scrap_rate": 0.03,
+      "inv_qty": "7054",
+      "child_code": "PART-MCU-STM32F103",
+      "child_name": "STM32F103控制芯片"
+    }
+  ],
+  "vega_duration_ms": 271,
+  "overall_ms": 294
+}

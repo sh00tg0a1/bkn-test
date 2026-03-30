@@ -1,0 +1,136 @@
+{
+  "entries": [
+    {
+      "supplier_name": "索尼半导体解决方案",
+      "supplier_code": "SUP-021",
+      "other_product": "UAV-XF-BASIC-PLUS"
+    },
+    {
+      "supplier_name": "索尼半导体解决方案",
+      "supplier_code": "SUP-021",
+      "other_product": "UAV-XF-PRO-A"
+    },
+    {
+      "supplier_name": "索尼半导体解决方案",
+      "supplier_code": "SUP-021",
+      "other_product": "UAV-XF-PRO-B"
+    },
+    {
+      "other_product": "VIRT-CAM-SEL",
+      "supplier_name": "索尼半导体解决方案",
+      "supplier_code": "SUP-021"
+    },
+    {
+      "other_product": "UAV-JF-ENT-AG",
+      "supplier_name": "索尼半导体解决方案",
+      "supplier_code": "SUP-021"
+    },
+    {
+      "supplier_name": "索尼半导体解决方案",
+      "supplier_code": "SUP-021",
+      "other_product": "UAV-JF-ENT-SV"
+    },
+    {
+      "supplier_name": "索尼半导体解决方案",
+      "supplier_code": "SUP-021",
+      "other_product": "UAV-JF-ENT-SC"
+    },
+    {
+      "supplier_name": "索尼半导体解决方案",
+      "supplier_code": "SUP-021",
+      "other_product": "UAV-BF-IND-H20"
+    },
+    {
+      "other_product": "UAV-BF-IND-H30",
+      "supplier_name": "索尼半导体解决方案",
+      "supplier_code": "SUP-021"
+    },
+    {
+      "supplier_name": "索尼半导体解决方案",
+      "supplier_code": "SUP-021",
+      "other_product": "ASSY-FC-RTK"
+    },
+    {
+      "supplier_name": "索尼半导体解决方案",
+      "supplier_code": "SUP-021",
+      "other_product": "ASSY-PWR-TQ"
+    },
+    {
+      "supplier_name": "索尼半导体解决方案",
+      "supplier_code": "SUP-021",
+      "other_product": "COMP-FC-PCB-R1"
+    },
+    {
+      "supplier_name": "索尼半导体解决方案",
+      "supplier_code": "SUP-021",
+      "other_product": "PART-MCU-STM32H743"
+    },
+    {
+      "supplier_name": "索尼半导体解决方案",
+      "supplier_code": "SUP-021",
+      "other_product": "PART-MCU-STM32H753"
+    },
+    {
+      "other_product": "PART-MOTOR-2212-920KV",
+      "supplier_name": "索尼半导体解决方案",
+      "supplier_code": "SUP-021"
+    },
+    {
+      "supplier_name": "索尼半导体解决方案",
+      "supplier_code": "SUP-021",
+      "other_product": "PART-MOTOR-2312-960KV"
+    },
+    {
+      "supplier_name": "索尼半导体解决方案",
+      "supplier_code": "SUP-021",
+      "other_product": "PART-MOTOR-4114-400KV"
+    },
+    {
+      "supplier_name": "索尼半导体解决方案",
+      "supplier_code": "SUP-021",
+      "other_product": "PART-BAT-2S-3000"
+    },
+    {
+      "supplier_code": "SUP-021",
+      "other_product": "PART-BAT-3S-4000",
+      "supplier_name": "索尼半导体解决方案"
+    },
+    {
+      "supplier_name": "索尼半导体解决方案",
+      "supplier_code": "SUP-021",
+      "other_product": "PART-BAT-4S-5200"
+    },
+    {
+      "supplier_name": "索尼半导体解决方案",
+      "supplier_code": "SUP-021",
+      "other_product": "PART-BAT-6S-10000"
+    },
+    {
+      "supplier_code": "SUP-021",
+      "other_product": "PART-BAT-12S-16000",
+      "supplier_name": "索尼半导体解决方案"
+    },
+    {
+      "supplier_name": "索尼半导体解决方案",
+      "supplier_code": "SUP-021",
+      "other_product": "PART-BAT-12S-22000"
+    },
+    {
+      "supplier_code": "SUP-021",
+      "other_product": "PART-PCB-FC-4L",
+      "supplier_name": "索尼半导体解决方案"
+    },
+    {
+      "supplier_code": "SUP-021",
+      "other_product": "PART-PCB-FC-6L",
+      "supplier_name": "索尼半导体解决方案"
+    },
+    {
+      "supplier_code": "SUP-021",
+      "other_product": "PART-PCB-FC-8L",
+      "supplier_name": "索尼半导体解决方案"
+    }
+  ],
+  "vega_duration_ms": 273,
+  "overall_ms": 295
+}

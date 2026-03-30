@@ -1,0 +1,11 @@
+{
+  "entries": [
+    {
+      "warehouse_code": "WH-华南-02",
+      "warehouse_type": "原材料仓",
+      "warehouse_name": "电子材料仓"
+    }
+  ],
+  "vega_duration_ms": 262,
+  "overall_ms": 284
+}

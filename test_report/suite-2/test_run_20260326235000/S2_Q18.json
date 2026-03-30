@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "scrap_rate": 0.01,
+      "parent_code": "UAV-XF-BASIC",
+      "product_name": "旋风基础版整机",
+      "bom_version": "V2.0",
+      "quantity": 1
+    }
+  ],
+  "vega_duration_ms": 275,
+  "overall_ms": 299
+}

@@ -1,0 +1,6 @@
+"factory_id","factory_code","factory_name","factory_type","address","city","province","country","production_lines","total_capacity","established_year","area_sqm","employee_count","manager","contact_phone","contact_email","certification","created_date","status"
+FAC004,DG-TIANYI-POWER,东莞天翼动力系统厂,动力系统工厂,中国广东省东莞市松山湖高新技术产业园,东莞市,广东省,中国,"电机装配线,动力总成线","100000套/年",2018,10000,220,刘强,"0769-23456789",power@tianyi-uav.com,ISO9001,"2018-04-15",Active
+FAC005,HZ-TIANYI-BATTERY,惠州天翼电池组装厂,电池组装工厂,中国广东省惠州市惠阳区新能源产业园,惠州市,广东省,中国,"电池PACK线1,电池PACK线2","120000块/年",2019,6000,150,陈静,"0752-88888888",battery@tianyi-uav.com,"ISO9001,UL认证","2019-11-01",Active
+FAC001,SZ-TIANYI-ASSY,深圳天翼无人机总装厂,总装工厂,中国广东省深圳市南山区高新科技园A区,深圳市,广东省,中国,"总装线A,总装线B,总装线C","50000台/年",2015,15000,350,李明,"0755-86012345",assy@tianyi-uav.com,"ISO9001,ISO14001","2015-03-15",Active
+FAC002,SZ-TIANYI-BODY,深圳天翼机身制造厂,机身制造工厂,中国广东省深圳市宝安区沙井工业园B区,深圳市,广东省,中国,"机身生产线1,机身生产线2","60000套/年",2016,12000,280,王芳,"0755-86012346",body@tianyi-uav.com,ISO9001,"2016-06-20",Active
+FAC003,SZ-TIANYI-FC,深圳天翼飞控电子厂,电子制造工厂,中国广东省深圳市龙华区观澜电子工业园,深圳市,广东省,中国,"飞控SMT线,飞控组装线","80000套/年",2017,8000,200,张伟,"0755-86012347",fc@tianyi-uav.com,"ISO9001,IATF16949","2017-09-10",Active

@@ -1,0 +1,10 @@
+{
+  "entries": [
+    {
+      "shipment_number": "SH-202305-0001",
+      "logistics_provider": "百世快递"
+    }
+  ],
+  "vega_duration_ms": 264,
+  "overall_ms": 286
+}

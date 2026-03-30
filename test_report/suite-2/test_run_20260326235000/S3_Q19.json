@@ -1,0 +1,18 @@
+{
+  "entries": [
+    {
+      "delivery_status": "已签收",
+      "cnt": 3
+    },
+    {
+      "cnt": 2,
+      "delivery_status": "运输中"
+    },
+    {
+      "delivery_status": "已发货",
+      "cnt": 1
+    }
+  ],
+  "vega_duration_ms": 281,
+  "overall_ms": 304
+}

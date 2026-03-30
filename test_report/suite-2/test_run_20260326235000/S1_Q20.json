@@ -1,0 +1,12 @@
+{
+  "entries": [
+    {
+      "wms_system": "SAP EWM",
+      "warehouse_id": "WH001",
+      "warehouse_name": "深圳天翼中央成品仓库",
+      "has_wms": "是"
+    }
+  ],
+  "vega_duration_ms": 274,
+  "overall_ms": 297
+}

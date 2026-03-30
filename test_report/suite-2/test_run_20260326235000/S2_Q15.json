@@ -1,0 +1,12 @@
+{
+  "entries": [
+    {
+      "requisition_number": "REQ-MO202305001-P0001-10",
+      "material_name": "入门塑料机身总成",
+      "material_code": "ASSY-BODY-PLA-01",
+      "is_assembly": "是"
+    }
+  ],
+  "vega_duration_ms": 276,
+  "overall_ms": 300
+}

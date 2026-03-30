@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "bom_version": "V2.0",
+      "parent_code": "UAV-XF-BASIC",
+      "child_code": "PART-BAT-2S-3000",
+      "child_name": "标准智能电池2S3000mAh",
+      "scrap_rate": 0.03
+    }
+  ],
+  "vega_duration_ms": 271,
+  "overall_ms": 294
+}

@@ -1,0 +1,27 @@
+{
+  "entries": [
+    {
+      "scrap_rate": 0.01,
+      "qty_per": 1,
+      "total_inv": "-306",
+      "child_code": "PART-CAM-FIX-12MP",
+      "child_name": "1200万像素固定相机"
+    },
+    {
+      "child_code": "PART-BAT-2S-3000",
+      "child_name": "标准智能电池2S3000mAh",
+      "scrap_rate": 0.03,
+      "qty_per": 1,
+      "total_inv": "-47"
+    },
+    {
+      "qty_per": 1,
+      "total_inv": "3253",
+      "child_code": "PART-RC-BASIC",
+      "child_name": "基础遥控器",
+      "scrap_rate": 0.01
+    }
+  ],
+  "vega_duration_ms": 271,
+  "overall_ms": 293
+}

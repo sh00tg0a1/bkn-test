@@ -1,0 +1,10 @@
+{
+  "entries": [
+    {
+      "purchase_order_number": "PO-2023040002",
+      "buyer": "赵六"
+    }
+  ],
+  "vega_duration_ms": 277,
+  "overall_ms": 299
+}

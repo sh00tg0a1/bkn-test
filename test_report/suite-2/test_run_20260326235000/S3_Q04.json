@@ -1,0 +1,36 @@
+{
+  "entries": [
+    {
+      "warehouse_name": "电子材料仓",
+      "quantity": 3370,
+      "child_code": "ASSY-BODY-PLA-01",
+      "child_name": "入门塑料机身总成"
+    },
+    {
+      "quantity": 3743,
+      "child_code": "ASSY-FC-BASIC",
+      "child_name": "基础飞控总成",
+      "warehouse_name": "电子材料仓"
+    },
+    {
+      "quantity": 821,
+      "child_code": "PART-CAM-FIX-12MP",
+      "child_name": "1200万像素固定相机",
+      "warehouse_name": "电子材料仓"
+    },
+    {
+      "child_name": "标准动力系统总成",
+      "warehouse_name": "电子材料仓",
+      "quantity": 2881,
+      "child_code": "ASSY-PWR-STD"
+    },
+    {
+      "warehouse_name": "配件仓",
+      "quantity": 3253,
+      "child_code": "PART-RC-BASIC",
+      "child_name": "基础遥控器"
+    }
+  ],
+  "vega_duration_ms": 269,
+  "overall_ms": 290
+}

@@ -1,0 +1,306 @@
+{
+  "entries": [
+    {
+      "purchase_order_number": "PO-2023030046",
+      "material_code": "PART-SPRAYER-16L",
+      "material_name": "16升智能喷洒系统",
+      "document_status": "已收货"
+    },
+    {
+      "material_code": "PART-SPRAYER-30L",
+      "material_name": "30升智能喷洒系统",
+      "document_status": "已收货",
+      "purchase_order_number": "PO-2023030098"
+    },
+    {
+      "material_code": "PART-FRAME-HEX-CF",
+      "material_name": "六轴碳纤维机架",
+      "document_status": "已收货",
+      "purchase_order_number": "PO-2023040082"
+    },
+    {
+      "document_status": "已收货",
+      "purchase_order_number": "PO-2023040084",
+      "material_code": "PART-FRAME-HEX-CF",
+      "material_name": "六轴碳纤维机架"
+    },
+    {
+      "document_status": "已收货",
+      "purchase_order_number": "PO-2023050040",
+      "material_code": "PART-SPRAYER-16L",
+      "material_name": "16升智能喷洒系统"
+    },
+    {
+      "purchase_order_number": "PO-2023060044",
+      "material_code": "PART-SPRAYER-16L",
+      "material_name": "16升智能喷洒系统",
+      "document_status": "已收货"
+    },
+    {
+      "document_status": "已收货",
+      "purchase_order_number": "PO-2023060105",
+      "material_code": "PART-SPRAYER-30L",
+      "material_name": "30升智能喷洒系统"
+    },
+    {
+      "purchase_order_number": "PO-2023080093",
+      "material_code": "PART-SPRAYER-20L",
+      "material_name": "20升智能喷洒系统",
+      "document_status": "已收货"
+    },
+    {
+      "material_code": "PART-FRAME-HEX-CF-HD",
+      "material_name": "六轴重载碳纤维机架",
+      "document_status": "已收货",
+      "purchase_order_number": "PO-2023080094"
+    },
+    {
+      "material_name": "雷达测高仪",
+      "document_status": "已收货",
+      "purchase_order_number": "PO-2023100050",
+      "material_code": "PART-RADAR-ALT"
+    },
+    {
+      "purchase_order_number": "PO-2023120041",
+      "material_code": "PART-SPRAYER-16L",
+      "material_name": "16升智能喷洒系统",
+      "document_status": "已收货"
+    },
+    {
+      "purchase_order_number": "PO-2023120085",
+      "material_code": "PART-FRAME-HEX-CF",
+      "material_name": "六轴碳纤维机架",
+      "document_status": "已收货"
+    },
+    {
+      "material_code": "PART-FRAME-HEX-CF",
+      "material_name": "六轴碳纤维机架",
+      "document_status": "已收货",
+      "purchase_order_number": "PO-2024020081"
+    },
+    {
+      "material_code": "PART-RADAR-ALT",
+      "material_name": "雷达测高仪",
+      "document_status": "已收货",
+      "purchase_order_number": "PO-2024040053"
+    },
+    {
+      "material_code": "PART-SPRAYER-20L",
+      "material_name": "20升智能喷洒系统",
+      "document_status": "已收货",
+      "purchase_order_number": "PO-2024040092"
+    },
+    {
+      "purchase_order_number": "PO-2024050090",
+      "material_code": "PART-SPRAYER-20L",
+      "material_name": "20升智能喷洒系统",
+      "document_status": "已收货"
+    },
+    {
+      "purchase_order_number": "PO-2024050103",
+      "material_code": "PART-SPRAYER-30L",
+      "material_name": "30升智能喷洒系统",
+      "document_status": "已收货"
+    },
+    {
+      "purchase_order_number": "PO-2024100034",
+      "material_code": "PART-CAM-FPV",
+      "material_name": "FPV图传相机",
+      "document_status": "已收货"
+    },
+    {
+      "document_status": "已收货",
+      "purchase_order_number": "PO-2024110048",
+      "material_code": "PART-RADAR-ALT",
+      "material_name": "雷达测高仪"
+    },
+    {
+      "purchase_order_number": "PO-2024120045",
+      "material_code": "PART-SPRAYER-16L",
+      "material_name": "16升智能喷洒系统",
+      "document_status": "已收货"
+    },
+    {
+      "material_name": "12S16000mAh工业电池",
+      "document_status": "已收货",
+      "purchase_order_number": "PO-202604-0249",
+      "material_code": "PART-BAT-12S-16000"
+    },
+    {
+      "purchase_order_number": "PO-202604-0250",
+      "material_code": "PART-RADAR-ALT",
+      "material_name": "雷达测高仪",
+      "document_status": "执行中"
+    },
+    {
+      "purchase_order_number": "PO-202605-0251",
+      "material_code": "PART-CAM-FPV",
+      "material_name": "FPV图传相机",
+      "document_status": "已下达"
+    },
+    {
+      "material_name": "工业遥控器",
+      "document_status": "已收货",
+      "purchase_order_number": "PO-202605-0252",
+      "material_code": "PART-RC-IND"
+    },
+    {
+      "purchase_order_number": "PO-202604-0253",
+      "material_code": "PART-FRAME-HEX-CF-HD",
+      "material_name": "六轴重载碳纤维机架",
+      "document_status": "已下达"
+    },
+    {
+      "purchase_order_number": "PO-202604-0254",
+      "material_code": "PART-PROP-3016-CF",
+      "material_name": "3016碳纤螺旋桨",
+      "document_status": "已下达"
+    },
+    {
+      "material_code": "PART-MOTOR-5010-PRO",
+      "material_name": "5010重载无刷电机",
+      "document_status": "已下达",
+      "purchase_order_number": "PO-202605-0255"
+    },
+    {
+      "purchase_order_number": "PO-202605-0256",
+      "material_code": "PART-ESC-60A",
+      "material_name": "60A电调",
+      "document_status": "已收货"
+    },
+    {
+      "material_code": "PART-RC-IND",
+      "material_name": "工业遥控器",
+      "document_status": "已收货",
+      "purchase_order_number": "PO-202604-0257"
+    },
+    {
+      "document_status": "已收货",
+      "purchase_order_number": "PO-202604-0258",
+      "material_code": "PART-SPRAYER-16L",
+      "material_name": "16升智能喷洒系统"
+    },
+    {
+      "purchase_order_number": "PO-202604-0259",
+      "material_code": "PART-RADAR-ALT",
+      "material_name": "雷达测高仪",
+      "document_status": "执行中"
+    },
+    {
+      "material_code": "PART-RC-IND",
+      "material_name": "工业遥控器",
+      "document_status": "已收货",
+      "purchase_order_number": "PO-202605-0260"
+    },
+    {
+      "material_code": "PART-SPRAYER-16L",
+      "material_name": "16升智能喷洒系统",
+      "document_status": "执行中",
+      "purchase_order_number": "PO-202605-0261"
+    },
+    {
+      "material_name": "工业遥控器",
+      "document_status": "已下达",
+      "purchase_order_number": "PO-202604-0264",
+      "material_code": "PART-RC-IND"
+    },
+    {
+      "purchase_order_number": "PO-202605-0269",
+      "material_code": "PART-BAT-12S-16000",
+      "material_name": "12S16000mAh工业电池",
+      "document_status": "已收货"
+    },
+    {
+      "purchase_order_number": "PO-202605-0270",
+      "material_code": "PART-SPRAYER-20L",
+      "material_name": "20升智能喷洒系统",
+      "document_status": "执行中"
+    },
+    {
+      "purchase_order_number": "PO-202605-0271",
+      "material_code": "PART-RADAR-ALT",
+      "material_name": "雷达测高仪",
+      "document_status": "已收货"
+    },
+    {
+      "purchase_order_number": "PO-202604-0279",
+      "material_code": "PART-FRAME-HEX-CF-HD",
+      "material_name": "六轴重载碳纤维机架",
+      "document_status": "已下达"
+    },
+    {
+      "document_status": "已下达",
+      "purchase_order_number": "PO-202604-0280",
+      "material_code": "PART-MOTOR-5010-PRO",
+      "material_name": "5010重载无刷电机"
+    },
+    {
+      "document_status": "已收货",
+      "purchase_order_number": "PO-202604-0281",
+      "material_code": "PART-ESC-60A",
+      "material_name": "60A电调"
+    },
+    {
+      "material_name": "12S22000mAh重载电池",
+      "document_status": "已收货",
+      "purchase_order_number": "PO-202604-0282",
+      "material_code": "PART-BAT-12S-22000"
+    },
+    {
+      "purchase_order_number": "PO-202604-0283",
+      "material_code": "PART-SPRAYER-30L",
+      "material_name": "30升智能喷洒系统",
+      "document_status": "执行中"
+    },
+    {
+      "material_name": "雷达测高仪",
+      "document_status": "已下达",
+      "purchase_order_number": "PO-202604-0284",
+      "material_code": "PART-RADAR-ALT"
+    },
+    {
+      "document_status": "已收货",
+      "purchase_order_number": "PO-202604-0296",
+      "material_code": "ASSY-PWR-TQ",
+      "material_name": "高扭矩动力系统总成"
+    },
+    {
+      "material_code": "PART-RC-IND",
+      "material_name": "工业遥控器",
+      "document_status": "已下达",
+      "purchase_order_number": "PO-202604-0297"
+    },
+    {
+      "document_status": "已下达",
+      "purchase_order_number": "PO-202604-0298",
+      "material_code": "PART-SPRAYER-16L",
+      "material_name": "16升智能喷洒系统"
+    },
+    {
+      "purchase_order_number": "PO-202605-0310",
+      "material_code": "PART-CAM-FPV",
+      "material_name": "FPV图传相机",
+      "document_status": "已收货"
+    },
+    {
+      "purchase_order_number": "PO-202605-0311",
+      "material_code": "ASSY-PWR-TQ",
+      "material_name": "高扭矩动力系统总成",
+      "document_status": "已下达"
+    },
+    {
+      "purchase_order_number": "PO-202605-0312",
+      "material_code": "PART-RC-IND",
+      "material_name": "工业遥控器",
+      "document_status": "已收货"
+    },
+    {
+      "material_name": "16升智能喷洒系统",
+      "document_status": "已下达",
+      "purchase_order_number": "PO-202605-0313",
+      "material_code": "PART-SPRAYER-16L"
+    }
+  ],
+  "vega_duration_ms": 278,
+  "overall_ms": 302
+}

@@ -1,0 +1,17 @@
+{
+  "run_id": "test_run_20260326134110",
+  "created_at_utc": "2026-03-26T13:41:10Z",
+  "suite": "suite-3",
+  "questions_ref": "test-cases/suite-3/questions/",
+  "method": "kweaver dataview query（CLI 逐次调用，无仓库内自动化脚本）",
+  "data_source_id": "90b93fb3-4d8e-42db-8c1a-84f8658364f6",
+  "data_source_name": "supply_chain_data_v1",
+  "catalog_database": "mysql_1j6tsjwo.supply_chain_data",
+  "entry_view_id": "ee5a1824-1c65-444d-9910-a5fac50efef2",
+  "entry_view_name": "product_entity",
+  "llm_tokens_total": 0,
+  "llm_tokens_note": "未调用 kweaver agent chat；无 LLM token。",
+  "kweaver_dataview_query_calls": 63,
+  "discovery_calls_note": "跑题前另执行 kweaver ds get 与 dataview list 做环境确认，未计入 query_calls。",
+  "network_note": "个别时段出现 connect timeout / TLS 断开，已重试成功后继续。"
+}

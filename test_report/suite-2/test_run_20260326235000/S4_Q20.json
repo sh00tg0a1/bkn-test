@@ -1,0 +1,56 @@
+{
+  "entries": [
+    {
+      "priority": "中",
+      "item_code": "COMP-MOTOR-MOUNT-AL-HD",
+      "item_name": "重载铝合金电机座"
+    },
+    {
+      "priority": "中",
+      "item_code": "COMP-FC-PCB-R1",
+      "item_name": "RTK飞控主板"
+    },
+    {
+      "item_code": "COMP-FC-PCB-R1",
+      "item_name": "RTK飞控主板",
+      "priority": "高"
+    },
+    {
+      "item_code": "ASSY-PWR-TQ",
+      "item_name": "高扭矩动力系统总成",
+      "priority": "高"
+    },
+    {
+      "item_name": "高扭矩动力系统总成",
+      "priority": "中",
+      "item_code": "ASSY-PWR-TQ"
+    },
+    {
+      "item_name": "工业铝合金起落架",
+      "priority": "中",
+      "item_code": "COMP-LG-AL-IND"
+    },
+    {
+      "item_name": "加强型碳纤维机臂",
+      "priority": "高",
+      "item_code": "COMP-ARM-CF-TUBE-HD"
+    },
+    {
+      "item_code": "ASSY-FC-RTK",
+      "item_name": "RTK高精度飞控总成",
+      "priority": "高"
+    },
+    {
+      "priority": "中",
+      "item_code": "ASSY-FC-RTK",
+      "item_name": "RTK高精度飞控总成"
+    },
+    {
+      "item_code": "ASSY-FC-RTK",
+      "item_name": "RTK高精度飞控总成",
+      "priority": "低"
+    }
+  ],
+  "vega_duration_ms": 272,
+  "overall_ms": 296
+}

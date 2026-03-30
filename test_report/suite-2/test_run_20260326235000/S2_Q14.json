@@ -1,0 +1,12 @@
+{
+  "entries": [
+    {
+      "storage_area_sqm": 20000,
+      "requisition_number": "REQ-MO202305001-P0001-10",
+      "warehouse_name": "深圳天翼中央成品仓库",
+      "warehouse_code": "WH-华中-01"
+    }
+  ],
+  "vega_duration_ms": 261,
+  "overall_ms": 284
+}

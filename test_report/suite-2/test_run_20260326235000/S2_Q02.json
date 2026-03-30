@@ -1,0 +1,11 @@
+{
+  "entries": [
+    {
+      "purchase_order_number": "PO-2024040001",
+      "supplier_name": "索尼半导体解决方案",
+      "lead_time_avg": 60
+    }
+  ],
+  "vega_duration_ms": 279,
+  "overall_ms": 304
+}

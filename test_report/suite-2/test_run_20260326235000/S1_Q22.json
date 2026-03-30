@@ -1,0 +1,12 @@
+{
+  "entries": [
+    {
+      "material_name": "入门塑料机身总成",
+      "material_type": "组件",
+      "is_assembly": "是",
+      "material_code": "ASSY-BODY-PLA-01"
+    }
+  ],
+  "vega_duration_ms": 264,
+  "overall_ms": 286
+}

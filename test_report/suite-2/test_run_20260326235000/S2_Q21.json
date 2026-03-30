@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "accumulated_arrival_tax": 394673.22,
+      "accumulated_storage_tax": 361703.69,
+      "document_status": "已收货",
+      "purchase_order_number": "PO-2023040002",
+      "purchase_quantity": 3829
+    }
+  ],
+  "vega_duration_ms": 273,
+  "overall_ms": 294
+}

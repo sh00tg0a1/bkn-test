@@ -1,0 +1,12 @@
+{
+  "entries": [
+    {
+      "purchase_order_number": "PO-2024040001",
+      "total_amount_tax": 198857.84,
+      "purchase_quantity": 2003,
+      "unit_price_tax": 99.28
+    }
+  ],
+  "vega_duration_ms": 262,
+  "overall_ms": 285
+}

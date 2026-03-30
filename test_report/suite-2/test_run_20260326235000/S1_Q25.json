@@ -1,0 +1,12 @@
+{
+  "entries": [
+    {
+      "requisition_number": "REQ-MO202305001-P0001-30",
+      "status": "已发料",
+      "material_name": "1200万像素固定相机",
+      "material_code": "PART-CAM-FIX-12MP"
+    }
+  ],
+  "vega_duration_ms": 266,
+  "overall_ms": 287
+}

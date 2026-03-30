@@ -1,0 +1,86 @@
+{
+  "entries": [
+    {
+      "output_code": "UAV-XF-BASIC-PLUS",
+      "output_name": "旋风增强版整机",
+      "total_qty": "4232"
+    },
+    {
+      "output_code": "UAV-XF-PRO-A",
+      "output_name": "巡风摄影版整机",
+      "total_qty": "4926"
+    },
+    {
+      "output_code": "UAV-XF-PRO-B",
+      "output_name": "巡风探索版整机",
+      "total_qty": "5974"
+    },
+    {
+      "total_qty": "3035",
+      "output_code": "UAV-XF-PRO-C",
+      "output_name": "巡风全能版整机"
+    },
+    {
+      "output_code": "UAV-JF-ENT-AG",
+      "output_name": "极风农业版整机",
+      "total_qty": "4158"
+    },
+    {
+      "total_qty": "2739",
+      "output_code": "UAV-JF-ENT-SV",
+      "output_name": "极风测绘版整机"
+    },
+    {
+      "total_qty": "1039",
+      "output_code": "UAV-JF-ENT-SC",
+      "output_name": "极风安防版整机"
+    },
+    {
+      "output_code": "UAV-BF-IND-H20",
+      "output_name": "霸风20L植保无人机",
+      "total_qty": "2216"
+    },
+    {
+      "output_code": "UAV-BF-IND-H30",
+      "output_name": "霸风30L植保无人机",
+      "total_qty": "2696"
+    },
+    {
+      "output_name": "RTK高精度飞控总成",
+      "total_qty": "31668",
+      "output_code": "ASSY-FC-RTK"
+    },
+    {
+      "output_name": "高扭矩动力系统总成",
+      "total_qty": "21594",
+      "output_code": "ASSY-PWR-TQ"
+    },
+    {
+      "output_code": "COMP-ARM-CF-TUBE-HD",
+      "output_name": "加强型碳纤维机臂",
+      "total_qty": "4208"
+    },
+    {
+      "total_qty": "7613",
+      "output_code": "COMP-MOTOR-MOUNT-AL-HD",
+      "output_name": "重载铝合金电机座"
+    },
+    {
+      "output_code": "COMP-LG-AL-IND",
+      "output_name": "工业铝合金起落架",
+      "total_qty": "8868"
+    },
+    {
+      "output_name": "RTK飞控主板",
+      "total_qty": "11229",
+      "output_code": "COMP-FC-PCB-R1"
+    },
+    {
+      "output_code": "COMP-BAT-MANAGER",
+      "output_name": "双电池管理模块",
+      "total_qty": "6850"
+    }
+  ],
+  "vega_duration_ms": 258,
+  "overall_ms": 281
+}

@@ -1,0 +1,83 @@
+{
+  "entries": [
+    {
+      "has_agv": "是",
+      "agv_count": 15,
+      "child_code": "ASSY-BODY-PLA-01",
+      "warehouse_name": "中央成品仓",
+      "warehouse_code": "WH-华中-01"
+    },
+    {
+      "warehouse_name": "中央成品仓",
+      "warehouse_code": "WH-华中-01",
+      "has_agv": "是",
+      "agv_count": 15,
+      "child_code": "ASSY-FC-BASIC"
+    },
+    {
+      "warehouse_name": "中央成品仓",
+      "warehouse_code": "WH-华中-01",
+      "has_agv": "是",
+      "agv_count": 15,
+      "child_code": "ASSY-PWR-STD"
+    },
+    {
+      "child_code": "ASSY-BODY-PLA-01",
+      "warehouse_name": "电子材料仓",
+      "warehouse_code": "WH-华南-02",
+      "has_agv": "是",
+      "agv_count": 8
+    },
+    {
+      "agv_count": 8,
+      "child_code": "ASSY-FC-BASIC",
+      "warehouse_name": "电子材料仓",
+      "warehouse_code": "WH-华南-02",
+      "has_agv": "是"
+    },
+    {
+      "agv_count": 8,
+      "child_code": "PART-CAM-FIX-12MP",
+      "warehouse_name": "电子材料仓",
+      "warehouse_code": "WH-华南-02",
+      "has_agv": "是"
+    },
+    {
+      "child_code": "ASSY-PWR-STD",
+      "warehouse_name": "电子材料仓",
+      "warehouse_code": "WH-华南-02",
+      "has_agv": "是",
+      "agv_count": 8
+    },
+    {
+      "warehouse_name": "配件仓",
+      "warehouse_code": "WH-华中-03",
+      "has_agv": "否",
+      "agv_count": 0,
+      "child_code": "PART-BAT-2S-3000"
+    },
+    {
+      "has_agv": "否",
+      "agv_count": 0,
+      "child_code": "PART-RC-BASIC",
+      "warehouse_name": "配件仓",
+      "warehouse_code": "WH-华中-03"
+    },
+    {
+      "child_code": "PART-RC-BASIC",
+      "warehouse_name": "深圳天翼中央成品仓库",
+      "warehouse_code": "WH-华中-01",
+      "has_agv": "是",
+      "agv_count": 15
+    },
+    {
+      "agv_count": 0,
+      "child_code": "PART-CAM-FIX-12MP",
+      "warehouse_name": "深圳天翼配件仓库",
+      "warehouse_code": "WH-华中-03",
+      "has_agv": "否"
+    }
+  ],
+  "vega_duration_ms": 283,
+  "overall_ms": 307
+}

@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "sales_order_number": "SO-202303-00001",
+      "product_code": "UAV-JF-ENT-AG",
+      "product_name": "极风农业版整机",
+      "status": "Active"
+    },
+    {
+      "status": "Active",
+      "sales_order_number": "SO-202303-00001",
+      "product_code": "UAV-BF-IND-H20",
+      "product_name": "霸风20L植保无人机"
+    },
+    {
+      "sales_order_number": "SO-202303-00001",
+      "product_code": "UAV-BF-IND-H30",
+      "product_name": "霸风30L植保无人机",
+      "status": "Active"
+    }
+  ],
+  "vega_duration_ms": 266,
+  "overall_ms": 289
+}

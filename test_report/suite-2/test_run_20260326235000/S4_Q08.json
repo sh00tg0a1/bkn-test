@@ -1,0 +1,221 @@
+{
+  "entries": [
+    {
+      "material_code": "PART-CAM-FPV",
+      "material_name": "FPV图传相机",
+      "inspection_status": "验收中"
+    },
+    {
+      "material_name": "RTK高精度飞控总成",
+      "inspection_status": "验收中",
+      "material_code": "ASSY-FC-RTK"
+    },
+    {
+      "material_code": "ASSY-PWR-TQ",
+      "material_name": "高扭矩动力系统总成",
+      "inspection_status": "已验收"
+    },
+    {
+      "material_name": "RTK高精度飞控总成",
+      "inspection_status": "待验收",
+      "material_code": "ASSY-FC-RTK"
+    },
+    {
+      "material_code": "PART-FRAME-HEX-CF-HD",
+      "material_name": "六轴重载碳纤维机架",
+      "inspection_status": "已验收"
+    },
+    {
+      "material_name": "高扭矩动力系统总成",
+      "inspection_status": "验收中",
+      "material_code": "ASSY-PWR-TQ"
+    },
+    {
+      "inspection_status": "已验收",
+      "material_code": "PART-RC-IND",
+      "material_name": "工业遥控器"
+    },
+    {
+      "inspection_status": "待验收",
+      "material_code": "ASSY-BAT-DUAL",
+      "material_name": "双电池冗余系统"
+    },
+    {
+      "material_code": "PART-FRAME-HEX-CF",
+      "material_name": "六轴碳纤维机架",
+      "inspection_status": "验收中"
+    },
+    {
+      "inspection_status": "待验收",
+      "material_code": "PART-MOTOR-5010-PRO",
+      "material_name": "5010重载无刷电机"
+    },
+    {
+      "material_code": "PART-MOTOR-5010-PRO",
+      "material_name": "5010重载无刷电机",
+      "inspection_status": "验收中"
+    },
+    {
+      "material_code": "PART-SPRAYER-16L",
+      "material_name": "16升智能喷洒系统",
+      "inspection_status": "验收中"
+    },
+    {
+      "material_code": "PART-SPRAYER-30L",
+      "material_name": "30升智能喷洒系统",
+      "inspection_status": "待验收"
+    },
+    {
+      "material_code": "PART-MOTOR-5010-PRO",
+      "material_name": "5010重载无刷电机",
+      "inspection_status": "已验收"
+    },
+    {
+      "material_name": "12S22000mAh重载电池",
+      "inspection_status": "验收中",
+      "material_code": "PART-BAT-12S-22000"
+    },
+    {
+      "inspection_status": "已验收",
+      "material_code": "PART-SPRAYER-20L",
+      "material_name": "20升智能喷洒系统"
+    },
+    {
+      "material_code": "PART-SPRAYER-16L",
+      "material_name": "16升智能喷洒系统",
+      "inspection_status": "已验收"
+    },
+    {
+      "material_code": "PART-SPRAYER-20L",
+      "material_name": "20升智能喷洒系统",
+      "inspection_status": "验收中"
+    },
+    {
+      "material_code": "PART-ESC-60A",
+      "material_name": "60A电调",
+      "inspection_status": "验收中"
+    },
+    {
+      "inspection_status": "已验收",
+      "material_code": "PART-BAT-12S-16000",
+      "material_name": "12S16000mAh工业电池"
+    },
+    {
+      "material_code": "PART-FRAME-HEX-CF-HD",
+      "material_name": "六轴重载碳纤维机架",
+      "inspection_status": "验收中"
+    },
+    {
+      "material_code": "PART-BAT-12S-16000",
+      "material_name": "12S16000mAh工业电池",
+      "inspection_status": "待验收"
+    },
+    {
+      "material_code": "PART-BAT-12S-22000",
+      "material_name": "12S22000mAh重载电池",
+      "inspection_status": "已验收"
+    },
+    {
+      "material_name": "30升智能喷洒系统",
+      "inspection_status": "已验收",
+      "material_code": "PART-SPRAYER-30L"
+    },
+    {
+      "material_code": "PART-RADAR-ALT",
+      "material_name": "雷达测高仪",
+      "inspection_status": "已验收"
+    },
+    {
+      "material_code": "PART-FRAME-HEX-CF",
+      "material_name": "六轴碳纤维机架",
+      "inspection_status": "已验收"
+    },
+    {
+      "material_code": "ASSY-BAT-DUAL",
+      "material_name": "双电池冗余系统",
+      "inspection_status": "验收中"
+    },
+    {
+      "material_code": "PART-PROP-3016-CF",
+      "material_name": "3016碳纤螺旋桨",
+      "inspection_status": "待验收"
+    },
+    {
+      "material_code": "PART-PROP-3016-CF",
+      "material_name": "3016碳纤螺旋桨",
+      "inspection_status": "验收中"
+    },
+    {
+      "material_code": "ASSY-BAT-DUAL",
+      "material_name": "双电池冗余系统",
+      "inspection_status": "已验收"
+    },
+    {
+      "inspection_status": "待验收",
+      "material_code": "PART-RADAR-ALT",
+      "material_name": "雷达测高仪"
+    },
+    {
+      "material_code": "PART-PROP-3016-CF",
+      "material_name": "3016碳纤螺旋桨",
+      "inspection_status": "已验收"
+    },
+    {
+      "material_code": "ASSY-BODY-IND-01",
+      "material_name": "工业级强化机身总成",
+      "inspection_status": "已验收"
+    },
+    {
+      "material_name": "FPV图传相机",
+      "inspection_status": "已验收",
+      "material_code": "PART-CAM-FPV"
+    },
+    {
+      "material_name": "FPV图传相机",
+      "inspection_status": "待验收",
+      "material_code": "PART-CAM-FPV"
+    },
+    {
+      "material_code": "PART-RC-IND",
+      "material_name": "工业遥控器",
+      "inspection_status": "待验收"
+    },
+    {
+      "material_name": "FPV图传相机",
+      "inspection_status": "部分验收",
+      "material_code": "PART-CAM-FPV"
+    },
+    {
+      "material_code": "PART-ESC-60A",
+      "material_name": "60A电调",
+      "inspection_status": "部分验收"
+    },
+    {
+      "inspection_status": "待验收",
+      "material_code": "PART-SPRAYER-20L",
+      "material_name": "20升智能喷洒系统"
+    },
+    {
+      "material_code": "PART-FRAME-HEX-CF-HD",
+      "material_name": "六轴重载碳纤维机架",
+      "inspection_status": "待验收"
+    },
+    {
+      "material_code": "PART-BAT-12S-22000",
+      "material_name": "12S22000mAh重载电池",
+      "inspection_status": "部分验收"
+    },
+    {
+      "inspection_status": "待验收",
+      "material_code": "PART-ESC-60A",
+      "material_name": "60A电调"
+    },
+    {
+      "inspection_status": "待验收",
+      "material_code": "ASSY-PWR-TQ",
+      "material_name": "高扭矩动力系统总成"
+    }
+  ],
+  "vega_duration_ms": 277,
+  "overall_ms": 301
+}

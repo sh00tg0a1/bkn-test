@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "material_type": "零件",
+      "is_assembly": "否",
+      "purchase_order_number": "PO-2024040001",
+      "material_code": "PART-CAM-FIX-12MP",
+      "material_name": "1200万像素固定相机"
+    }
+  ],
+  "vega_duration_ms": 278,
+  "overall_ms": 301
+}

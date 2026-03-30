@@ -1,0 +1,10 @@
+{
+  "entries": [
+    {
+      "shipment_number": "SH-202305-0002",
+      "actual_delivery_date": "2023-05-28"
+    }
+  ],
+  "vega_duration_ms": 259,
+  "overall_ms": 282
+}

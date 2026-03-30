@@ -1,0 +1,14 @@
+{
+  "run_id": "test_run_20260326235000",
+  "method": "kweaver dataview query（仅 CLI，无 Python 批跑）",
+  "datasource_id": "90b93fb3-4d8e-42db-8c1a-84f8658364f6",
+  "dataview_id": "9d2a06d1-d906-491e-a513-698332ce3751",
+  "catalog_prefix": "mysql_1j6tsjwo.\"supply_chain_data\"",
+  "kweaver_dataview_query_calls": 100,
+  "retry_calls": 2,
+  "note": "S2_Q12/S2_Q13 曾因网络超时失败，已用同一 SQL 重试覆盖。",
+  "llm_input_tokens": 0,
+  "llm_output_tokens": 0,
+  "llm_total_tokens": 0,
+  "token_note": "纯 SQL 查询，无 LLM。"
+}

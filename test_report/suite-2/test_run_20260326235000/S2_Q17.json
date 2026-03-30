@@ -1,0 +1,48 @@
+{
+  "entries": [
+    {
+      "child_type": "Material",
+      "child_code": "ASSY-BODY-PLA-01",
+      "child_name": "入门塑料机身总成",
+      "quantity": 1,
+      "scrap_rate": 0
+    },
+    {
+      "scrap_rate": 0,
+      "child_type": "Material",
+      "child_code": "ASSY-FC-BASIC",
+      "child_name": "基础飞控总成",
+      "quantity": 1
+    },
+    {
+      "child_code": "PART-CAM-FIX-12MP",
+      "child_name": "1200万像素固定相机",
+      "quantity": 1,
+      "scrap_rate": 0.01,
+      "child_type": "Material"
+    },
+    {
+      "scrap_rate": 0,
+      "child_type": "Material",
+      "child_code": "ASSY-PWR-STD",
+      "child_name": "标准动力系统总成",
+      "quantity": 1
+    },
+    {
+      "scrap_rate": 0.03,
+      "child_type": "Material",
+      "child_code": "PART-BAT-2S-3000",
+      "child_name": "标准智能电池2S3000mAh",
+      "quantity": 1
+    },
+    {
+      "child_code": "PART-RC-BASIC",
+      "child_name": "基础遥控器",
+      "quantity": 1,
+      "scrap_rate": 0.01,
+      "child_type": "Material"
+    }
+  ],
+  "vega_duration_ms": 276,
+  "overall_ms": 300
+}

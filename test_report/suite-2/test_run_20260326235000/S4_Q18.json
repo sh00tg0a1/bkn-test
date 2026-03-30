@@ -1,0 +1,131 @@
+{
+  "entries": [
+    {
+      "customer_name": "西安沃土植保科技有限公司",
+      "customer_code": "CUST-10002",
+      "customer_level": "T2"
+    },
+    {
+      "customer_name": "青岛田园农科有限公司",
+      "customer_code": "CUST-10003",
+      "customer_level": "T2"
+    },
+    {
+      "customer_name": "武汉农兴农业科技有限公司",
+      "customer_code": "CUST-10010",
+      "customer_level": "T2"
+    },
+    {
+      "customer_name": "上海沃土农资技术有限公司",
+      "customer_code": "CUST-10016",
+      "customer_level": "T2"
+    },
+    {
+      "customer_level": "T2",
+      "customer_name": "郑州绿洲农服技术有限公司",
+      "customer_code": "CUST-10018"
+    },
+    {
+      "customer_name": "青岛沃土植保有限公司",
+      "customer_code": "CUST-10021",
+      "customer_level": "T2"
+    },
+    {
+      "customer_name": "长沙绿地农服技术有限公司",
+      "customer_code": "CUST-10030",
+      "customer_level": "T2"
+    },
+    {
+      "customer_name": "厦门绿源农科技术有限公司",
+      "customer_code": "CUST-10035",
+      "customer_level": "T2"
+    },
+    {
+      "customer_name": "沈阳地信勘测工程有限公司",
+      "customer_code": "CUST-10037",
+      "customer_level": "T2"
+    },
+    {
+      "customer_name": "青岛空地测量有限公司",
+      "customer_code": "CUST-10038",
+      "customer_level": "T2"
+    },
+    {
+      "customer_name": "沈阳测量地理信息科技有限公司",
+      "customer_code": "CUST-10041",
+      "customer_level": "T2"
+    },
+    {
+      "customer_code": "CUST-10067",
+      "customer_level": "T2",
+      "customer_name": "杭州光影时代影像工作室"
+    },
+    {
+      "customer_code": "CUST-10076",
+      "customer_level": "T2",
+      "customer_name": "杭州视野制作传媒有限公司"
+    },
+    {
+      "customer_code": "CUST-10078",
+      "customer_level": "T2",
+      "customer_name": "厦门影立方制作有限公司"
+    },
+    {
+      "customer_code": "CUST-10087",
+      "customer_level": "T2",
+      "customer_name": "大连影视通传媒传媒有限公司"
+    },
+    {
+      "customer_code": "CUST-10089",
+      "customer_level": "T2",
+      "customer_name": "西安影像空间影像传媒有限公司"
+    },
+    {
+      "customer_level": "T2",
+      "customer_name": "天津安邦安防服务有限公司",
+      "customer_code": "CUST-10113"
+    },
+    {
+      "customer_name": "厦门新能源风电技术有限公司",
+      "customer_code": "CUST-10122",
+      "customer_level": "T2"
+    },
+    {
+      "customer_name": "沈阳华能能源有限公司",
+      "customer_code": "CUST-10130",
+      "customer_level": "T2"
+    },
+    {
+      "customer_name": "沈阳智电新能源股份有限公司",
+      "customer_code": "CUST-10133",
+      "customer_level": "T2"
+    },
+    {
+      "customer_name": "武汉顺丰配送服务有限公司",
+      "customer_code": "CUST-10144",
+      "customer_level": "T2"
+    },
+    {
+      "customer_name": "青岛物流通配送集团有限公司",
+      "customer_code": "CUST-10148",
+      "customer_level": "T2"
+    },
+    {
+      "customer_name": "北京环境水务科技有限公司",
+      "customer_code": "CUST-10162",
+      "customer_level": "T2"
+    },
+    {
+      "customer_level": "T2",
+      "customer_name": "青岛环保环保工程有限公司",
+      "customer_code": "CUST-10164"
+    },
+    {
+      "customer_name": "青岛建模工程股份有限公司",
+      "customer_code": "CUST-10209",
+      "customer_level": "T2"
+    }
+  ],
+  "vega_duration_ms": 279,
+  "overall_ms": 303
+}

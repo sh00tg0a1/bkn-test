@@ -1,0 +1,17 @@
+{
+  "run_id": "test_run_20260326121212",
+  "created_at_utc": "2026-03-26T00:00:00Z",
+  "suite": "suite-3",
+  "questions_ref": "test-cases/suite-3/questions/",
+  "method": "kweaver dataview query (manual CLI invocations, no committed runner script)",
+  "view_id_used": "81d60443-ca6e-49c2-b377-4b89b7752cd4",
+  "view_name": "product_entity",
+  "datasource_id_observed": "10ee24cb-bdb8-4324-95cb-1bed928ef3c4",
+  "datasource_name": "kweaver_demo",
+  "poc_reference_url": "https://dip-poc.aishu.cn/api/mdl-data-model/v1/data-views?sort=update_time&direction=desc&limit=20&offset=0&type=atomic&data_source_id=90b93fb3-4d8e-42db-8c1a-84f8658364f6",
+  "note_datasource": "本机 kweaver config 下仅存在 kweaver_demo；用户提供的 90b93fb3-... 在当前租户 dataview list 为空，Suite-3 全量表（forecast/mrp/pr 等）需绑定含 supplychaindata_1 的数据源后再验算。",
+  "llm_tokens_total": 0,
+  "llm_tokens_note": "本次未调用 kweaver agent chat；仅 dataview SQL，无 LLM token。若后续用 Agent 生成 SQL，请从对话响应 usage 汇总。",
+  "kweaver_dataview_query_calls": 26,
+  "calls_note": "含成功与失败请求（400/500/超时均计入）；精确列表见同目录 S1_规范查询_dataview结果.md"
+}

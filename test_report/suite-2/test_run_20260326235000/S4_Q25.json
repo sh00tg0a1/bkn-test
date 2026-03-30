@@ -1,0 +1,14 @@
+{
+  "entries": [
+    {
+      "risk_level": "中",
+      "cnt": 3
+    },
+    {
+      "risk_level": "低",
+      "cnt": 6
+    }
+  ],
+  "vega_duration_ms": 283,
+  "overall_ms": 305
+}

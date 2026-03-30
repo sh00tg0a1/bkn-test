@@ -1,0 +1,46 @@
+{
+  "entries": [
+    {
+      "logistics_provider": "京东物流",
+      "cnt": 15
+    },
+    {
+      "logistics_provider": "申通快递",
+      "cnt": 11
+    },
+    {
+      "logistics_provider": "中通快递",
+      "cnt": 10
+    },
+    {
+      "cnt": 9,
+      "logistics_provider": "百世快递"
+    },
+    {
+      "logistics_provider": "顺丰速运",
+      "cnt": 9
+    },
+    {
+      "logistics_provider": "德邦物流",
+      "cnt": 8
+    },
+    {
+      "cnt": 6,
+      "logistics_provider": "圆通速递"
+    },
+    {
+      "logistics_provider": "韵达快递",
+      "cnt": 6
+    },
+    {
+      "logistics_provider": "顺丰",
+      "cnt": 3
+    },
+    {
+      "cnt": 1,
+      "logistics_provider": "德邦"
+    }
+  ],
+  "vega_duration_ms": 280,
+  "overall_ms": 302
+}

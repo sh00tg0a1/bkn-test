@@ -1,0 +1,21 @@
+{
+  "entries": [
+    {
+      "warehouse_name": "深圳天翼中央成品仓库",
+      "warehouse_code": "WH-华中-01",
+      "has_sorting_system": "是"
+    },
+    {
+      "warehouse_name": "深圳天翼配件仓库",
+      "warehouse_code": "WH-华中-03",
+      "has_sorting_system": "否"
+    },
+    {
+      "warehouse_name": "深圳天翼电子材料仓库",
+      "warehouse_code": "WH-华南-02",
+      "has_sorting_system": "否"
+    }
+  ],
+  "vega_duration_ms": 286,
+  "overall_ms": 307
+}

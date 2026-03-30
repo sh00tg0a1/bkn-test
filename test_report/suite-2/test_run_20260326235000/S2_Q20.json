@@ -1,0 +1,12 @@
+{
+  "entries": [
+    {
+      "earliest_storage_date": "2023-04-30",
+      "batch_number": "FG230501-001",
+      "item_code": "UAV-XF-BASIC",
+      "warehouse_name": "中央成品仓"
+    }
+  ],
+  "vega_duration_ms": 266,
+  "overall_ms": 288
+}

@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "risk_level": "低",
+      "supplier_tier": "战略",
+      "purchase_order_number": "PO-2024040001",
+      "supplier_name": "索尼半导体解决方案",
+      "supplier_code": "SUP-021"
+    }
+  ],
+  "vega_duration_ms": 276,
+  "overall_ms": 299
+}

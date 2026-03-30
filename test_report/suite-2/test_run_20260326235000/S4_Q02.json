@@ -1,0 +1,91 @@
+{
+  "entries": [
+    {
+      "child_code": "PART-RADAR-ALT",
+      "child_name": "雷达测高仪",
+      "inv_qty": "42273"
+    },
+    {
+      "child_name": "16升智能喷洒系统",
+      "inv_qty": "8804",
+      "child_code": "PART-SPRAYER-16L"
+    },
+    {
+      "child_name": "工业遥控器",
+      "inv_qty": "37352",
+      "child_code": "PART-RC-IND"
+    },
+    {
+      "child_code": "ASSY-BAT-DUAL",
+      "child_name": "双电池冗余系统",
+      "inv_qty": "8664"
+    },
+    {
+      "child_code": "ASSY-PWR-TQ",
+      "child_name": "高扭矩动力系统总成",
+      "inv_qty": "35990"
+    },
+    {
+      "child_code": "PART-CAM-FPV",
+      "child_name": "FPV图传相机",
+      "inv_qty": "24591"
+    },
+    {
+      "child_name": "RTK高精度飞控总成",
+      "inv_qty": "36946",
+      "child_code": "ASSY-FC-RTK"
+    },
+    {
+      "child_code": "ASSY-BODY-IND-01",
+      "child_name": "工业级强化机身总成",
+      "inv_qty": "6440"
+    },
+    {
+      "inv_qty": "10023",
+      "child_code": "PART-SPRAYER-20L",
+      "child_name": "20升智能喷洒系统"
+    },
+    {
+      "child_code": "PART-BAT-12S-16000",
+      "child_name": "12S16000mAh工业电池",
+      "inv_qty": "5067"
+    },
+    {
+      "child_code": "PART-FRAME-HEX-CF",
+      "child_name": "六轴碳纤维机架",
+      "inv_qty": "10194"
+    },
+    {
+      "child_name": "30升智能喷洒系统",
+      "inv_qty": "5098",
+      "child_code": "PART-SPRAYER-30L"
+    },
+    {
+      "child_code": "PART-BAT-12S-22000",
+      "child_name": "12S22000mAh重载电池",
+      "inv_qty": "4774"
+    },
+    {
+      "inv_qty": "6336",
+      "child_code": "PART-PROP-3016-CF",
+      "child_name": "3016碳纤螺旋桨"
+    },
+    {
+      "inv_qty": "10620",
+      "child_code": "PART-ESC-60A",
+      "child_name": "60A电调"
+    },
+    {
+      "child_name": "5010重载无刷电机",
+      "inv_qty": "10978",
+      "child_code": "PART-MOTOR-5010-PRO"
+    },
+    {
+      "child_code": "PART-FRAME-HEX-CF-HD",
+      "child_name": "六轴重载碳纤维机架",
+      "inv_qty": "8710"
+    }
+  ],
+  "vega_duration_ms": 281,
+  "overall_ms": 305
+}

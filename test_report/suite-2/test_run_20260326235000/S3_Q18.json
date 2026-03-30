@@ -1,0 +1,11 @@
+{
+  "entries": [
+    {
+      "product_type": "UAV",
+      "parent_code": "UAV-XF-BASIC",
+      "product_name": "旋风基础版整机"
+    }
+  ],
+  "vega_duration_ms": 260,
+  "overall_ms": 283
+}

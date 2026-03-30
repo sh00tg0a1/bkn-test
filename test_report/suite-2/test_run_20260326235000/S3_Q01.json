@@ -1,0 +1,84 @@
+{
+  "entries": [
+    {
+      "child_code": "PART-RADAR-ALT",
+      "child_name": "雷达测高仪",
+      "material_type": "零件",
+      "scrap_rate": 0.03
+    },
+    {
+      "child_name": "16升智能喷洒系统",
+      "material_type": "零件",
+      "scrap_rate": 0.03,
+      "child_code": "PART-SPRAYER-16L"
+    },
+    {
+      "child_code": "PART-RC-IND",
+      "child_name": "工业遥控器",
+      "material_type": "零件",
+      "scrap_rate": 0.01
+    },
+    {
+      "child_code": "PART-CAM-FPV",
+      "child_name": "FPV图传相机",
+      "material_type": "零件",
+      "scrap_rate": 0.01
+    },
+    {
+      "child_name": "20升智能喷洒系统",
+      "material_type": "零件",
+      "scrap_rate": 0.01,
+      "child_code": "PART-SPRAYER-20L"
+    },
+    {
+      "child_code": "PART-BAT-12S-16000",
+      "child_name": "12S16000mAh工业电池",
+      "material_type": "零件",
+      "scrap_rate": 0
+    },
+    {
+      "material_type": "零件",
+      "scrap_rate": 0.01,
+      "child_code": "PART-FRAME-HEX-CF",
+      "child_name": "六轴碳纤维机架"
+    },
+    {
+      "child_code": "PART-SPRAYER-30L",
+      "child_name": "30升智能喷洒系统",
+      "material_type": "零件",
+      "scrap_rate": 0.02
+    },
+    {
+      "child_code": "PART-BAT-12S-22000",
+      "child_name": "12S22000mAh重载电池",
+      "material_type": "零件",
+      "scrap_rate": 0.02
+    },
+    {
+      "child_code": "PART-PROP-3016-CF",
+      "child_name": "3016碳纤螺旋桨",
+      "material_type": "零件",
+      "scrap_rate": 0.03
+    },
+    {
+      "child_code": "PART-ESC-60A",
+      "child_name": "60A电调",
+      "material_type": "零件",
+      "scrap_rate": 0
+    },
+    {
+      "child_code": "PART-MOTOR-5010-PRO",
+      "child_name": "5010重载无刷电机",
+      "material_type": "零件",
+      "scrap_rate": 0.03
+    },
+    {
+      "child_code": "PART-FRAME-HEX-CF-HD",
+      "child_name": "六轴重载碳纤维机架",
+      "material_type": "零件",
+      "scrap_rate": 0
+    }
+  ],
+  "vega_duration_ms": 265,
+  "overall_ms": 289
+}

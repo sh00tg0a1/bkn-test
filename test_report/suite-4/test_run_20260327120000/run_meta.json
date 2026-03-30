@@ -1,0 +1,21 @@
+{
+  "suite": "suite-4",
+  "questions_file": "test-cases/suite-4/questions.md",
+  "datasource_id": "90b93fb3-4d8e-42db-8c1a-84f8658364f6",
+  "datasource_name": "supply_chain_data_v1",
+  "catalog_prefix": "mysql_1j6tsjwo.\"supply_chain_data\"",
+  "entry_dataview_id": "4bebeb86-838b-478c-b51a-b5f81041042d",
+  "kweaver_dataview_query_calls": 56,
+  "kweaver_dataview_query_success": 51,
+  "kweaver_dataview_query_failed": 5,
+  "kweaver_dataview_get_calls": 8,
+  "kweaver_dataview_list_calls": 1,
+  "llm_prompt_tokens": 0,
+  "llm_completion_tokens": 0,
+  "llm_total_tokens": 0,
+  "notes": "kweaver_dataview_query_calls=56 含成功 51 + 失败 5（列名错误等重试）。每条 SQL 执行均计一次调用。",
+  "f4_deliverables_file": "f4_deliverables.md",
+  "f4_note": "F4 飞书/网页/简报交付物由模型在拉数结论与金标基础上生成；与 BKN 对比时与 dataview 事实对齐。",
+  "restore_bundle": "suite4-f4-bkn95-20260327",
+  "restore_readme": "test_report/suite-4/README_Suite4_恢复清单.md"
+}

@@ -1,0 +1,12 @@
+{
+  "entries": [
+    {
+      "shipment_number": "SH-202305-0001",
+      "sales_order_number": "SO-202305-6923",
+      "customer_name": "南京云仓配送科技有限公司",
+      "customer_level": "T3"
+    }
+  ],
+  "vega_duration_ms": 262,
+  "overall_ms": 286
+}

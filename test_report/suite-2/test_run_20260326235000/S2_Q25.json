@@ -1,0 +1,12 @@
+{
+  "entries": [
+    {
+      "actual_delivery_date": "2023-05-23",
+      "customer_name": "大连安控警用装备有限公司",
+      "shipment_number": "SH-202305-0004",
+      "delivery_status": "已签收"
+    }
+  ],
+  "vega_duration_ms": 266,
+  "overall_ms": 287
+}

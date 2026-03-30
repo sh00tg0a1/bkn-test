@@ -1,0 +1,76 @@
+{
+  "entries": [
+    {
+      "item_code": "UAV-XF-BASIC",
+      "item_name": "旋风基础版整机",
+      "factory_name": "深圳天翼无人机总装厂"
+    },
+    {
+      "item_name": "旋风增强版整机",
+      "factory_name": "深圳天翼无人机总装厂",
+      "item_code": "UAV-XF-BASIC-PLUS"
+    },
+    {
+      "factory_name": "深圳天翼无人机总装厂",
+      "item_code": "UAV-XF-PRO-A",
+      "item_name": "巡风摄影版整机"
+    },
+    {
+      "factory_name": "深圳天翼无人机总装厂",
+      "item_code": "UAV-XF-PRO-B",
+      "item_name": "巡风探索版整机"
+    },
+    {
+      "item_code": "UAV-XF-PRO-C",
+      "item_name": "巡风全能版整机",
+      "factory_name": "深圳天翼无人机总装厂"
+    },
+    {
+      "item_code": "UAV-JF-ENT-AG",
+      "item_name": "极风农业版整机",
+      "factory_name": "深圳天翼无人机总装厂"
+    },
+    {
+      "item_code": "UAV-JF-ENT-SV",
+      "item_name": "极风测绘版整机",
+      "factory_name": "深圳天翼无人机总装厂"
+    },
+    {
+      "item_name": "极风安防版整机",
+      "factory_name": "深圳天翼无人机总装厂",
+      "item_code": "UAV-JF-ENT-SC"
+    },
+    {
+      "factory_name": "深圳天翼无人机总装厂",
+      "item_code": "UAV-BF-IND-H20",
+      "item_name": "霸风20L植保无人机"
+    },
+    {
+      "item_code": "UAV-BF-IND-H30",
+      "item_name": "霸风30L植保无人机",
+      "factory_name": "深圳天翼无人机总装厂"
+    },
+    {
+      "item_code": "ASSY-FC-RTK",
+      "item_name": "RTK高精度飞控总成",
+      "factory_name": "深圳天翼无人机总装厂"
+    },
+    {
+      "factory_name": "深圳天翼无人机总装厂",
+      "item_code": "ASSY-PWR-TQ",
+      "item_name": "高扭矩动力系统总成"
+    },
+    {
+      "item_code": "COMP-FC-PCB-R1",
+      "item_name": "RTK飞控主板",
+      "factory_name": "深圳天翼无人机总装厂"
+    },
+    {
+      "item_name": "重载铝合金电机座",
+      "factory_name": "深圳天翼无人机总装厂",
+      "item_code": "COMP-MOTOR-MOUNT-AL-HD"
+    }
+  ],
+  "vega_duration_ms": 271,
+  "overall_ms": 293
+}

@@ -1,0 +1,10 @@
+{
+  "entries": [
+    {
+      "purchase_order_number": "PO-2024040001",
+      "document_status": "已关闭"
+    }
+  ],
+  "vega_duration_ms": 267,
+  "overall_ms": 289
+}

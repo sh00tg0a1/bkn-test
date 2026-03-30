@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "is_urgent": "否",
+      "sales_order_number": "SO-202303-00001",
+      "customer_name": "广州绿野农技技术有限公司",
+      "customer_level": "T3"
+    },
+    {
+      "customer_name": "广州绿野农技技术有限公司",
+      "customer_level": "T3",
+      "is_urgent": "否",
+      "sales_order_number": "SO-202303-00001"
+    },
+    {
+      "customer_level": "T3",
+      "is_urgent": "否",
+      "sales_order_number": "SO-202303-00001",
+      "customer_name": "广州绿野农技技术有限公司"
+    }
+  ],
+  "vega_duration_ms": 277,
+  "overall_ms": 298
+}

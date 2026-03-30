@@ -1,0 +1,21 @@
+{
+  "entries": [
+    {
+      "sales_order_number": "SO-202303-00001",
+      "order_status": "已发货",
+      "customer_name": "广州绿野农技技术有限公司"
+    },
+    {
+      "sales_order_number": "SO-202303-00001",
+      "order_status": "已发货",
+      "customer_name": "广州绿野农技技术有限公司"
+    },
+    {
+      "customer_name": "广州绿野农技技术有限公司",
+      "sales_order_number": "SO-202303-00001",
+      "order_status": "已发货"
+    }
+  ],
+  "vega_duration_ms": 265,
+  "overall_ms": 287
+}

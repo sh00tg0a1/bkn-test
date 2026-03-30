@@ -1,0 +1,12 @@
+{
+  "entries": [
+    {
+      "procurement_number": "PO-202303-961422",
+      "supplier_name": "北京智能视觉科技公司",
+      "supplier_code": "SUP-035",
+      "supplier_tier": "核心"
+    }
+  ],
+  "vega_duration_ms": 260,
+  "overall_ms": 282
+}

@@ -1,0 +1,41 @@
+{
+  "entries": [
+    {
+      "product_code": "UAV-BF-IND-H30",
+      "product_name": "UAV-BF-IND-H30",
+      "inv_qty": 2696
+    },
+    {
+      "product_code": "UAV-JF-ENT-AG",
+      "product_name": "UAV-JF-ENT-AG",
+      "inv_qty": 4158
+    },
+    {
+      "product_code": "UAV-BF-IND-H20",
+      "product_name": "UAV-BF-IND-H20",
+      "inv_qty": 2216
+    },
+    {
+      "product_code": "UAV-XF-PRO-B",
+      "product_name": "UAV-XF-PRO-B",
+      "inv_qty": 5974
+    },
+    {
+      "inv_qty": 2739,
+      "product_code": "UAV-JF-ENT-SV",
+      "product_name": "UAV-JF-ENT-SV"
+    },
+    {
+      "inv_qty": 3035,
+      "product_code": "UAV-XF-PRO-C",
+      "product_name": "UAV-XF-PRO-C"
+    },
+    {
+      "product_code": "UAV-XF-BASIC-PLUS",
+      "product_name": "UAV-XF-BASIC-PLUS",
+      "inv_qty": 4232
+    }
+  ],
+  "vega_duration_ms": 281,
+  "overall_ms": 305
+}

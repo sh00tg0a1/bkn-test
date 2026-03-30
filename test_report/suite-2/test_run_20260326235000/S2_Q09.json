@@ -1,0 +1,12 @@
+{
+  "entries": [
+    {
+      "output_code": "UAV-XF-BASIC",
+      "output_name": "旋风基础版整机",
+      "bom_version": "V2.0",
+      "production_order_number": "MO-202305001"
+    }
+  ],
+  "vega_duration_ms": 266,
+  "overall_ms": 288
+}

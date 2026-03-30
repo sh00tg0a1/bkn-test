@@ -1,0 +1,29 @@
+{
+  "suite": "suite-4",
+  "questions_file": "test-cases/suite-4/questions.md",
+  "datasource_id": "90b93fb3-4d8e-42db-8c1a-84f8658364f6",
+  "datasource_name": "supply_chain_data_v1",
+  "catalog_prefix": "mysql_1j6tsjwo.\"supply_chain_data\"",
+  "test_run_id": "test_run_20260327104600",
+  "method": "kweaver dataview query (interactive CLI; no batch script)",
+  "kweaver_dataview_query_calls": 36,
+  "kweaver_dataview_query_failed_attempts": 4,
+  "kweaver_dataview_get_calls": 2,
+  "kweaver_dataview_list_calls": 1,
+  "failed_attempt_notes": "HTTP 500 / column not resolved: bom_event.parent_name; mrp_plan_order_event.material_code; purchase_requisition_event.rootdemandbillno; product_entity.production_lead_time",
+  "llm_prompt_tokens": 0,
+  "llm_completion_tokens": 0,
+  "llm_total_tokens": 0,
+  "llm_token_note": "未使用 kweaver agent chat；答案正文由会话内归纳。若需计量对话 token，请使用平台用量统计。",
+  "primary_dataview_ids_used": {
+    "inventory_event": "4bebeb86-838b-478c-b51a-b5f81041042d",
+    "forecast_event": "453b867e-9865-4477-9eea-042ae6238f65",
+    "bom_event": "9bd77928-c3e1-4b03-8ca4-50ca7a7cd625",
+    "purchase_order_event": "d9bf1295-8335-4d7a-87c0-ca878c7ef6a4",
+    "mrp_plan_order_event": "7eb93fee-de8e-4ace-a1da-be5da7325a32",
+    "purchase_requisition_event": "4ef531c6-f3c7-42b2-8640-86893c5087c4",
+    "shipment_event": "041c4c7d-715a-478e-8da0-d45ca6f1b63b",
+    "product_entity": "ee5a1824-1c65-444d-9910-a5fac50efef2",
+    "material_procurement_event": "e2d691a6-3bcd-47a8-a951-dd6f59c8c64b"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "entries": [
+    {
+      "material_name": "1200万像素固定相机",
+      "unit": "个",
+      "material_code": "PART-CAM-FIX-12MP"
+    }
+  ],
+  "vega_duration_ms": 275,
+  "overall_ms": 297
+}

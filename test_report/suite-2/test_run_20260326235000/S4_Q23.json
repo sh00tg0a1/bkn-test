@@ -1,0 +1,51 @@
+{
+  "entries": [
+    {
+      "parent_code": "UAV-BF-IND-H30",
+      "product_name": "霸风30L植保无人机",
+      "inv_qty": "29656"
+    },
+    {
+      "parent_code": "UAV-JF-ENT-AG",
+      "product_name": "极风农业版整机",
+      "inv_qty": "29106"
+    },
+    {
+      "product_name": "霸风20L植保无人机",
+      "inv_qty": "15512",
+      "parent_code": "UAV-BF-IND-H20"
+    },
+    {
+      "inv_qty": "12468",
+      "parent_code": "UAV-JF-ENT-SC",
+      "product_name": "极风安防版整机"
+    },
+    {
+      "parent_code": "UAV-JF-ENT-SV",
+      "product_name": "极风测绘版整机",
+      "inv_qty": "21912"
+    },
+    {
+      "parent_code": "UAV-XF-PRO-B",
+      "product_name": "巡风探索版整机",
+      "inv_qty": "47792"
+    },
+    {
+      "inv_qty": "6062",
+      "parent_code": "UAV-XF-BASIC",
+      "product_name": "旋风基础版整机"
+    },
+    {
+      "product_name": "旋风增强版整机",
+      "inv_qty": "16928",
+      "parent_code": "UAV-XF-BASIC-PLUS"
+    },
+    {
+      "product_name": "巡风摄影版整机",
+      "inv_qty": "14778",
+      "parent_code": "UAV-XF-PRO-A"
+    }
+  ],
+  "vega_duration_ms": 273,
+  "overall_ms": 296
+}

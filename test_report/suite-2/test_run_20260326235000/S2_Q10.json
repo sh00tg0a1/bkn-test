@@ -1,0 +1,12 @@
+{
+  "entries": [
+    {
+      "warehouse_code": "WH-华中-01",
+      "has_sorting_system": "是",
+      "inventory_id": "INV0000001",
+      "warehouse_name": "中央成品仓"
+    }
+  ],
+  "vega_duration_ms": 268,
+  "overall_ms": 294
+}

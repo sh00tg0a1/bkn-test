@@ -1,0 +1,21 @@
+{
+  "entries": [
+    {
+      "sales_order_number": "SO-202303-00001",
+      "line_number": 10,
+      "planned_delivery_date": "2023-05-12"
+    },
+    {
+      "sales_order_number": "SO-202303-00001",
+      "line_number": 20,
+      "planned_delivery_date": "2023-05-16"
+    },
+    {
+      "sales_order_number": "SO-202303-00001",
+      "line_number": 30,
+      "planned_delivery_date": "2023-04-13"
+    }
+  ],
+  "vega_duration_ms": 275,
+  "overall_ms": 301
+}

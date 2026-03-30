@@ -1,0 +1,11 @@
+{
+  "entries": [
+    {
+      "customer_code": "CUST-10001",
+      "customer_name": "广州绿野农技技术有限公司",
+      "is_named_customer": "否"
+    }
+  ],
+  "vega_duration_ms": 275,
+  "overall_ms": 297
+}

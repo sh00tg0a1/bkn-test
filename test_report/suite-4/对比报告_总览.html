@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>对比报告：纯 SQL vs BKN</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #f7f8fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,.08);
+    max-width: 780px;
+    width: 100%;
+    padding: 40px 48px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 6px;
+  }
+  .subtitle {
+    font-size: 13px;
+    color: #8a8fa3;
+    margin-bottom: 28px;
+  }
+  .scope {
+    font-size: 13px;
+    color: #555;
+    background: #f0f1f5;
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin-bottom: 24px;
+    line-height: 1.6;
+  }
+  .scope b { color: #1a1a2e; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+  }
+  thead th {
+    text-align: left;
+    padding: 12px 16px;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: #8a8fa3;
+    border-bottom: 2px solid #ecedf1;
+  }
+  thead th:first-child { padding-left: 0; }
+  thead th.col-bkn {
+    color: #15803d;
+  }
+  tbody td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #f0f1f5;
+    color: #333;
+  }
+  tbody td:first-child {
+    padding-left: 0;
+    font-weight: 500;
+    color: #1a1a2e;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  .col-bkn {
+    background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+    font-weight: 600;
+    color: #15803d;
+  }
+  .val { font-variant-numeric: tabular-nums; }
+  .badge {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-left: 4px;
+  }
+  .badge-green { background: #dcfce7; color: #15803d; }
+  .badge-gray  { background: #f0f1f5; color: #666; }
+  .footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Suite-4 对比报告：纯 SQL vs BKN</h1>
+  <div class="subtitle">PMC 供应链场景 · 24 题 · Agent + MiniMax-M2.5</div>
+  <div class="scope">
+    <b>F1</b> 基础信息查询（6 题）·
+    <b>F2</b> MRP 状态分析（6 题）·
+    <b>F3</b> 交期复杂分析（6 题）·
+    <b>F4</b> 报告生成（6 题）
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>指标</th>
+        <th>LLM + 纯 SQL</th>
+        <th class="col-bkn">LLM + BKN</th>
+        <th>差值</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>通过</td>
+        <td class="val">19 / 24（79.2%）</td>
+        <td class="col-bkn val">23 / 24（95.8%）</td>
+        <td><span class="badge badge-green">BKN +4</span></td>
+      </tr>
+      <tr>
+        <td>API 调用次数</td>
+        <td class="val">56 次</td>
+        <td class="col-bkn val">45 次</td>
+        <td><span class="badge badge-green">BKN −11</span></td>
+      </tr>
+      <tr>
+        <td>客户端 LLM Token</td>
+        <td class="val">~500K</td>
+        <td class="col-bkn val">~292K</td>
+        <td><span class="badge badge-green">× 0.58</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="footer">
+    两侧均做同等优化（Schema 预嵌入、TSV 输出、查询去重、condition 过滤、字段裁剪），2 题采样等比外推。
+  </div>
+</div>
+</body>
+</html>

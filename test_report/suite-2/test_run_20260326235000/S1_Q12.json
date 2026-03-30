@@ -1,0 +1,10 @@
+{
+  "entries": [
+    {
+      "work_order_status": "已完工",
+      "production_order_number": "MO-202305001"
+    }
+  ],
+  "vega_duration_ms": 274,
+  "overall_ms": 296
+}

@@ -1,0 +1,51 @@
+{
+  "entries": [
+    {
+      "factory_name": "深圳天翼无人机总装厂",
+      "certification": "ISO9001,ISO14001",
+      "product_name": "旋风基础版整机"
+    },
+    {
+      "product_name": "旋风增强版整机",
+      "factory_name": "深圳天翼无人机总装厂",
+      "certification": "ISO9001,ISO14001"
+    },
+    {
+      "product_name": "巡风摄影版整机",
+      "factory_name": "深圳天翼无人机总装厂",
+      "certification": "ISO9001,ISO14001"
+    },
+    {
+      "product_name": "巡风探索版整机",
+      "factory_name": "深圳天翼无人机总装厂",
+      "certification": "ISO9001,ISO14001"
+    },
+    {
+      "factory_name": "深圳天翼无人机总装厂",
+      "certification": "ISO9001,ISO14001",
+      "product_name": "极风农业版整机"
+    },
+    {
+      "factory_name": "深圳天翼无人机总装厂",
+      "certification": "ISO9001,ISO14001",
+      "product_name": "极风测绘版整机"
+    },
+    {
+      "factory_name": "深圳天翼无人机总装厂",
+      "certification": "ISO9001,ISO14001",
+      "product_name": "极风安防版整机"
+    },
+    {
+      "product_name": "霸风20L植保无人机",
+      "factory_name": "深圳天翼无人机总装厂",
+      "certification": "ISO9001,ISO14001"
+    },
+    {
+      "factory_name": "深圳天翼无人机总装厂",
+      "certification": "ISO9001,ISO14001",
+      "product_name": "霸风30L植保无人机"
+    }
+  ],
+  "vega_duration_ms": 284,
+  "overall_ms": 306
+}

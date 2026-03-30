@@ -1,0 +1,306 @@
+{
+  "entries": [
+    {
+      "item_name": "极风农业版整机",
+      "sales_order_number": "SO-202404-00004",
+      "order_status": "已取消",
+      "item_code": "UAV-JF-ENT-AG"
+    },
+    {
+      "order_status": "已取消",
+      "item_code": "UAV-BF-IND-H20",
+      "item_name": "霸风20L植保无人机",
+      "sales_order_number": "SO-202303-00010"
+    },
+    {
+      "sales_order_number": "SO-202303-00010",
+      "order_status": "已取消",
+      "item_code": "UAV-JF-ENT-AG",
+      "item_name": "极风农业版整机"
+    },
+    {
+      "sales_order_number": "SO-202303-00010",
+      "order_status": "已取消",
+      "item_code": "UAV-BF-IND-H30",
+      "item_name": "霸风30L植保无人机"
+    },
+    {
+      "sales_order_number": "SO-202303-00017",
+      "order_status": "已取消",
+      "item_code": "UAV-BF-IND-H30",
+      "item_name": "霸风30L植保无人机"
+    },
+    {
+      "sales_order_number": "SO-202303-00017",
+      "order_status": "已取消",
+      "item_code": "UAV-BF-IND-H20",
+      "item_name": "霸风20L植保无人机"
+    },
+    {
+      "item_code": "UAV-JF-ENT-AG",
+      "item_name": "极风农业版整机",
+      "sales_order_number": "SO-202303-00017",
+      "order_status": "已取消"
+    },
+    {
+      "item_code": "UAV-JF-ENT-AG",
+      "item_name": "极风农业版整机",
+      "sales_order_number": "SO-202303-00043",
+      "order_status": "已取消"
+    },
+    {
+      "item_code": "UAV-BF-IND-H30",
+      "item_name": "霸风30L植保无人机",
+      "sales_order_number": "SO-202303-00043",
+      "order_status": "已取消"
+    },
+    {
+      "item_name": "霸风30L植保无人机",
+      "sales_order_number": "SO-202304-00081",
+      "order_status": "已取消",
+      "item_code": "UAV-BF-IND-H30"
+    },
+    {
+      "item_name": "霸风20L植保无人机",
+      "sales_order_number": "SO-202304-00081",
+      "order_status": "已取消",
+      "item_code": "UAV-BF-IND-H20"
+    },
+    {
+      "item_code": "UAV-BF-IND-H20",
+      "item_name": "霸风20L植保无人机",
+      "sales_order_number": "SO-202404-00102",
+      "order_status": "已取消"
+    },
+    {
+      "item_code": "UAV-BF-IND-H30",
+      "item_name": "霸风30L植保无人机",
+      "sales_order_number": "SO-202404-00102",
+      "order_status": "已取消"
+    },
+    {
+      "sales_order_number": "SO-202309-00154",
+      "order_status": "已取消",
+      "item_code": "UAV-JF-ENT-AG",
+      "item_name": "极风农业版整机"
+    },
+    {
+      "item_code": "UAV-BF-IND-H30",
+      "item_name": "霸风30L植保无人机",
+      "sales_order_number": "SO-202309-00154",
+      "order_status": "已取消"
+    },
+    {
+      "order_status": "已取消",
+      "item_code": "UAV-JF-ENT-AG",
+      "item_name": "极风农业版整机",
+      "sales_order_number": "SO-202301-00193"
+    },
+    {
+      "sales_order_number": "SO-202301-00193",
+      "order_status": "已取消",
+      "item_code": "UAV-BF-IND-H20",
+      "item_name": "霸风20L植保无人机"
+    },
+    {
+      "item_code": "UAV-XF-PRO-A",
+      "item_name": "巡风摄影版整机",
+      "sales_order_number": "SO-202402-00273",
+      "order_status": "已取消"
+    },
+    {
+      "item_name": "极风测绘版整机",
+      "sales_order_number": "SO-202402-00273",
+      "order_status": "已取消",
+      "item_code": "UAV-JF-ENT-SV"
+    },
+    {
+      "sales_order_number": "SO-202402-00273",
+      "order_status": "已取消",
+      "item_code": "UAV-XF-PRO-B",
+      "item_name": "巡风探索版整机"
+    },
+    {
+      "item_code": "UAV-XF-PRO-A",
+      "item_name": "巡风摄影版整机",
+      "sales_order_number": "SO-202410-00294",
+      "order_status": "已取消"
+    },
+    {
+      "item_code": "UAV-JF-ENT-SV",
+      "item_name": "极风测绘版整机",
+      "sales_order_number": "SO-202410-00294",
+      "order_status": "已取消"
+    },
+    {
+      "item_code": "UAV-XF-PRO-A",
+      "item_name": "巡风摄影版整机",
+      "sales_order_number": "SO-202301-00296",
+      "order_status": "已取消"
+    },
+    {
+      "item_code": "UAV-JF-ENT-SV",
+      "item_name": "极风测绘版整机",
+      "sales_order_number": "SO-202301-00296",
+      "order_status": "已取消"
+    },
+    {
+      "item_name": "巡风探索版整机",
+      "sales_order_number": "SO-202301-00296",
+      "order_status": "已取消",
+      "item_code": "UAV-XF-PRO-B"
+    },
+    {
+      "item_code": "UAV-XF-PRO-B",
+      "item_name": "巡风探索版整机",
+      "sales_order_number": "SO-202301-00328",
+      "order_status": "已取消"
+    },
+    {
+      "order_status": "已取消",
+      "item_code": "UAV-JF-ENT-SV",
+      "item_name": "极风测绘版整机",
+      "sales_order_number": "SO-202301-00328"
+    },
+    {
+      "item_code": "UAV-XF-PRO-A",
+      "item_name": "巡风摄影版整机",
+      "sales_order_number": "SO-202301-00328",
+      "order_status": "已取消"
+    },
+    {
+      "item_name": "极风测绘版整机",
+      "sales_order_number": "SO-202308-00343",
+      "order_status": "已取消",
+      "item_code": "UAV-JF-ENT-SV"
+    },
+    {
+      "order_status": "已取消",
+      "item_code": "UAV-XF-PRO-B",
+      "item_name": "巡风探索版整机",
+      "sales_order_number": "SO-202308-00343"
+    },
+    {
+      "item_name": "巡风摄影版整机",
+      "sales_order_number": "SO-202308-00343",
+      "order_status": "已取消",
+      "item_code": "UAV-XF-PRO-A"
+    },
+    {
+      "item_name": "巡风摄影版整机",
+      "sales_order_number": "SO-202311-00368",
+      "order_status": "已取消",
+      "item_code": "UAV-XF-PRO-A"
+    },
+    {
+      "item_code": "UAV-JF-ENT-SV",
+      "item_name": "极风测绘版整机",
+      "sales_order_number": "SO-202311-00368",
+      "order_status": "已取消"
+    },
+    {
+      "item_code": "UAV-XF-PRO-B",
+      "item_name": "巡风探索版整机",
+      "sales_order_number": "SO-202311-00368",
+      "order_status": "已取消"
+    },
+    {
+      "order_status": "已取消",
+      "item_code": "UAV-XF-PRO-B",
+      "item_name": "巡风探索版整机",
+      "sales_order_number": "SO-202403-00397"
+    },
+    {
+      "item_name": "巡风摄影版整机",
+      "sales_order_number": "SO-202403-00397",
+      "order_status": "已取消",
+      "item_code": "UAV-XF-PRO-A"
+    },
+    {
+      "order_status": "已取消",
+      "item_code": "UAV-JF-ENT-SV",
+      "item_name": "极风测绘版整机",
+      "sales_order_number": "SO-202403-00397"
+    },
+    {
+      "item_name": "巡风探索版整机",
+      "sales_order_number": "SO-202408-00403",
+      "order_status": "已取消",
+      "item_code": "UAV-XF-PRO-B"
+    },
+    {
+      "item_code": "UAV-XF-PRO-A",
+      "item_name": "巡风摄影版整机",
+      "sales_order_number": "SO-202307-00419",
+      "order_status": "已取消"
+    },
+    {
+      "item_name": "巡风全能版整机",
+      "sales_order_number": "SO-202307-00419",
+      "order_status": "已取消",
+      "item_code": "UAV-XF-PRO-C"
+    },
+    {
+      "sales_order_number": "SO-202307-00419",
+      "order_status": "已取消",
+      "item_code": "UAV-XF-PRO-B",
+      "item_name": "巡风探索版整机"
+    },
+    {
+      "item_name": "巡风全能版整机",
+      "sales_order_number": "SO-202305-00426",
+      "order_status": "已取消",
+      "item_code": "UAV-XF-PRO-C"
+    },
+    {
+      "order_status": "已取消",
+      "item_code": "UAV-XF-PRO-A",
+      "item_name": "巡风摄影版整机",
+      "sales_order_number": "SO-202305-00426"
+    },
+    {
+      "item_code": "UAV-XF-BASIC-PLUS",
+      "item_name": "旋风增强版整机",
+      "sales_order_number": "SO-202403-00431",
+      "order_status": "已取消"
+    },
+    {
+      "sales_order_number": "SO-202403-00431",
+      "order_status": "已取消",
+      "item_code": "UAV-XF-PRO-C",
+      "item_name": "巡风全能版整机"
+    },
+    {
+      "item_code": "UAV-XF-BASIC-PLUS",
+      "item_name": "旋风增强版整机",
+      "sales_order_number": "SO-202402-00436",
+      "order_status": "已取消"
+    },
+    {
+      "item_code": "UAV-XF-PRO-C",
+      "item_name": "巡风全能版整机",
+      "sales_order_number": "SO-202404-00445",
+      "order_status": "已取消"
+    },
+    {
+      "item_code": "UAV-XF-BASIC-PLUS",
+      "item_name": "旋风增强版整机",
+      "sales_order_number": "SO-202404-00445",
+      "order_status": "已取消"
+    },
+    {
+      "sales_order_number": "SO-202404-00445",
+      "order_status": "已取消",
+      "item_code": "UAV-XF-PRO-B",
+      "item_name": "巡风探索版整机"
+    },
+    {
+      "sales_order_number": "SO-202404-00445",
+      "order_status": "已取消",
+      "item_code": "UAV-XF-PRO-A",
+      "item_name": "巡风摄影版整机"
+    }
+  ],
+  "vega_duration_ms": 276,
+  "overall_ms": 298
+}

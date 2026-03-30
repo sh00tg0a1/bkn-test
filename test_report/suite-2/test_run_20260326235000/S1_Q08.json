@@ -1,0 +1,11 @@
+{
+  "entries": [
+    {
+      "risk_level": "低",
+      "supplier_code": "SUP-021",
+      "supplier_name": "索尼半导体解决方案"
+    }
+  ],
+  "vega_duration_ms": 283,
+  "overall_ms": 305
+}

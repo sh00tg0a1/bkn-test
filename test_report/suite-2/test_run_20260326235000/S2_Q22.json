@@ -1,0 +1,12 @@
+{
+  "entries": [
+    {
+      "customer_name": "青岛物流通配送集团有限公司",
+      "customer_code": "CUST-10148",
+      "is_named_customer": "否",
+      "shipment_number": "SH-202305-0003"
+    }
+  ],
+  "vega_duration_ms": 266,
+  "overall_ms": 290
+}

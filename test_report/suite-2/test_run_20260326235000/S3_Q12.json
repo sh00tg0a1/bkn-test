@@ -1,0 +1,48 @@
+{
+  "entries": [
+    {
+      "material_code": "PART-CAM-FIX-12MP",
+      "material_name": "1200万像素固定相机",
+      "purchase_order_number": "PO-2023010007",
+      "supplier_name": "索尼半导体解决方案"
+    },
+    {
+      "material_code": "PART-CAM-FIX-12MP",
+      "material_name": "1200万像素固定相机",
+      "purchase_order_number": "PO-2023020004",
+      "supplier_name": "索尼半导体解决方案"
+    },
+    {
+      "material_code": "PART-CAM-FIX-12MP",
+      "material_name": "1200万像素固定相机",
+      "purchase_order_number": "PO-2023040002",
+      "supplier_name": "索尼半导体解决方案"
+    },
+    {
+      "material_code": "PART-CAM-FIX-12MP",
+      "material_name": "1200万像素固定相机",
+      "purchase_order_number": "PO-2023090006",
+      "supplier_name": "索尼半导体解决方案"
+    },
+    {
+      "material_code": "PART-CAM-FIX-12MP",
+      "material_name": "1200万像素固定相机",
+      "purchase_order_number": "PO-2024040001",
+      "supplier_name": "索尼半导体解决方案"
+    },
+    {
+      "material_code": "PART-CAM-FIX-12MP",
+      "material_name": "1200万像素固定相机",
+      "purchase_order_number": "PO-2024040003",
+      "supplier_name": "索尼半导体解决方案"
+    },
+    {
+      "material_code": "PART-CAM-FIX-12MP",
+      "material_name": "1200万像素固定相机",
+      "purchase_order_number": "PO-2024110005",
+      "supplier_name": "索尼半导体解决方案"
+    }
+  ],
+  "vega_duration_ms": 279,
+  "overall_ms": 302
+}

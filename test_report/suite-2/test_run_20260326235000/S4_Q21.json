@@ -1,0 +1,16 @@
+{
+  "entries": [
+    {
+      "purchase_order_number": "PO-2023010007",
+      "material_code": "PART-CAM-FIX-12MP",
+      "document_status": "已收货"
+    },
+    {
+      "material_code": "PART-CAM-FIX-12MP",
+      "document_status": "已收货",
+      "purchase_order_number": "PO-2023040002"
+    }
+  ],
+  "vega_duration_ms": 285,
+  "overall_ms": 307
+}

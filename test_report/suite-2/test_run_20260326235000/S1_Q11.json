@@ -1,0 +1,11 @@
+{
+  "entries": [
+    {
+      "planned_finish_date": "2023-05-19",
+      "production_order_id": "PO0000007",
+      "production_order_number": "MO-202305001"
+    }
+  ],
+  "vega_duration_ms": 278,
+  "overall_ms": 300
+}

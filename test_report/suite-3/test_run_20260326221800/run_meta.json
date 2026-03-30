@@ -1,0 +1,27 @@
+{
+  "run_id": "test_run_20260326221800",
+  "created_at_utc": "2026-03-26T14:22:00Z",
+  "suite": "suite-3",
+  "questions_ref": "test-cases/suite-3/questions/",
+  "method": "kweaver dataview query（CLI 逐次调用，无仓库内自动化脚本）",
+  "data_source_id": "90b93fb3-4d8e-42db-8c1a-84f8658364f6",
+  "data_source_name": "supply_chain_data_v1",
+  "catalog_database": "mysql_1j6tsjwo.supply_chain_data",
+  "entry_view_id": "ee5a1824-1c65-444d-9910-a5fac50efef2",
+  "entry_view_name": "product_entity",
+  "llm_tokens_total": 0,
+  "llm_tokens_note": "未调用 kweaver agent chat；无 LLM token。",
+  "kweaver_dataview_query_calls": 75,
+  "query_calls_by_section": {
+    "S1": 23,
+    "S2": 17,
+    "S3": 20,
+    "S4": 13,
+    "S5": 2
+  },
+  "sql_chars_total": null,
+  "sql_chars_note": "生成 SQL 计入工作量；完整字符数需从每次 CLI --sql 累加，见 query_call_log.md。",
+  "estimated_sql_tokens_note": "若需标量：estimated_sql_tokens ≈ ceil(sql_chars_total / 4)。",
+  "sections_completed": ["S1", "S2", "S3", "S4", "S5"],
+  "last_updated_utc": "2026-03-26T14:26:30Z"
+}

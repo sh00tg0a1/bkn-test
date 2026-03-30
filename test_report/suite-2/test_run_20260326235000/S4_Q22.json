@@ -1,0 +1,16 @@
+{
+  "entries": [
+    {
+      "supplier_name": "索尼半导体解决方案",
+      "supplier_code": "SUP-021",
+      "annual_capacity": "1896万件"
+    },
+    {
+      "supplier_name": "北京智能视觉科技公司",
+      "supplier_code": "SUP-035",
+      "annual_capacity": "6637万件"
+    }
+  ],
+  "vega_duration_ms": 264,
+  "overall_ms": 287
+}

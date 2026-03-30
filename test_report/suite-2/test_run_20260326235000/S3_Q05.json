@@ -1,0 +1,41 @@
+{
+  "entries": [
+    {
+      "required_date": "2023-03-20",
+      "purchase_order_number": "PO-2023010007",
+      "planned_arrival_date": "2023-03-14"
+    },
+    {
+      "purchase_order_number": "PO-2023020004",
+      "planned_arrival_date": "2023-04-29",
+      "required_date": "2023-05-05"
+    },
+    {
+      "purchase_order_number": "PO-2023040002",
+      "planned_arrival_date": "2023-06-06",
+      "required_date": "2023-06-22"
+    },
+    {
+      "purchase_order_number": "PO-2023090006",
+      "planned_arrival_date": "2023-11-23",
+      "required_date": "2023-12-08"
+    },
+    {
+      "planned_arrival_date": "2024-06-05",
+      "required_date": "2024-06-10",
+      "purchase_order_number": "PO-2024040001"
+    },
+    {
+      "required_date": "2024-06-20",
+      "purchase_order_number": "PO-2024040003",
+      "planned_arrival_date": "2024-06-13"
+    },
+    {
+      "purchase_order_number": "PO-2024110005",
+      "planned_arrival_date": "2025-01-23",
+      "required_date": "2025-01-27"
+    }
+  ],
+  "vega_duration_ms": 281,
+  "overall_ms": 303
+}

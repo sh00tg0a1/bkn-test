@@ -1,0 +1,11 @@
+{
+  "entries": [
+    {
+      "payment_terms": "月结60天",
+      "supplier_code": "SUP-001",
+      "supplier_name": "芯源微电子股份有限公司"
+    }
+  ],
+  "vega_duration_ms": 263,
+  "overall_ms": 288
+}

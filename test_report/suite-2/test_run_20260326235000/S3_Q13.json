@@ -1,0 +1,18 @@
+{
+  "entries": [
+    {
+      "inspection_status": "待验收",
+      "cnt": 1
+    },
+    {
+      "cnt": 1,
+      "inspection_status": "验收中"
+    },
+    {
+      "inspection_status": "已验收",
+      "cnt": 1
+    }
+  ],
+  "vega_duration_ms": 277,
+  "overall_ms": 300
+}

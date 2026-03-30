@@ -1,0 +1,27 @@
+{
+  "entries": [
+    {
+      "total_amount": 349155.33,
+      "subtotal_amount": 308987.02,
+      "sales_order_number": "SO-202303-00001",
+      "line_number": 10,
+      "product_code": "UAV-JF-ENT-AG"
+    },
+    {
+      "subtotal_amount": 428120.42,
+      "sales_order_number": "SO-202303-00001",
+      "line_number": 20,
+      "product_code": "UAV-BF-IND-H20",
+      "total_amount": 483776.07
+    },
+    {
+      "total_amount": 1108679.52,
+      "subtotal_amount": 981132.32,
+      "sales_order_number": "SO-202303-00001",
+      "line_number": 30,
+      "product_code": "UAV-BF-IND-H30"
+    }
+  ],
+  "vega_duration_ms": 286,
+  "overall_ms": 309
+}
